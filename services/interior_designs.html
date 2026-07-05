@@ -1,0 +1,2971 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DH Construction - Premium Interior Design & Fit-Out Solutions in Chennai. Offices, homes, retail spaces crafted with precision."
+    />
+    <title>Interior Design & Fit-Out | DH Construction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #2e7d32;
+        --primary-dark: #1b5e20;
+        --primary-light: #66bb6a;
+        --primary-accent: #81c784;
+        --bg-cream: #fafaf7;
+        --bg-warm: #f5f3ee;
+        --white: #ffffff;
+        --dark: #1a1a1a;
+        --text: #2d2d2d;
+        --text-light: #6b7280;
+        --text-muted: #9ca3af;
+        --border: #e8e6e1;
+        --gradient: linear-gradient(135deg, #2e7d32, #66bb6a);
+        --heading: "Playfair Display", serif;
+        --body: "Poppins", sans-serif;
+        --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
+        --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.1);
+        --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
+        --shadow-xl: 0 30px 80px rgba(0, 0, 0, 0.15);
+        --radius: 16px;
+        --radius-lg: 24px;
+        --radius-xl: 40px;
+        --ease: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      body {
+        font-family: var(--body);
+        color: var(--text);
+        background: var(--white);
+        line-height: 1.7;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--heading);
+        font-weight: 600;
+        line-height: 1.25;
+        color: var(--dark);
+      }
+      p {
+        color: var(--text-light);
+        margin-bottom: 1rem;
+      }
+      a {
+        text-decoration: none;
+        color: var(--primary);
+        transition: all 0.3s var(--ease);
+      }
+      a:hover {
+        color: var(--primary-dark);
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      .section-pad {
+        padding: 120px 0;
+      }
+      .section-pad-sm {
+        padding: 80px 0;
+      }
+      .overline {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--body);
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--primary);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 1.25rem;
+      }
+      .overline::before {
+        content: "";
+        width: 40px;
+        height: 2px;
+        background: var(--gradient);
+      }
+      .section-heading {
+        font-size: 3.25rem;
+        font-weight: 700;
+        margin-bottom: 1.25rem;
+        letter-spacing: -0.5px;
+      }
+      .section-desc {
+        font-size: 1.05rem;
+        color: var(--text-light);
+        max-width: 560px;
+        line-height: 1.8;
+      }
+
+      /* Buttons */
+      .btn-main {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--gradient);
+        color: var(--white);
+        padding: 16px 36px;
+        border-radius: var(--radius-xl);
+        font-family: var(--body);
+        font-weight: 600;
+        font-size: 0.95rem;
+        border: none;
+        transition: all 0.4s var(--ease);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .btn-main::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: var(--primary-dark);
+        z-index: -1;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s var(--ease);
+      }
+      .btn-main:hover {
+        color: var(--white);
+        transform: translateY(-3px);
+        box-shadow: 0 12px 35px rgba(46, 125, 50, 0.35);
+      }
+      .btn-main:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+      .btn-ghost {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        color: var(--white);
+        padding: 16px 36px;
+        border-radius: var(--radius-xl);
+        font-family: var(--body);
+        font-weight: 500;
+        font-size: 0.95rem;
+        border: 1.5px solid rgba(255, 255, 255, 0.4);
+        transition: all 0.4s var(--ease);
+      }
+      .btn-ghost:hover {
+        background: var(--white);
+        color: var(--primary-dark);
+        border-color: var(--white);
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-lg);
+      }
+      .btn-outline {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        color: var(--primary);
+        padding: 14px 32px;
+        border-radius: var(--radius-xl);
+        font-family: var(--body);
+        font-weight: 600;
+        font-size: 0.9rem;
+        border: 2px solid var(--primary);
+        transition: all 0.4s var(--ease);
+      }
+      .btn-outline:hover {
+        background: var(--primary);
+        color: var(--white);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(46, 125, 50, 0.3);
+      }
+
+      /* ===== NAVBAR ===== */
+      .navbar {
+        padding: 24px 0;
+        transition: all 0.4s var(--ease);
+        z-index: 1000;
+      }
+      .navbar.scrolled {
+        background: rgba(255, 255, 255, 0.97);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        padding: 14px 0;
+        box-shadow: 0 1px 20px rgba(0, 0, 0, 0.06);
+      }
+      .navbar-brand {
+        font-family: var(--heading);
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--white) !important;
+        letter-spacing: -0.5px;
+      }
+      .navbar.scrolled .navbar-brand {
+        color: var(--dark) !important;
+      }
+      .navbar-brand b {
+        color: var(--primary-light);
+        font-weight: 800;
+      }
+      .navbar.scrolled .navbar-brand b {
+        color: var(--primary);
+      }
+      .nav-link {
+        font-family: var(--body);
+        font-weight: 500;
+        font-size: 0.88rem;
+        color: rgba(255, 255, 255, 0.85) !important;
+        padding: 8px 20px !important;
+        transition: all 0.3s var(--ease);
+        position: relative;
+        letter-spacing: 0.3px;
+      }
+      .navbar.scrolled .nav-link {
+        color: var(--text) !important;
+      }
+      .nav-link:hover,
+      .nav-link.active {
+        color: var(--primary-light) !important;
+      }
+      .navbar.scrolled .nav-link:hover,
+      .navbar.scrolled .nav-link.active {
+        color: var(--primary) !important;
+      }
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        left: 20px;
+        right: 20px;
+        height: 2px;
+        background: var(--gradient);
+        transform: scaleX(0);
+        transition: transform 0.3s var(--ease);
+        border-radius: 2px;
+      }
+      .nav-link:hover::after,
+      .nav-link.active::after {
+        transform: scaleX(1);
+      }
+      .navbar-toggler {
+        border: none;
+        padding: 0;
+        font-size: 1.5rem;
+        color: var(--white);
+      }
+      .navbar.scrolled .navbar-toggler {
+        color: var(--dark);
+      }
+      @media (max-width: 991px) {
+        .navbar-collapse {
+          background: var(--white);
+          border-radius: var(--radius);
+          padding: 24px;
+          margin-top: 16px;
+          box-shadow: var(--shadow-lg);
+        }
+        .nav-link {
+          color: var(--text) !important;
+          padding: 12px 16px !important;
+        }
+        .nav-link:hover,
+        .nav-link.active {
+          color: var(--primary) !important;
+        }
+      }
+
+      /* ===== HERO — Animated Canvas BG ===== */
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        background: #0a0a0a;
+      }
+      .hero-canvas {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+      .hero-canvas canvas {
+        width: 100%;
+        height: 100%;
+      }
+      .hero-grad {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          105deg,
+          rgba(10, 10, 10, 0.88) 0%,
+          rgba(15, 15, 15, 0.72) 35%,
+          rgba(25, 25, 25, 0.4) 60%,
+          rgba(30, 30, 30, 0.15) 100%
+        );
+        z-index: 1;
+      }
+      .hero-content {
+        position: relative;
+        z-index: 10;
+      }
+      .hero-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: var(--radius-xl);
+        padding: 10px 22px;
+        margin-bottom: 2rem;
+        opacity: 0;
+        transform: translateY(25px);
+        animation: sUp 0.8s var(--ease) 0.4s forwards;
+      }
+      .hero-tag i {
+        color: var(--primary-light);
+      }
+      .hero-tag span {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 0.88rem;
+        font-weight: 500;
+      }
+      .hero h1 {
+        font-size: 4.2rem;
+        font-weight: 700;
+        color: var(--white);
+        line-height: 1.08;
+        margin-bottom: 1.75rem;
+      }
+      .hero h1 .line {
+        display: block;
+        overflow: hidden;
+      }
+      .hero h1 .line-in {
+        display: block;
+        transform: translateY(115%);
+        animation: revealLine 1s var(--ease) forwards;
+      }
+      .hero h1 .line:nth-child(1) .line-in {
+        animation-delay: 0.6s;
+      }
+      .hero h1 .line:nth-child(2) .line-in {
+        animation-delay: 0.8s;
+      }
+      .hero h1 .line:nth-child(3) .line-in {
+        animation-delay: 1s;
+      }
+      .hero h1 em {
+        font-style: italic;
+        color: var(--primary-light);
+      }
+      @keyframes revealLine {
+        to {
+          transform: translateY(0);
+        }
+      }
+      @keyframes sUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .hero-sub {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.7);
+        max-width: 520px;
+        line-height: 1.8;
+        margin-bottom: 2.5rem;
+        opacity: 0;
+        transform: translateY(25px);
+        animation: sUp 0.8s var(--ease) 1.2s forwards;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+        opacity: 0;
+        transform: translateY(25px);
+        animation: sUp 0.8s var(--ease) 1.4s forwards;
+      }
+      .hero-visual {
+        position: relative;
+        z-index: 10;
+        height: 580px;
+        opacity: 0;
+        transform: translateX(50px);
+        animation: sInR 1s var(--ease) 0.8s forwards;
+      }
+      @keyframes sInR {
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .hv-main {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 72%;
+        height: 75%;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        box-shadow: -15px 15px 50px rgba(0, 0, 0, 0.4);
+        z-index: 2;
+      }
+      .hv-main img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 5s ease;
+      }
+      .hv-main:hover img {
+        transform: scale(1.08);
+      }
+      .hv-accent {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 62%;
+        height: 55%;
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: 10px 15px 40px rgba(0, 0, 0, 0.35);
+        z-index: 3;
+        border: 3px solid rgba(255, 255, 255, 0.12);
+      }
+      .hv-accent img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .hv-badge {
+        position: absolute;
+        z-index: 5;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(12px);
+        border-radius: var(--radius);
+        padding: 16px 22px;
+        box-shadow: var(--shadow-md);
+      }
+      .hv-badge-1 {
+        bottom: 30px;
+        right: 0;
+        animation: badgeFloat 4s ease-in-out infinite;
+      }
+      .hv-badge-2 {
+        top: 50%;
+        left: -20px;
+        transform: translateY(-50%);
+        animation: badgeFloat 4s ease-in-out infinite 1s;
+      }
+      @keyframes badgeFloat {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+      .hv-badge-icon {
+        width: 40px;
+        height: 40px;
+        background: var(--gradient);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+      }
+      .hv-badge h4 {
+        font-family: var(--body);
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--dark);
+        line-height: 1;
+        margin-bottom: 2px;
+      }
+      .hv-badge p {
+        font-size: 0.72rem;
+        color: var(--text-light);
+        margin-bottom: 0;
+      }
+      .hv-badge-2 h4 {
+        color: var(--primary);
+      }
+      .hero-stats-bar {
+        display: flex;
+        gap: 0;
+        opacity: 0;
+        transform: translateY(25px);
+        animation: sUp 0.8s var(--ease) 1.6s forwards;
+      }
+      .hsb-item {
+        flex: 1;
+        text-align: center;
+        padding: 20px 15px;
+        border-right: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .hsb-item:last-child {
+        border-right: none;
+      }
+      .hsb-item h3 {
+        font-family: var(--heading);
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--white);
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+      .hsb-item h3 span {
+        color: var(--primary-light);
+        font-size: 1.4rem;
+      }
+      .hsb-item p {
+        font-size: 0.78rem;
+        color: rgba(255, 255, 255, 0.55);
+        margin-bottom: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      /* ===== PROCESS SECTION ===== */
+      .process-track {
+        position: relative;
+      }
+      .process-track::before {
+        content: "";
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: var(--border);
+        z-index: 0;
+      }
+      .proc-step {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+      }
+      .proc-num {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background: var(--white);
+        border: 2px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        transition: all 0.4s var(--ease);
+        position: relative;
+      }
+      .proc-num i {
+        font-size: 1.8rem;
+        color: var(--primary);
+        transition: all 0.4s var(--ease);
+      }
+      .proc-step:hover .proc-num {
+        background: var(--gradient);
+        border-color: transparent;
+        transform: scale(1.1);
+        box-shadow: 0 8px 30px rgba(46, 125, 50, 0.3);
+      }
+      .proc-step:hover .proc-num i {
+        color: var(--white);
+      }
+      .proc-step h5 {
+        font-family: var(--body);
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .proc-step p {
+        font-size: 0.82rem;
+        margin-bottom: 0;
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* ===== SPACE TYPES ===== */
+      .space-card {
+        position: relative;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        height: 400px;
+        cursor: pointer;
+      }
+      .space-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.7s var(--ease);
+      }
+      .space-card:hover img {
+        transform: scale(1.1);
+      }
+      .space-ov {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.85) 0%,
+          rgba(0, 0, 0, 0.1) 60%
+        );
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 32px;
+        transition: all 0.4s var(--ease);
+      }
+      .space-card:hover .space-ov {
+        background: linear-gradient(
+          to top,
+          rgba(46, 125, 50, 0.85) 0%,
+          rgba(46, 125, 50, 0.1) 60%
+        );
+      }
+      .space-ov .sp-icon {
+        width: 48px;
+        height: 48px;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(8px);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+        transition: all 0.4s var(--ease);
+      }
+      .space-card:hover .sp-icon {
+        background: rgba(255, 255, 255, 0.25);
+        transform: translateY(-4px);
+      }
+      .space-ov h4 {
+        font-size: 1.3rem;
+        color: var(--white);
+        margin-bottom: 8px;
+      }
+      .space-ov p {
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 0;
+      }
+      .space-features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .space-features span {
+        font-size: 0.72rem;
+        background: rgba(255, 255, 255, 0.15);
+        color: var(--white);
+        padding: 4px 12px;
+        border-radius: var(--radius-xl);
+      }
+
+      /* ===== MATERIALS SHOWCASE ===== */
+      .mat-card {
+        background: var(--white);
+        border-radius: var(--radius);
+        padding: 32px 24px;
+        text-align: center;
+        border: 1px solid var(--border);
+        transition: all 0.4s var(--ease);
+        height: 100%;
+      }
+      .mat-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-md);
+        border-color: transparent;
+      }
+      .mat-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin: 0 auto 18px;
+        overflow: hidden;
+        border: 3px solid var(--bg-cream);
+        transition: all 0.4s var(--ease);
+      }
+      .mat-card:hover .mat-img {
+        border-color: var(--primary-light);
+        transform: scale(1.1);
+      }
+      .mat-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .mat-card h5 {
+        font-family: var(--body);
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .mat-card p {
+        font-size: 0.82rem;
+        margin-bottom: 0;
+      }
+
+      /* ===== TESTIMONIALS ===== */
+      .testi-card {
+        background: var(--white);
+        border-radius: var(--radius-lg);
+        padding: 36px 32px;
+        border: 1px solid var(--border);
+        transition: all 0.4s var(--ease);
+        height: 100%;
+        position: relative;
+      }
+      .testi-card:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-4px);
+        border-color: transparent;
+      }
+      .testi-card .quote-icon {
+        font-size: 2.5rem;
+        color: var(--primary-accent);
+        line-height: 1;
+        margin-bottom: 16px;
+      }
+      .testi-card blockquote {
+        font-size: 0.92rem;
+        color: var(--text-light);
+        line-height: 1.8;
+        margin-bottom: 20px;
+        font-style: italic;
+      }
+      .testi-author {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .testi-avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid var(--bg-cream);
+      }
+      .testi-author h6 {
+        font-family: var(--body);
+        font-size: 0.88rem;
+        font-weight: 600;
+        margin-bottom: 2px;
+      }
+      .testi-author small {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+      }
+      .testi-stars {
+        color: #f59e0b;
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+      }
+      .testi-card::after {
+        content: "";
+        position: absolute;
+        top: 24px;
+        right: 28px;
+        font-family: var(--heading);
+        font-size: 6rem;
+        color: var(--bg-cream);
+        line-height: 1;
+        font-weight: 800;
+        pointer-events: none;
+      }
+
+      /* ===== PRICING TABLE ===== */
+      .price-card {
+        background: var(--white);
+        border-radius: var(--radius-lg);
+        padding: 0;
+        border: 1px solid var(--border);
+        transition: all 0.4s var(--ease);
+        height: 100%;
+        overflow: hidden;
+      }
+      .price-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-lg);
+        border-color: transparent;
+      }
+      .price-card.featured {
+        border: 2px solid var(--primary);
+      }
+      .price-head {
+        padding: 32px 28px 24px;
+        text-align: center;
+      }
+      .price-card.featured .price-head {
+        background: var(--gradient);
+        color: var(--white);
+      }
+      .price-card.featured .price-head h5,
+      .price-card.featured .price-head p {
+        color: var(--white) !important;
+      }
+      .price-head h5 {
+        font-family: var(--body);
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+      .price-head p {
+        font-size: 0.82rem;
+        margin-bottom: 0;
+      }
+      .price-amt {
+        text-align: center;
+        padding: 20px 28px 24px;
+        border-bottom: 1px solid var(--border);
+      }
+      .price-amt h3 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--dark);
+        margin-bottom: 4px;
+      }
+      .price-amt h3 small {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: var(--text-muted);
+      }
+      .price-amt span {
+        font-size: 0.78rem;
+        color: var(--text-muted);
+      }
+      .price-body {
+        padding: 24px 28px 32px;
+      }
+      .price-body ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 28px;
+      }
+      .price-body ul li {
+        padding: 8px 0;
+        font-size: 0.85rem;
+        color: var(--text);
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        border-bottom: 1px solid var(--border);
+      }
+      .price-body ul li:last-child {
+        border-bottom: none;
+      }
+      .price-body ul li i {
+        color: var(--primary);
+        font-size: 0.85rem;
+        margin-top: 3px;
+      }
+      .price-body .btn-main,
+      .price-body .btn-outline {
+        width: 100%;
+        justify-content: center;
+      }
+
+      /* ===== FAQ ===== */
+      .faq-item {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        margin-bottom: 12px;
+        overflow: hidden;
+        transition: all 0.3s var(--ease);
+      }
+      .faq-item:hover {
+        border-color: var(--primary-accent);
+      }
+      .faq-item.active {
+        border-color: var(--primary);
+        box-shadow: 0 4px 20px rgba(46, 125, 50, 0.08);
+      }
+      .faq-q {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 24px;
+        cursor: pointer;
+        background: var(--white);
+        transition: all 0.3s var(--ease);
+      }
+      .faq-q:hover {
+        background: var(--bg-cream);
+      }
+      .faq-q h6 {
+        font-family: var(--body);
+        font-size: 0.92rem;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+      .faq-q i {
+        font-size: 1rem;
+        color: var(--primary);
+        transition: transform 0.3s var(--ease);
+      }
+      .faq-item.active .faq-q i {
+        transform: rotate(180deg);
+      }
+      .faq-a {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s var(--ease);
+      }
+      .faq-a-inner {
+        padding: 0 24px 20px;
+        font-size: 0.88rem;
+        color: var(--text-light);
+        line-height: 1.8;
+      }
+
+      /* ===== STATS ===== */
+      .stats-strip {
+        background: var(--gradient);
+        position: relative;
+        overflow: hidden;
+      }
+      .stats-strip::before {
+        content: "";
+        position: absolute;
+        top: -60%;
+        right: -8%;
+        width: 350px;
+        height: 350px;
+        border: 2px solid rgba(255, 255, 255, 0.08);
+        border-radius: 50%;
+      }
+      .ss-item {
+        text-align: center;
+        padding: 35px 20px;
+        position: relative;
+        z-index: 1;
+      }
+      .ss-item h3 {
+        font-family: var(--heading);
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: var(--white);
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+      .ss-item h3 span {
+        font-size: 1.8rem;
+      }
+      .ss-item p {
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 0;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+      }
+
+      /* ===== CTA ===== */
+      .cta-sec {
+        background: var(--gradient);
+        position: relative;
+        overflow: hidden;
+      }
+      .cta-sec::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -10%;
+        width: 500px;
+        height: 500px;
+        border: 3px solid rgba(255, 255, 255, 0.08);
+        border-radius: 50%;
+      }
+      .cta-inner {
+        position: relative;
+        z-index: 1;
+      }
+      .cta-inner h2 {
+        font-size: 2.75rem;
+        color: var(--white);
+        margin-bottom: 1rem;
+      }
+      .cta-inner p {
+        font-size: 1.05rem;
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 600px;
+        margin-bottom: 2rem;
+      }
+
+      /* ===== CONTACT ===== */
+      .ci-wrap {
+        position: relative;
+      }
+      .ci-wrap::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--gradient);
+        border-radius: 10px;
+      }
+      .ci-card {
+        background: var(--bg-cream);
+        border-radius: var(--radius);
+        padding: 22px 22px 22px 28px;
+        display: flex;
+        align-items: flex-start;
+        gap: 18px;
+        transition: all 0.3s var(--ease);
+        border: 1px solid transparent;
+        margin-bottom: 16px;
+      }
+      .ci-card:hover {
+        background: var(--white);
+        box-shadow: var(--shadow-md);
+        transform: translateX(5px);
+        border-color: var(--border);
+      }
+      .ci-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        background: var(--white);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        color: var(--primary);
+        transition: all 0.3s var(--ease);
+        box-shadow: var(--shadow-soft);
+      }
+      .ci-card:hover .ci-icon {
+        background: var(--gradient);
+        color: var(--white);
+      }
+      .ci-card h5 {
+        font-family: var(--body);
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      .ci-card p {
+        font-size: 0.85rem;
+        margin-bottom: 0;
+        line-height: 1.7;
+      }
+      .ci-card a:hover {
+        color: var(--primary) !important;
+      }
+      .cf-wrap {
+        background: var(--white);
+        border-radius: var(--radius-lg);
+        padding: 40px;
+        box-shadow: var(--shadow-md);
+        border: 1px solid var(--border);
+      }
+      .cf-head {
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 24px;
+      }
+      .cf-head h4 {
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+      }
+      .cf-head p {
+        font-size: 0.88rem;
+        margin-bottom: 0;
+      }
+      .cf-wrap .form-label {
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 8px;
+      }
+      .ig-custom {
+        position: relative;
+      }
+      .ig-icon {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        z-index: 5;
+        transition: color 0.3s;
+        pointer-events: none;
+      }
+      .ig-custom:has(textarea) .ig-icon {
+        top: 20px;
+        transform: none;
+      }
+      .fc-custom {
+        border: 2px solid var(--border);
+        border-radius: 12px;
+        padding: 14px 20px 14px 46px;
+        font-family: var(--body);
+        font-size: 0.9rem;
+        color: var(--text);
+        transition: all 0.3s var(--ease);
+        background: var(--white);
+        width: 100%;
+      }
+      .fc-custom:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.08);
+        outline: none;
+      }
+      .ig-custom:focus-within .ig-icon {
+        color: var(--primary);
+      }
+      .cf-wrap .form-select.fc-custom {
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236B7280' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        padding-right: 40px;
+      }
+
+      /* ===== FOOTER ===== */
+      .foot {
+        background: var(--dark);
+        color: rgba(255, 255, 255, 0.65);
+      }
+      .foot-brand {
+        font-family: var(--heading);
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 18px;
+        display: inline-block;
+      }
+      .foot-brand b {
+        color: var(--primary-light);
+        font-weight: 800;
+      }
+      .foot p {
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 0.9rem;
+      }
+      .foot h5 {
+        font-family: var(--body);
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--white);
+        margin-bottom: 22px;
+        position: relative;
+        padding-bottom: 12px;
+      }
+      .foot h5::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background: var(--gradient);
+        border-radius: 10px;
+      }
+      .foot-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .foot-links li {
+        margin-bottom: 10px;
+      }
+      .foot-links a {
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 0.88rem;
+        transition: all 0.3s var(--ease);
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .foot-links a:hover {
+        color: var(--primary-light);
+        padding-left: 5px;
+      }
+      .foot-soc {
+        display: flex;
+        gap: 10px;
+        margin-top: 22px;
+      }
+      .foot-soc a {
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.95rem;
+        transition: all 0.3s var(--ease);
+      }
+      .foot-soc a:hover {
+        background: var(--gradient);
+        border-color: transparent;
+        color: var(--white);
+        transform: translateY(-3px);
+      }
+      .foot-bot {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 24px 0;
+        margin-top: 55px;
+      }
+      .foot-bot p {
+        font-size: 0.82rem;
+        margin-bottom: 0;
+      }
+
+      /* ===== FLOATING ===== */
+      .float-wa {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 58px;
+        height: 58px;
+        background: #25d366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: 1.6rem;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        z-index: 999;
+        transition: all 0.3s var(--ease);
+        animation: waPulse 2s infinite;
+      }
+      .float-wa:hover {
+        transform: scale(1.1);
+        color: var(--white);
+      }
+      @keyframes waPulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+        }
+        70% {
+          box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        }
+      }
+      .float-call {
+        position: fixed;
+        bottom: 98px;
+        right: 32px;
+        width: 50px;
+        height: 50px;
+        background: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: 1.3rem;
+        box-shadow: 0 4px 18px rgba(46, 125, 50, 0.35);
+        z-index: 999;
+        transition: all 0.3s var(--ease);
+      }
+      .float-call:hover {
+        transform: scale(1.1);
+        color: var(--white);
+        background: var(--primary-dark);
+      }
+      .btt {
+        position: fixed;
+        bottom: 160px;
+        right: 35px;
+        width: 42px;
+        height: 42px;
+        background: var(--white);
+        border: 2px solid var(--border);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary);
+        font-size: 1rem;
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s var(--ease);
+        box-shadow: var(--shadow-soft);
+      }
+      .btt.on {
+        opacity: 1;
+        visibility: visible;
+      }
+      .btt:hover {
+        background: var(--gradient);
+        border-color: transparent;
+        color: var(--white);
+        transform: translateY(-3px);
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 1199px) {
+        .hero h1 {
+          font-size: 3.5rem;
+        }
+        .section-heading {
+          font-size: 2.75rem;
+        }
+        .hero-visual {
+          height: 480px;
+        }
+        .hv-main {
+          height: 360px;
+        }
+      }
+      @media (max-width: 991px) {
+        .hero h1 {
+          font-size: 3rem;
+        }
+        .section-heading {
+          font-size: 2.25rem;
+        }
+        .section-pad {
+          padding: 80px 0;
+        }
+        .hero-visual {
+          height: 420px;
+          margin-top: 40px;
+        }
+        .hv-main {
+          height: 320px;
+          width: 75%;
+        }
+        .hv-accent {
+          height: 48%;
+          width: 58%;
+        }
+        .ci-wrap::before {
+          display: none;
+        }
+        .cf-wrap {
+          padding: 30px 24px;
+        }
+        .process-track::before {
+          display: none;
+        }
+        .space-card {
+          height: 340px;
+        }
+      }
+      @media (max-width: 767px) {
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+        .section-heading {
+          font-size: 2rem;
+        }
+        .section-pad {
+          padding: 60px 0;
+        }
+        .hero-stats-bar {
+          flex-direction: column;
+          gap: 0;
+        }
+        .hsb-item {
+          border-right: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          padding: 14px 0;
+        }
+        .hsb-item:last-child {
+          border-bottom: none;
+        }
+        .hsb-item h3 {
+          font-size: 1.8rem;
+        }
+        .hero-visual {
+          height: 360px;
+        }
+        .hv-main {
+          height: 270px;
+          width: 80%;
+        }
+        .hv-accent {
+          height: 44%;
+          width: 60%;
+          bottom: 0;
+        }
+        .hv-badge {
+          display: none;
+        }
+        .space-card {
+          height: 300px;
+        }
+        .cta-inner h2 {
+          font-size: 2rem;
+        }
+        .cf-wrap {
+          padding: 24px 18px;
+        }
+      }
+      @media (max-width: 575px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+        .section-heading {
+          font-size: 1.75rem;
+        }
+        .hero-actions {
+          flex-direction: column;
+        }
+        .hero-actions .btn {
+          width: 100%;
+          justify-content: center;
+        }
+        .hero-sub {
+          font-size: 0.95rem;
+        }
+        .hero-visual {
+          height: 300px;
+        }
+        .hv-main {
+          height: 230px;
+          width: 85%;
+        }
+        .hv-accent {
+          height: 38%;
+          width: 62%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="nav">
+      <div class="container">
+        <a class="navbar-brand" href="#hero">DH <b>Construction</b></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#spaces">Spaces</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#process">Process</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#materials">Materials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Reviews</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a
+                class="btn-main btn-sm"
+                href="tel:+919042356696"
+                style="padding: 10px 24px; font-size: 0.85rem"
+                >Get Quote</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HERO — Animated Canvas BG ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-canvas"><canvas id="heroCanvas"></canvas></div>
+      <div class="hero-grad"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <div class="hero-tag">
+                <i class="bi bi-palette-fill"></i
+                ><span>Interior Design & Fit-Out Specialists</span>
+              </div>
+              <h1>
+                <span class="line"
+                  ><span class="line-in">Spaces That</span></span
+                >
+                <span class="line"
+                  ><span class="line-in">Inspire <em>&</em> </span></span
+                >
+                <span class="line"
+                  ><span class="line-in"><em>Elevate</em> Living</span></span
+                >
+              </h1>
+              <p class="hero-sub">
+                From concept to completion, we transform empty spaces into
+                stunning interiors — offices, homes, retail, and commercial
+                environments crafted with precision.
+              </p>
+              <div class="hero-actions">
+                <a href="tel:+919042356696" class="btn-main"
+                  ><i class="bi bi-telephone"></i> Call: 90423 56696</a
+                >
+                <a
+                  href="https://wa.me/919042356696"
+                  target="_blank"
+                  class="btn-ghost"
+                  ><i class="bi bi-whatsapp"></i> WhatsApp Us</a
+                >
+              </div>
+              <div class="hero-stats-bar">
+                <div class="hsb-item">
+                  <h3>200<span>+</span></h3>
+                  <p>Interiors Done</p>
+                </div>
+                <div class="hsb-item">
+                  <h3>15<span>+</span></h3>
+                  <p>Years Exp.</p>
+                </div>
+                <div class="hsb-item">
+                  <h3>98<span>%</span></h3>
+                  <p>Client Satisfaction</p>
+                </div>
+                <div class="hsb-item">
+                  <h3>30<span>Days</span></h3>
+                  <p>Avg. Delivery</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="hero-visual">
+              <div class="hv-main">
+                <img
+                  src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80"
+                  alt="Modern Interior"
+                />
+              </div>
+              <div class="hv-accent">
+                <img
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&q=80"
+                  alt="Office Interior"
+                />
+              </div>
+              <div class="hv-badge hv-badge-1">
+                <div class="hv-badge-icon"><i class="bi bi-star-fill"></i></div>
+                <h4>5-Star Rated</h4>
+                <p>200+ Reviews</p>
+              </div>
+              <div class="hv-badge hv-badge-2">
+                <div class="hv-badge-icon">
+                  <i class="bi bi-calendar-check"></i>
+                </div>
+                <h4>Fast Delivery</h4>
+                <p>On Schedule</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats-strip section-pad-sm" data-aos="fade-up">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-6 col-md-3">
+            <div class="ss-item">
+              <h3>
+                <span class="counter" data-target="200">0</span><span>+</span>
+              </h3>
+              <p>Interior Projects</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="ss-item">
+              <h3>
+                <span class="counter" data-target="15">0</span><span>+</span>
+              </h3>
+              <p>Years Experience</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="ss-item">
+              <h3>
+                <span class="counter" data-target="98">0</span><span>%</span>
+              </h3>
+              <p>Client Satisfaction</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="ss-item">
+              <h3>
+                <span class="counter" data-target="50">0</span><span>K+</span>
+              </h3>
+              <p>Sq Ft Delivered</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SPACE TYPES ===== -->
+    <section class="section-pad" id="spaces">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="overline justify-content-center">Spaces We Transform</div>
+          <h2 class="section-heading">Interior Solutions for Every Space</h2>
+          <p class="section-desc mx-auto">
+            Whether it's a cozy home or a corporate headquarters, we deliver
+            interiors that match your vision and purpose.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="space-card">
+              <img
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
+                alt="Corporate Office"
+              />
+              <div class="space-ov">
+                <div class="sp-icon"><i class="bi bi-building"></i></div>
+                <h4>Corporate Offices</h4>
+                <p>
+                  Productive workspaces with smart partitions, ergonomic
+                  layouts, and professional aesthetics.
+                </p>
+                <div class="space-features">
+                  <span>Glass Partitions</span><span>False Ceilings</span
+                  ><span>Workstations</span><span>Meeting Pods</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="space-card">
+              <img
+                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80"
+                alt="Residential Interior"
+              />
+              <div class="space-ov">
+                <div class="sp-icon"><i class="bi bi-house-heart"></i></div>
+                <h4>Residential Interiors</h4>
+                <p>
+                  Warm, elegant living spaces that reflect your personality and
+                  lifestyle perfectly.
+                </p>
+                <div class="space-features">
+                  <span>Modular Kitchen</span><span>Wardrobes</span
+                  ><span>TV Units</span><span>False Ceiling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="space-card">
+              <img
+                src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=600&q=80"
+                alt="Retail Store"
+              />
+              <div class="space-ov">
+                <div class="sp-icon"><i class="bi bi-bag-heart"></i></div>
+                <h4>Retail & Showrooms</h4>
+                <p>
+                  Eye-catching displays and customer-friendly layouts that boost
+                  sales.
+                </p>
+                <div class="space-features">
+                  <span>Display Units</span><span>Lighting</span
+                  ><span>Branding</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="space-card">
+              <img
+                src="https://images.unsplash.com/photo-1577985043696-8bd54d9c4f17?w=600&q=80"
+                alt="Restaurant"
+              />
+              <div class="space-ov">
+                <div class="sp-icon"><i class="bi bi-cup-hot"></i></div>
+                <h4>Restaurants & Cafés</h4>
+                <p>
+                  Atmospheric dining interiors that create memorable experiences
+                  for guests.
+                </p>
+                <div class="space-features">
+                  <span>Themed Design</span><span>Lighting</span
+                  ><span>Acoustics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="space-card">
+              <img
+                src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&q=80"
+                alt="Healthcare"
+              />
+              <div class="space-ov">
+                <div class="sp-icon"><i class="bi bi-heart-pulse"></i></div>
+                <h4>Healthcare & Clinics</h4>
+                <p>
+                  Hygienic, calming interiors designed for patient comfort and
+                  efficiency.
+                </p>
+                <div class="space-features">
+                  <span>Hygienic Finishes</span><span>Waiting Areas</span
+                  ><span>Signage</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUR PROCESS ===== -->
+    <section
+      class="section-pad-sm"
+      id="process"
+      style="background: var(--bg-cream)"
+    >
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="overline justify-content-center">How We Work</div>
+          <h2 class="section-heading">Our Design Process</h2>
+          <p class="section-desc mx-auto">
+            A streamlined 5-step process that ensures your project is delivered
+            on time, on budget, and beyond expectations.
+          </p>
+        </div>
+        <div class="row g-4 process-track" data-aos="fade-up">
+          <div class="col-lg col-md-4 col-6">
+            <div class="proc-step">
+              <div class="proc-num"><i class="bi bi-chat-dots"></i></div>
+              <h5>Consultation</h5>
+              <p>
+                Understanding your vision, needs, and budget through detailed
+                discussion.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg col-md-4 col-6">
+            <div class="proc-step">
+              <div class="proc-num"><i class="bi bi-rulers"></i></div>
+              <h5>Site Measurement</h5>
+              <p>
+                Precise on-site measurements and structural assessment by our
+                team.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg col-md-4 col-6">
+            <div class="proc-step">
+              <div class="proc-num"><i class="bi bi-palette"></i></div>
+              <h5>Design & 3D</h5>
+              <p>
+                Creating detailed layouts, material selection, and 3D
+                visualizations.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg col-md-4 col-6">
+            <div class="proc-step">
+              <div class="proc-num"><i class="bi bi-tools"></i></div>
+              <h5>Execution</h5>
+              <p>
+                Skilled craftsmen bring the design to life with precision
+                fit-out work.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg col-md-4 col-6">
+            <div class="proc-step">
+              <div class="proc-num"><i class="bi bi-check2-circle"></i></div>
+              <h5>Handover</h5>
+              <p>
+                Final quality check, cleanup, and key handover with warranty
+                details.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MATERIALS ===== -->
+    <section class="section-pad" id="materials">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="overline justify-content-center">Premium Materials</div>
+          <h2 class="section-heading">Materials We Work With</h2>
+          <p class="section-desc mx-auto">
+            We source only the finest materials from trusted brands to ensure
+            durability and elegance in every project.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div
+            class="col-lg-3 col-md-4 col-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="mat-card">
+              <div class="mat-img">
+                <img
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=200&q=80"
+                  alt="Wood"
+                />
+              </div>
+              <h5>Premium Wood</h5>
+              <p>Teak, oak, walnut for furniture & paneling</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-6"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div class="mat-card">
+              <div class="mat-img">
+                <img
+                  src="https://images.unsplash.com/photo-1615529328331-f8917597711f?w=200&q=80"
+                  alt="Glass"
+                />
+              </div>
+              <h5>Toughened Glass</h5>
+              <p>Frameless partitions & doors</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="mat-card">
+              <div class="mat-img">
+                <img
+                  src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=200&q=80"
+                  alt="Marble"
+                />
+              </div>
+              <h5>Marble & Granite</h5>
+              <p>Flooring, countertops & wall cladding</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-6"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <div class="mat-card">
+              <div class="mat-img">
+                <img
+                  src="https://images.unsplash.com/photo-1615529151169-7b1ff8e8a966?w=200&q=80"
+                  alt="Vinyl"
+                />
+              </div>
+              <h5>Vinyl Flooring</h5>
+              <p>Commercial-grade durable flooring</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="mat-card">
+              <div class="mat-img">
+                <img
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=200&q=80"
+                  alt="Laminate"
+                />
+              </div>
+              <h5>Laminate & Veneer</h5>
+              <p>Modern finishes for furniture & walls</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-6"
+            data-aos="fade-up"
+            data-aos-delay="350"
+          >
+            <div class="mat-card">
+              <div class="mat-img">
+                <img
+                  src="https://images.unsplash.com/photo-1615529328331-f8917597711f?w=200&q=80"
+                  alt="Gypsum"
+                />
+              </div>
+              <h5>Gypsum Board</h5>
+              <p>False ceilings & wall partitions</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="mat-card">
+              <div class="mat-img">
+                <img
+                  src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=200&q=80"
+                  alt="Acoustic"
+                />
+              </div>
+              <h5>Acoustic Panels</h5>
+              <p>Sound-proofing for offices & studios</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-6"
+            data-aos="fade-up"
+            data-aos-delay="450"
+          >
+            <div class="mat-card">
+              <div class="mat-img">
+                <img
+                  src="https://images.unsplash.com/photo-1615529151169-7b1ff8e8a966?w=200&q=80"
+                  alt="Hardware"
+                />
+              </div>
+              <h5>Premium Hardware</h5>
+              <p>Hettich, Hafele, & top brands</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING ===== 
+<section class="section-pad-sm" id="pricing" style="background:var(--bg-cream);">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <div class="overline justify-content-center">Pricing</div>
+            <h2 class="section-heading">Fit-Out Packages</h2>
+            <p class="section-desc mx-auto">Transparent pricing with no hidden costs. Choose a package or get a custom quote for your project.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="price-card">
+                    <div class="price-head">
+                        <h5>Essential</h5>
+                        <p>Basic fit-out for budgets</p>
+                    </div>
+                    <div class="price-amt">
+                        <h3>₹85 <small>/ sq ft</small></h3>
+                        <span>Starting price, varies by scope</span>
+                    </div>
+                    <div class="price-body">
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill"></i> False ceiling (basic design)</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Gypsum partitions</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Electrical & lighting setup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Painting (2 coats)</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Vinyl / tile flooring</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Basic furniture installation</li>
+                        </ul>
+                        <a href="#contact" class="btn-outline">Get Quote <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="price-card featured">
+                    <div class="price-head">
+                        <h5><i class="bi bi-star-fill me-1"></i> Premium</h5>
+                        <p>Most popular for offices</p>
+                    </div>
+                    <div class="price-amt">
+                        <h3>₹150 <small>/ sq ft</small></h3>
+                        <span>Starting price, varies by scope</span>
+                    </div>
+                    <div class="price-body">
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill"></i> Designer false ceiling</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Glass & gypsum partitions</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Complete electrical & data cabling</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Premium painting & wall finishes</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Engineered wood / vinyl flooring</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Modular workstation setup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Meeting room & cabin fit-out</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Branding wall & reception</li>
+                        </ul>
+                        <a href="#contact" class="btn-main">Get Quote <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="price-card">
+                    <div class="price-head">
+                        <h5>Luxury</h5>
+                        <p>High-end bespoke interiors</p>
+                    </div>
+                    <div class="price-amt">
+                        <h3>₹250 <small>/ sq ft</small></h3>
+                        <span>Starting price, varies by scope</span>
+                    </div>
+                    <div class="price-body">
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill"></i> Custom ceiling designs (POP + wood)</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Frameless glass partitions</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Smart lighting & automation</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Italian marble / hardwood flooring</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Custom-made furniture</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Acoustic treatment</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Green wall & biophilic design</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 3D design consultation included</li>
+                        </ul>
+                        <a href="#contact" class="btn-outline">Get Quote <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section-pad" id="testimonials">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="overline justify-content-center">Client Stories</div>
+          <h2 class="section-heading">What Our Clients Say</h2>
+          <p class="section-desc mx-auto">
+            Real feedback from clients who trusted us with their interior
+            transformations.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="testi-card">
+              <div class="testi-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
+              <blockquote>
+                "DH Construction transformed our 8,000 sq ft office into a
+                modern workspace. The glass partitions and false ceiling work
+                was flawless. Delivered in just 40 days!"
+              </blockquote>
+              <div class="testi-author">
+                <img
+                  src="https://picsum.photos/seed/rajesh01/96/96.jpg"
+                  alt="Rajesh"
+                  class="testi-avatar"
+                />
+                <div>
+                  <h6>Rajesh Kumar</h6>
+                  <small>CEO, TechVista Solutions — Tambaram</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="testi-card">
+              <div class="testi-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
+              <blockquote>
+                "Our restaurant interior turned out even better than the 3D
+                design. The ambience, lighting, and finishes are top-notch.
+                Customers love the new look!"
+              </blockquote>
+              <div class="testi-author">
+                <img
+                  src="https://picsum.photos/seed/priya02/96/96.jpg"
+                  alt="Priya"
+                  class="testi-avatar"
+                />
+                <div>
+                  <h6>Priya Menon</h6>
+                  <small>Owner, Spice Garden Restaurant — Chennai</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="testi-card">
+              <div class="testi-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"></i>
+              </div>
+              <blockquote>
+                "The modular kitchen and wardrobes they designed for our home
+                are beautiful and functional. Very professional team, clean
+                work, and great after-service support."
+              </blockquote>
+              <div class="testi-author">
+                <img
+                  src="https://picsum.photos/seed/suresh03/96/96.jpg"
+                  alt="Suresh"
+                  class="testi-avatar"
+                />
+                <div>
+                  <h6>Dr. Suresh Babu</h6>
+                  <small>Homeowner — Pallavaram</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section
+      class="section-pad-sm"
+      id="faq"
+      style="background: var(--bg-cream)"
+    >
+      <div class="container">
+        <div class="row align-items-start g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="overline">FAQ</div>
+            <h2 class="section-heading">Frequently Asked Questions</h2>
+            <p class="section-desc">
+              Got questions about our interior design and fit-out services? Here
+              are answers to the most common ones.
+            </p>
+            <a href="#contact" class="btn-main mt-3"
+              >Still Have Questions? <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="faq-item active">
+              <div class="faq-q">
+                <h6>How long does a typical office fit-out take?</h6>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  For a standard office of 2,000–5,000 sq ft, the fit-out
+                  typically takes 25–45 days depending on the complexity. Larger
+                  spaces or custom designs may take 45–60 days. We provide a
+                  detailed timeline before starting work.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                <h6>Do you provide 3D designs before starting work?</h6>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  Yes! For all premium and luxury packages, we provide detailed
+                  3D visualizations so you can see exactly how your space will
+                  look before any work begins. Essential packages include basic
+                  layout plans.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                <h6>What is the minimum area you work with?</h6>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  We handle projects starting from 500 sq ft upwards. There's no
+                  maximum limit — we've done everything from small cabins to
+                  entire corporate floors of 20,000+ sq ft.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                <h6>Can I use my existing furniture in the new design?</h6>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  Absolutely. We integrate your existing furniture into the new
+                  design wherever possible. Our designers will assess what can
+                  be reused and suggest complementary pieces for a cohesive
+                  look.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                <h6>Do you offer warranties on the work?</h6>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  Yes, we provide a 1-year warranty on all fit-out work
+                  including false ceilings, partitions, and furniture.
+                  Electrical work comes with a 2-year warranty. Extended
+                  warranty options are also available.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                <h6>Can work be done on weekends or after hours?</h6>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  Yes, for operational offices and commercial spaces, we can
+                  schedule work during weekends or after business hours to
+                  minimize disruption. This may have a small scheduling
+                  surcharge.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-sec section-pad" data-aos="fade-up">
+      <div class="container">
+        <div class="cta-inner text-center">
+          <h2>Ready to Transform Your Space?</h2>
+          <p>
+            Get a free consultation and detailed quote for your interior
+            project. Our design experts are just a call away.
+          </p>
+          <div class="d-flex gap-3 justify-content-center flex-wrap">
+            <a href="tel:+919042356696" class="btn-ghost"
+              ><i class="bi bi-telephone"></i> Call: 90423 56696</a
+            >
+            <a
+              href="https://wa.me/919042356696"
+              target="_blank"
+              class="btn-ghost"
+              style="
+                background: rgba(255, 255, 255, 0.15);
+                border-color: rgba(255, 255, 255, 0.3);
+              "
+              ><i class="bi bi-whatsapp"></i> WhatsApp Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section-pad" id="contact">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="overline">Get In Touch</div>
+            <h2 class="section-heading">Let's Discuss Your Project</h2>
+            <p class="section-desc mb-4">
+              Share your requirements and we'll get back to you with a detailed
+              quote within 24 hours.
+            </p>
+            <div class="ci-wrap">
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-telephone"></i></div>
+                <div>
+                  <h5>Phone</h5>
+                  <p>
+                    <a href="tel:+919042356696" style="color: var(--text)"
+                      >+91 90423 56696</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-whatsapp"></i></div>
+                <div>
+                  <h5>WhatsApp</h5>
+                  <p>
+                    <a
+                      href="https://wa.me/919042356696"
+                      target="_blank"
+                      style="color: var(--text)"
+                      >Chat on WhatsApp</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-envelope"></i></div>
+                <div>
+                  <h5>Email</h5>
+                  <p>
+                    <a
+                      href="mailto:info@dhconstruction.in"
+                      style="color: var(--text)"
+                      >info@dhconstruction.in</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-geo-alt"></i></div>
+                <div>
+                  <h5>Office</h5>
+                  <p>Pallavaram, Chennai, Tamil Nadu 600043</p>
+                </div>
+              </div>
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-clock"></i></div>
+                <div>
+                  <h5>Working Hours</h5>
+                  <p>Mon–Sat: 9:00 AM – 7:00 PM<br />Sunday: By Appointment</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <p
+                style="
+                  font-size: 0.85rem;
+                  font-weight: 600;
+                  color: var(--text);
+                  margin-bottom: 12px;
+                "
+              >
+                Service Areas:
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="area-pill"
+                  ><i class="bi bi-geo-alt-fill"></i> Pallavaram</span
+                >
+                <span class="area-pill"
+                  ><i class="bi bi-geo-alt-fill"></i> Tambaram</span
+                >
+                <span class="area-pill"
+                  ><i class="bi bi-geo-alt-fill"></i> Chengalpattu</span
+                >
+                <span class="area-pill"
+                  ><i class="bi bi-geo-alt-fill"></i> Chromepet</span
+                >
+                <span class="area-pill"
+                  ><i class="bi bi-geo-alt-fill"></i> Velachery</span
+                >
+                <span class="area-pill"
+                  ><i class="bi bi-geo-alt-fill"></i> Kanchipuram</span
+                >
+                <span class="area-pill"
+                  ><i class="bi bi-geo-alt-fill"></i> GST Road</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="cf-wrap">
+              <div class="cf-head">
+                <h4>Request a Free Quote</h4>
+                <p>
+                  Fill in the details and we'll get back to you within 24 hours.
+                </p>
+              </div>
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Full Name *</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-person ig-icon"></i>
+                      <input
+                        type="text"
+                        class="fc-custom"
+                        placeholder="Your name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Phone Number *</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-telephone ig-icon"></i>
+                      <input
+                        type="tel"
+                        class="fc-custom"
+                        placeholder="+91 XXXXX XXXXX"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Email</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-envelope ig-icon"></i>
+                      <input
+                        type="email"
+                        class="fc-custom"
+                        placeholder="your@email.com"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Space Type *</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-building ig-icon"></i>
+                      <select class="fc-custom form-select" required>
+                        <option value="">Select type</option>
+                        <option>Corporate Office</option>
+                        <option>Residential</option>
+                        <option>Retail / Showroom</option>
+                        <option>Restaurant / Café</option>
+                        <option>Healthcare / Clinic</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Approx. Area (sq ft) *</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-arrows-angle-expand ig-icon"></i>
+                      <input
+                        type="text"
+                        class="fc-custom"
+                        placeholder="e.g. 2000"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Budget Range</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-wallet2 ig-icon"></i>
+                      <select class="fc-custom form-select">
+                        <option value="">Select budget</option>
+                        <option>Below ₹2 Lakhs</option>
+                        <option>₹2–5 Lakhs</option>
+                        <option>₹5–10 Lakhs</option>
+                        <option>₹10–25 Lakhs</option>
+                        <option>Above ₹25 Lakhs</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Project Details *</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-chat-left-text ig-icon"></i>
+                      <textarea
+                        class="fc-custom"
+                        rows="4"
+                        placeholder="Describe your requirements, timeline, special needs..."
+                        required
+                        style="padding-top: 18px"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="btn-main w-100"
+                      id="cfBtn"
+                      style="min-height: 54px; justify-content: center"
+                    >
+                      <i class="bi bi-send"></i> Send Enquiry
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="foot" style="padding-top: 60px">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <a href="#hero" class="foot-brand">DH <b>Construction</b></a>
+            <p>
+              Premium interior design & fit-out solutions in Chennai.
+              Transforming spaces with 15+ years of experience, skilled
+              craftsmanship, and a passion for perfection.
+            </p>
+            <div class="foot-soc">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5>Services</h5>
+            <ul class="foot-links">
+              <li><a href="#spaces">Office Fit-Out</a></li>
+              <li><a href="#spaces">Residential Interiors</a></li>
+              <li><a href="#spaces">Retail Design</a></li>
+              <li><a href="#spaces">False Ceiling</a></li>
+              <li><a href="#spaces">Glass Partitions</a></li>
+              <li><a href="#spaces">Modular Kitchen</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5>Company</h5>
+            <ul class="foot-links">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#process">Our Process</a></li>
+              <li><a href="#testimonials">Reviews</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <h5>Contact Info</h5>
+            <ul class="foot-links">
+              <li>
+                <a href="tel:+919042356696"
+                  ><i class="bi bi-telephone"></i> +91 90423 56696</a
+                >
+              </li>
+              <li>
+                <a href="https://wa.me/919042356696" target="_blank"
+                  ><i class="bi bi-whatsapp"></i> WhatsApp Chat</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@dhconstruction.in"
+                  ><i class="bi bi-envelope"></i> info@dhconstruction.in</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="bi bi-geo-alt"></i> Pallavaram, Chennai 600043</a
+                >
+              </li>
+            </ul>
+            <div
+              style="
+                margin-top: 18px;
+                border-radius: var(--radius);
+                overflow: hidden;
+                height: 140px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+              "
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.1!2d80.15!3d12.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzEyLjAiTiA4MMKwMDknMDAuMCJF!5e0!3m2!1sen!2sin!4v1"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="foot-bot text-center">
+          <p>
+            &copy; 2025 DH Construction. All rights reserved. | Interior Design
+            & Fit-Out Specialists in Chennai
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/919042356696" target="_blank" class="float-wa"
+      ><i class="bi bi-whatsapp"></i
+    ></a>
+    <a href="tel:+919042356696" class="float-call"
+      ><i class="bi bi-telephone"></i
+    ></a>
+    <button
+      class="btt"
+      id="btt"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      // ===== AOS Init =====
+      AOS.init({ duration: 700, once: true, offset: 80 });
+
+      // ===== Navbar Scroll =====
+      const nav = document.getElementById("nav");
+      window.addEventListener("scroll", () => {
+        nav.classList.toggle("scrolled", window.scrollY > 60);
+        document
+          .getElementById("btt")
+          .classList.toggle("on", window.scrollY > 500);
+      });
+
+      // ===== Smooth Scroll for Nav Links =====
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", function (e) {
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            e.preventDefault();
+            const offset = 80;
+            const top =
+              target.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top, behavior: "smooth" });
+            const collapse = document.querySelector(".navbar-collapse.show");
+            if (collapse) new bootstrap.Collapse(collapse).hide();
+          }
+        });
+      });
+
+      // ===== Active Nav on Scroll =====
+      const sections = document.querySelectorAll("section[id]");
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((sec) => {
+          if (window.pageYOffset >= sec.offsetTop - 120) current = sec.id;
+        });
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + current)
+            link.classList.add("active");
+        });
+      });
+
+      // ===== Counter Animation =====
+      const counters = document.querySelectorAll(".counter");
+      let counted = false;
+      function animateCounters() {
+        if (counted) return;
+        const first = document.querySelector(".counter");
+        if (!first) return;
+        const rect = first.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          counted = true;
+          counters.forEach((c) => {
+            const target = +c.dataset.target;
+            const duration = 2000;
+            const start = performance.now();
+            function step(now) {
+              const progress = Math.min((now - start) / duration, 1);
+              const ease = 1 - Math.pow(1 - progress, 3);
+              c.textContent = Math.floor(ease * target);
+              if (progress < 1) requestAnimationFrame(step);
+              else c.textContent = target;
+            }
+            requestAnimationFrame(step);
+          });
+        }
+      }
+      window.addEventListener("scroll", animateCounters);
+      animateCounters();
+
+      // ===== FAQ Accordion =====
+      document.querySelectorAll(".faq-item").forEach((item) => {
+        const q = item.querySelector(".faq-q");
+        const a = item.querySelector(".faq-a");
+        const inner = a.querySelector(".faq-a-inner");
+        q.addEventListener("click", () => {
+          const isOpen = item.classList.contains("active");
+          document.querySelectorAll(".faq-item").forEach((i) => {
+            i.classList.remove("active");
+            i.querySelector(".faq-a").style.maxHeight = "0";
+          });
+          if (!isOpen) {
+            item.classList.add("active");
+            a.style.maxHeight = inner.scrollHeight + 20 + "px";
+          }
+        });
+      });
+      // Open first FAQ by default
+      const firstFaq = document.querySelector(".faq-item.active");
+      if (firstFaq) {
+        const fa = firstFaq.querySelector(".faq-a");
+        const fi = fa.querySelector(".faq-a-inner");
+        fa.style.maxHeight = fi.scrollHeight + 20 + "px";
+      }
+
+      // ===== Contact Form =====
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const btn = document.getElementById("cfBtn");
+          const origHTML = btn.innerHTML;
+          btn.innerHTML =
+            '<i class="bi bi-check-circle-fill"></i> Enquiry Sent Successfully!';
+          btn.style.background = "var(--primary)";
+          btn.style.pointerEvents = "none";
+          setTimeout(() => {
+            btn.innerHTML = origHTML;
+            btn.style.background = "";
+            btn.style.pointerEvents = "";
+            this.reset();
+          }, 3000);
+        });
+
+      // ===== HERO CANVAS ANIMATION =====
+      (function () {
+        const canvas = document.getElementById("heroCanvas");
+        const ctx = canvas.getContext("2d");
+        let w,
+          h,
+          particles = [],
+          mouse = { x: -1000, y: -1000 };
+
+        function resize() {
+          w = canvas.width = canvas.parentElement.offsetWidth;
+          h = canvas.height = canvas.parentElement.offsetHeight;
+        }
+        resize();
+        window.addEventListener("resize", resize);
+
+        // Track mouse
+        canvas.addEventListener("mousemove", (e) => {
+          const rect = canvas.getBoundingClientRect();
+          mouse.x = e.clientX - rect.left;
+          mouse.y = e.clientY - rect.top;
+        });
+        canvas.addEventListener("mouseleave", () => {
+          mouse.x = -1000;
+          mouse.y = -1000;
+        });
+
+        // Particle class
+        class Particle {
+          constructor() {
+            this.reset();
+          }
+          reset() {
+            this.x = Math.random() * w;
+            this.y = Math.random() * h;
+            this.size = Math.random() * 2.5 + 0.5;
+            this.speedX = (Math.random() - 0.5) * 0.6;
+            this.speedY = (Math.random() - 0.5) * 0.6;
+            this.opacity = Math.random() * 0.5 + 0.1;
+            // Color palette: soft greens and whites
+            const colors = [
+              "rgba(102,187,106,", // primary-light
+              "rgba(129,199,132,", // primary-accent
+              "rgba(200,230,201,", // light green
+              "rgba(255,255,255,", // white
+              "rgba(46,125,50,", // primary
+            ];
+            this.color = colors[Math.floor(Math.random() * colors.length)];
+          }
+          update() {
+            // Mouse repulsion
+            const dx = this.x - mouse.x;
+            const dy = this.y - mouse.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 150) {
+              const force = (150 - dist) / 150;
+              this.x += (dx / dist) * force * 2;
+              this.y += (dy / dist) * force * 2;
+            }
+            this.x += this.speedX;
+            this.y += this.speedY;
+            if (
+              this.x < -10 ||
+              this.x > w + 10 ||
+              this.y < -10 ||
+              this.y > h + 10
+            )
+              this.reset();
+          }
+          draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = this.color + this.opacity + ")";
+            ctx.fill();
+          }
+        }
+
+        // Create particles
+        const count = Math.min(Math.floor((w * h) / 6000), 200);
+        for (let i = 0; i < count; i++) particles.push(new Particle());
+
+        // Draw connections
+        function drawLines() {
+          for (let i = 0; i < particles.length; i++) {
+            for (let j = i + 1; j < particles.length; j++) {
+              const dx = particles[i].x - particles[j].x;
+              const dy = particles[i].y - particles[j].y;
+              const dist = Math.sqrt(dx * dx + dy * dy);
+              if (dist < 120) {
+                const opacity = (1 - dist / 120) * 0.15;
+                ctx.beginPath();
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(particles[j].x, particles[j].y);
+                ctx.strokeStyle = "rgba(102,187,106," + opacity + ")";
+                ctx.lineWidth = 0.5;
+                ctx.stroke();
+              }
+            }
+          }
+        }
+
+        // Floating geometric shapes
+        const shapes = [];
+        for (let i = 0; i < 6; i++) {
+          shapes.push({
+            x: Math.random() * w,
+            y: Math.random() * h,
+            size: Math.random() * 60 + 30,
+            speedX: (Math.random() - 0.5) * 0.3,
+            speedY: (Math.random() - 0.5) * 0.3,
+            rotation: Math.random() * Math.PI * 2,
+            rotSpeed: (Math.random() - 0.5) * 0.005,
+            sides: Math.floor(Math.random() * 3) + 3, // 3-5 sides
+            opacity: Math.random() * 0.06 + 0.02,
+          });
+        }
+
+        function drawShapes() {
+          shapes.forEach((s) => {
+            s.x += s.speedX;
+            s.y += s.speedY;
+            s.rotation += s.rotSpeed;
+            if (s.x < -100) s.x = w + 100;
+            if (s.x > w + 100) s.x = -100;
+            if (s.y < -100) s.y = h + 100;
+            if (s.y > h + 100) s.y = -100;
+
+            ctx.save();
+            ctx.translate(s.x, s.y);
+            ctx.rotate(s.rotation);
+            ctx.beginPath();
+            for (let i = 0; i < s.sides; i++) {
+              const angle = (i / s.sides) * Math.PI * 2;
+              const px = Math.cos(angle) * s.size;
+              const py = Math.sin(angle) * s.size;
+              if (i === 0) ctx.moveTo(px, py);
+              else ctx.lineTo(px, py);
+            }
+            ctx.closePath();
+            ctx.strokeStyle = "rgba(102,187,106," + s.opacity + ")";
+            ctx.lineWidth = 1;
+            ctx.stroke();
+            ctx.restore();
+          });
+        }
+
+        // Gradient orbs
+        const orbs = [
+          {
+            x: w * 0.2,
+            y: h * 0.3,
+            r: 200,
+            color: "46,125,50",
+            sx: 0.15,
+            sy: 0.1,
+          },
+          {
+            x: w * 0.8,
+            y: h * 0.7,
+            r: 250,
+            color: "102,187,106",
+            sx: -0.1,
+            sy: -0.15,
+          },
+          {
+            x: w * 0.5,
+            y: h * 0.5,
+            r: 180,
+            color: "129,199,132",
+            sx: 0.08,
+            sy: -0.12,
+          },
+        ];
+
+        function drawOrbs() {
+          orbs.forEach((o) => {
+            o.x += o.sx;
+            o.y += o.sy;
+            if (o.x < -o.r || o.x > w + o.r) o.sx *= -1;
+            if (o.y < -o.r || o.y > h + o.r) o.sy *= -1;
+            const grad = ctx.createRadialGradient(o.x, o.y, 0, o.x, o.y, o.r);
+            grad.addColorStop(0, "rgba(" + o.color + ",0.08)");
+            grad.addColorStop(1, "rgba(" + o.color + ",0)");
+            ctx.fillStyle = grad;
+            ctx.fillRect(o.x - o.r, o.y - o.r, o.r * 2, o.r * 2);
+          });
+        }
+
+        // Animation loop
+        function animate() {
+          ctx.clearRect(0, 0, w, h);
+          drawOrbs();
+          drawShapes();
+          particles.forEach((p) => {
+            p.update();
+            p.draw();
+          });
+          drawLines();
+          requestAnimationFrame(animate);
+        }
+        animate();
+
+        // Re-init on resize
+        window.addEventListener("resize", () => {
+          resize();
+          particles.length = 0;
+          const newCount = Math.min(Math.floor((w * h) / 6000), 200);
+          for (let i = 0; i < newCount; i++) particles.push(new Particle());
+          shapes.forEach((s) => {
+            s.x = Math.random() * w;
+            s.y = Math.random() * h;
+          });
+          orbs.forEach((o, i) => {
+            o.x = w * [0.2, 0.8, 0.5][i];
+            o.y = h * [0.3, 0.7, 0.5][i];
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
