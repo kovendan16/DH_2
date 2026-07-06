@@ -1,0 +1,1193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DH Construction - Our Projects. Explore our completed renovation projects across Chennai — homes, kitchens, bathrooms, and commercial spaces." />
+    <title>Our Projects | DH Construction - Renovation Portfolio Chennai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <style>
+      :root {
+        --primary: #2e7d32;
+        --primary-dark: #1b5e20;
+        --primary-light: #66bb6a;
+        --primary-accent: #81c784;
+        --bg-cream: #fafaf7;
+        --bg-warm: #f5f3ee;
+        --white: #ffffff;
+        --dark: #1a1a1a;
+        --text: #2d2d2d;
+        --text-light: #6b7280;
+        --text-muted: #9ca3af;
+        --border: #e8e6e1;
+        --gradient: linear-gradient(135deg, #2e7d32, #66bb6a);
+        --heading: "Playfair Display", serif;
+        --body: "Poppins", sans-serif;
+        --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
+        --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.1);
+        --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
+        --shadow-xl: 0 30px 80px rgba(0, 0, 0, 0.15);
+        --radius: 16px;
+        --radius-lg: 24px;
+        --radius-xl: 40px;
+        --ease: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+      html { scroll-behavior: smooth; overflow-x: hidden; }
+      body {
+        font-family: var(--body); color: var(--text); background: var(--white);
+        line-height: 1.7; overflow-x: hidden; -webkit-font-smoothing: antialiased;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: var(--heading); font-weight: 600; line-height: 1.25; color: var(--dark);
+      }
+      p { color: var(--text-light); margin-bottom: 1rem; }
+      a { text-decoration: none; color: var(--primary); transition: all 0.3s var(--ease); }
+      a:hover { color: var(--primary-dark); }
+      img { max-width: 100%; height: auto; display: block; }
+      .section-pad { padding: 120px 0; }
+      .section-pad-sm { padding: 80px 0; }
+      .overline {
+        display: inline-flex; align-items: center; gap: 10px; font-family: var(--body);
+        font-size: 0.8rem; font-weight: 600; color: var(--primary); text-transform: uppercase;
+        letter-spacing: 3px; margin-bottom: 1.25rem;
+      }
+      .overline::before { content: ""; width: 40px; height: 2px; background: var(--gradient); }
+      .section-heading { font-size: 3.25rem; font-weight: 700; margin-bottom: 1.25rem; letter-spacing: -0.5px; }
+      .section-desc { font-size: 1.05rem; color: var(--text-light); max-width: 600px; line-height: 1.8; }
+
+      /* Fade-up */
+      .fade-up { opacity: 0; transform: translateY(40px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+      .fade-up.visible { opacity: 1; transform: translateY(0); }
+      .fd1 { transition-delay: 0.1s; } .fd2 { transition-delay: 0.2s; } .fd3 { transition-delay: 0.3s; }
+      .fd4 { transition-delay: 0.4s; } .fd5 { transition-delay: 0.5s; } .fd6 { transition-delay: 0.6s; }
+      .fd7 { transition-delay: 0.7s; } .fd8 { transition-delay: 0.8s; }
+
+      /* Buttons */
+      .btn-main {
+        display: inline-flex; align-items: center; gap: 10px; background: var(--gradient);
+        color: var(--white); padding: 16px 36px; border-radius: var(--radius-xl);
+        font-family: var(--body); font-weight: 600; font-size: 0.95rem; border: none;
+        transition: all 0.4s var(--ease); position: relative; overflow: hidden; z-index: 1;
+      }
+      .btn-main::before {
+        content: ""; position: absolute; inset: 0; background: var(--primary-dark); z-index: -1;
+        transform: scaleX(0); transform-origin: right; transition: transform 0.5s var(--ease);
+      }
+      .btn-main:hover { color: var(--white); transform: translateY(-3px); box-shadow: 0 12px 35px rgba(46,125,50,0.35); }
+      .btn-main:hover::before { transform: scaleX(1); transform-origin: left; }
+      .btn-ghost {
+        display: inline-flex; align-items: center; gap: 10px; background: transparent;
+        color: var(--white); padding: 16px 36px; border-radius: var(--radius-xl);
+        font-family: var(--body); font-weight: 500; font-size: 0.95rem;
+        border: 1.5px solid rgba(255,255,255,0.4); transition: all 0.4s var(--ease);
+      }
+      .btn-ghost:hover { background: var(--white); color: var(--primary-dark); border-color: var(--white); transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+      .btn-outline {
+        display: inline-flex; align-items: center; gap: 10px; background: transparent;
+        color: var(--primary); padding: 14px 32px; border-radius: var(--radius-xl);
+        font-family: var(--body); font-weight: 600; font-size: 0.9rem;
+        border: 2px solid var(--primary); transition: all 0.4s var(--ease);
+      }
+      .btn-outline:hover { background: var(--primary); color: var(--white); transform: translateY(-3px); box-shadow: 0 10px 30px rgba(46,125,50,0.3); }
+      .btn-white {
+        display: inline-flex; align-items: center; gap: 10px; background: var(--white);
+        color: var(--primary-dark); padding: 16px 36px; border-radius: var(--radius-xl);
+        font-family: var(--body); font-weight: 600; font-size: 0.95rem; border: none;
+        transition: all 0.4s var(--ease);
+      }
+      .btn-white:hover { transform: translateY(-3px); box-shadow: 0 12px 35px rgba(0,0,0,0.2); color: var(--primary-dark); }
+
+      /* ===== NAVBAR ===== */
+      .navbar { padding: 24px 0; transition: all 0.4s var(--ease); z-index: 1000; }
+      .navbar.scrolled { background: rgba(255,255,255,0.97); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); padding: 14px 0; box-shadow: 0 1px 20px rgba(0,0,0,0.06); }
+      .navbar-brand { font-family: var(--heading); font-size: 1.6rem; font-weight: 700; color: var(--white) !important; letter-spacing: -0.5px; }
+      .navbar.scrolled .navbar-brand { color: var(--dark) !important; }
+      .navbar-brand b { color: var(--primary-light); font-weight: 800; }
+      .navbar.scrolled .navbar-brand b { color: var(--primary); }
+      .nav-link { font-family: var(--body); font-weight: 500; font-size: 0.88rem; color: rgba(255,255,255,0.85) !important; padding: 8px 18px !important; transition: all 0.3s var(--ease); position: relative; letter-spacing: 0.3px; }
+      .navbar.scrolled .nav-link { color: var(--text) !important; }
+      .nav-link:hover, .nav-link.active { color: var(--primary-light) !important; }
+      .navbar.scrolled .nav-link:hover, .navbar.scrolled .nav-link.active { color: var(--primary) !important; }
+      .nav-link::after { content: ""; position: absolute; bottom: 2px; left: 18px; right: 18px; height: 2px; background: var(--gradient); transform: scaleX(0); transition: transform 0.3s var(--ease); border-radius: 2px; }
+      .nav-link:hover::after, .nav-link.active::after { transform: scaleX(1); }
+      .navbar-toggler { border: none; padding: 0; font-size: 1.5rem; color: var(--white); }
+      .navbar.scrolled .navbar-toggler { color: var(--dark); }
+      @media (max-width: 991px) {
+        .navbar-collapse { background: var(--white); border-radius: var(--radius); padding: 24px; margin-top: 16px; box-shadow: var(--shadow-lg); }
+        .nav-link { color: var(--text) !important; padding: 12px 16px !important; }
+        .nav-link:hover, .nav-link.active { color: var(--primary) !important; }
+      }
+
+      /* ===== HERO ===== */
+      .hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; background: #0a0a0a; }
+      .hero-bg { position: absolute; inset: 0; z-index: 0; }
+      .hero-bg img { width: 100%; height: 100%; object-fit: cover; opacity: 0.4; }
+      #heroCanvas { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+      .hero-grad { position: absolute; inset: 0; z-index: 1; background: linear-gradient(105deg, rgba(10,10,10,0.96) 0%, rgba(20,20,20,0.88) 35%, rgba(30,30,30,0.55) 60%, rgba(40,40,40,0.2) 100%); }
+      .hero-sweep { position: absolute; inset: 0; z-index: 3; pointer-events: none; overflow: hidden; }
+      .hero-sweep::before {
+        content: ""; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+        background: conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(46,125,50,0.06) 30deg, transparent 60deg, transparent 180deg, rgba(102,187,106,0.04) 210deg, transparent 240deg);
+        animation: sweepRot 20s linear infinite;
+      }
+      @keyframes sweepRot { to { transform: rotate(360deg); } }
+      .hero-shapes { position: absolute; inset: 0; z-index: 2; pointer-events: none; overflow: hidden; }
+      .hero-shape { position: absolute; border: 1px solid rgba(102,187,106,0.12); border-radius: 4px; }
+      .hs-1 { width: 80px; height: 80px; top: 15%; right: 20%; animation: fShape 12s ease-in-out infinite, rSlow 30s linear infinite; }
+      .hs-2 { width: 50px; height: 50px; top: 60%; right: 35%; animation: fShape 10s ease-in-out infinite 2s, rSlow 25s linear infinite reverse; }
+      .hs-3 { width: 120px; height: 120px; bottom: 20%; right: 10%; border-radius: 50%; animation: fShape 15s ease-in-out infinite 4s, rSlow 40s linear infinite; }
+      .hs-4 { width: 40px; height: 40px; top: 30%; right: 45%; animation: fShape 8s ease-in-out infinite 1s, rSlow 20s linear infinite reverse; }
+      .hs-5 { width: 60px; height: 60px; bottom: 35%; right: 25%; border-radius: 50%; animation: fShape 11s ease-in-out infinite 3s, rSlow 35s linear infinite; }
+      @keyframes fShape { 0%, 100% { transform: translateY(0) rotate(0deg); } 25% { transform: translateY(-20px) rotate(5deg); } 50% { transform: translateY(-10px) rotate(-3deg); } 75% { transform: translateY(-25px) rotate(4deg); } }
+      @keyframes rSlow { to { transform: rotate(360deg); } }
+      .hero-grid { position: absolute; inset: 0; z-index: 1; opacity: 0.03; background-image: linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px); background-size: 60px 60px; animation: gridDrift 30s linear infinite; }
+      @keyframes gridDrift { to { background-position: 60px 60px; } }
+      .hero-content { position: relative; z-index: 10; }
+      .hero-tag { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius-xl); padding: 10px 22px; margin-bottom: 2rem; opacity: 0; transform: translateY(25px); animation: sUp 0.8s var(--ease) 0.4s forwards; }
+      .hero-tag i { color: var(--primary-light); }
+      .hero-tag span { color: rgba(255,255,255,0.85); font-size: 0.88rem; font-weight: 500; }
+      .hero h1 { font-size: 4.2rem; font-weight: 700; color: var(--white); line-height: 1.08; margin-bottom: 1.75rem; }
+      .hero h1 .line { display: block; overflow: hidden; }
+      .hero h1 .line-in { display: block; transform: translateY(115%); animation: revLine 1s var(--ease) forwards; }
+      .hero h1 .line:nth-child(1) .line-in { animation-delay: 0.6s; }
+      .hero h1 .line:nth-child(2) .line-in { animation-delay: 0.8s; }
+      .hero h1 .line:nth-child(3) .line-in { animation-delay: 1s; }
+      .hero h1 em { font-style: italic; color: var(--primary-light); }
+      @keyframes revLine { to { transform: translateY(0); } }
+      @keyframes sUp { to { opacity: 1; transform: translateY(0); } }
+      .hero-sub { font-size: 1.1rem; color: rgba(255,255,255,0.75); max-width: 540px; line-height: 1.8; margin-bottom: 2.5rem; opacity: 0; transform: translateY(25px); animation: sUp 0.8s var(--ease) 1.2s forwards; }
+      .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 3rem; opacity: 0; transform: translateY(25px); animation: sUp 0.8s var(--ease) 1.4s forwards; }
+      .hero-stats-bar { display: flex; gap: 0; opacity: 0; transform: translateY(25px); animation: sUp 0.8s var(--ease) 1.6s forwards; }
+      .hsb-item { flex: 1; text-align: center; padding: 20px 15px; border-right: 1px solid rgba(255,255,255,0.12); }
+      .hsb-item:last-child { border-right: none; }
+      .hsb-item h3 { font-family: var(--heading); font-size: 2.2rem; font-weight: 700; color: var(--white); line-height: 1; margin-bottom: 4px; }
+      .hsb-item h3 span { color: var(--primary-light); font-size: 1.4rem; }
+      .hsb-item p { font-size: 0.78rem; color: rgba(255,255,255,0.55); margin-bottom: 0; text-transform: uppercase; letter-spacing: 1px; }
+
+      /* ===== PROJECT CATEGORY FILTER ===== */
+      .filter-bar { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 3rem; }
+      .filter-btn {
+        background: transparent; border: 2px solid var(--border); border-radius: var(--radius-xl);
+        padding: 10px 24px; font-family: var(--body); font-size: 0.85rem; font-weight: 500;
+        color: var(--text-light); cursor: pointer; transition: all 0.3s var(--ease);
+      }
+      .filter-btn:hover { border-color: var(--primary-light); color: var(--primary); }
+      .filter-btn.active { background: var(--gradient); border-color: transparent; color: var(--white); }
+
+      /* ===== PROJECT CARDS (No Image — Icon Based) ===== */
+      .proj-card {
+        background: var(--white); border-radius: var(--radius); border: 1px solid var(--border);
+        padding: 0; transition: all 0.4s var(--ease); height: 100%; position: relative;
+        overflow: hidden; display: flex; flex-direction: column;
+      }
+      .proj-card::before {
+        content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+        background: var(--gradient); transform: scaleX(0); transition: transform 0.5s var(--ease);
+      }
+      .proj-card:hover::before { transform: scaleX(1); }
+      .proj-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: transparent; }
+      .proj-card-head {
+        padding: 32px 28px 20px; display: flex; align-items: flex-start; gap: 20px;
+      }
+      .proj-icon-lg {
+        width: 72px; height: 72px; min-width: 72px; border-radius: 18px;
+        display: flex; align-items: center; justify-content: center; font-size: 1.8rem;
+        color: var(--white); background: var(--gradient); transition: all 0.4s var(--ease);
+      }
+      .proj-card:hover .proj-icon-lg { transform: rotate(-5deg) scale(1.08); border-radius: 50%; }
+      .proj-card-head h4 { font-size: 1.2rem; margin-bottom: 4px; }
+      .proj-cat-badge {
+        display: inline-block; background: var(--bg-cream); color: var(--primary);
+        padding: 4px 14px; border-radius: var(--radius-xl); font-size: 0.72rem;
+        font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+      }
+      .proj-card-body { padding: 0 28px 20px; flex: 1; }
+      .proj-card-body p { font-size: 0.88rem; line-height: 1.75; margin-bottom: 16px; }
+      .proj-meta-grid {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+      }
+      .proj-meta-item {
+        display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: var(--text-light);
+      }
+      .proj-meta-item i { color: var(--primary); font-size: 0.85rem; }
+      .proj-card-foot {
+        padding: 16px 28px; border-top: 1px solid var(--border); display: flex;
+        align-items: center; justify-content: space-between;
+      }
+      .proj-card-foot .proj-status {
+        display: inline-flex; align-items: center; gap: 6px; font-size: 0.78rem;
+        font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;
+      }
+      .proj-status.completed { color: var(--primary); }
+      .proj-status.ongoing { color: #f59e0b; }
+      .proj-status-dot {
+        width: 8px; height: 8px; border-radius: 50%;
+      }
+      .proj-status.completed .proj-status-dot { background: var(--primary); }
+      .proj-status.ongoing .proj-status-dot { background: #f59e0b; animation: blink 1.5s infinite; }
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+      .proj-card-foot a { font-size: 0.82rem; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
+      .proj-card-foot a:hover { gap: 10px; }
+
+      /* ===== FEATURED PROJECT HIGHLIGHT ===== */
+      .featured-proj {
+        background: var(--dark); border-radius: var(--radius-lg); padding: 56px 48px;
+        position: relative; overflow: hidden;
+      }
+      .featured-proj::before {
+        content: ""; position: absolute; top: -60%; right: -15%; width: 500px; height: 500px;
+        border: 2px solid rgba(102,187,106,0.08); border-radius: 50%;
+      }
+      .featured-proj::after {
+        content: ""; position: absolute; bottom: -40%; left: -10%; width: 350px; height: 350px;
+        border: 1px solid rgba(102,187,106,0.05); border-radius: 50%;
+      }
+      .featured-inner { position: relative; z-index: 1; }
+      .featured-badge {
+        display: inline-flex; align-items: center; gap: 8px; background: rgba(102,187,106,0.15);
+        border: 1px solid rgba(102,187,106,0.25); border-radius: var(--radius-xl);
+        padding: 8px 18px; margin-bottom: 1.5rem;
+      }
+      .featured-badge i { color: var(--primary-light); font-size: 0.85rem; }
+      .featured-badge span { color: var(--primary-light); font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; }
+      .featured-inner h3 { font-size: 2rem; color: var(--white); margin-bottom: 1rem; }
+      .featured-inner p { color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1.5rem; }
+      .featured-stats { display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 2rem; }
+      .featured-stat h4 { font-family: var(--heading); font-size: 1.8rem; color: var(--white); margin-bottom: 2px; }
+      .featured-stat h4 span { color: var(--primary-light); }
+      .featured-stat p { font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-bottom: 0; text-transform: uppercase; letter-spacing: 1px; }
+      .featured-scope { list-style: none; padding: 0; margin: 0; }
+      .featured-scope li {
+        display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-xl);
+        padding: 8px 16px; margin: 0 8px 10px 0; font-size: 0.8rem; color: rgba(255,255,255,0.7);
+      }
+      .featured-scope li i { color: var(--primary-light); font-size: 0.75rem; }
+
+      /* ===== PROJECT NUMBERS ===== */
+      .pnum-sec { background: var(--bg-cream); }
+      .pnum-card { text-align: center; padding: 20px; }
+      .pnum-icon { width: 64px; height: 64px; background: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--primary); margin: 0 auto 16px; box-shadow: var(--shadow-soft); transition: all 0.4s var(--ease); }
+      .pnum-card:hover .pnum-icon { background: var(--gradient); color: var(--white); transform: scale(1.1); }
+      .pnum-val { font-family: var(--heading); font-size: 2.8rem; font-weight: 700; color: var(--dark); line-height: 1; margin-bottom: 6px; }
+      .pnum-val .pnum-suf { font-size: 1.6rem; color: var(--primary); }
+      .pnum-card p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0; text-transform: uppercase; letter-spacing: 1.5px; }
+
+      /* ===== PROCESS WE FOLLOW ===== */
+      .proc-card {
+        background: var(--white); border-radius: var(--radius); padding: 32px 24px;
+        border: 1px solid var(--border); transition: all 0.4s var(--ease); text-align: center;
+        height: 100%; position: relative;
+      }
+      .proc-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); border-color: transparent; }
+      .proc-num {
+        width: 48px; height: 48px; background: var(--gradient); border-radius: 50%;
+        display: flex; align-items: center; justify-content: center; font-family: var(--heading);
+        font-size: 1.1rem; font-weight: 700; color: var(--white); margin: 0 auto 18px;
+      }
+      .proc-card h5 { font-family: var(--body); font-size: 1rem; font-weight: 600; margin-bottom: 8px; }
+      .proc-card p { font-size: 0.84rem; margin-bottom: 0; line-height: 1.7; }
+
+      /* ===== TESTIMONIALS ===== */
+      .testi-card {
+        background: var(--white); border-radius: var(--radius); padding: 32px;
+        border: 1px solid var(--border); transition: all 0.4s var(--ease); height: 100%;
+        position: relative;
+      }
+      .testi-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); border-color: transparent; }
+      .testi-stars { color: #f59e0b; font-size: 0.9rem; margin-bottom: 16px; }
+      .testi-card p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 20px; font-style: italic; color: var(--text); }
+      .testi-author { display: flex; align-items: center; gap: 14px; }
+      .testi-avatar {
+        width: 48px; height: 48px; border-radius: 50%; overflow: hidden;
+        border: 2px solid var(--primary-light); display: flex; align-items: center;
+        justify-content: center; background: var(--bg-cream); font-size: 1.2rem;
+        color: var(--primary); font-family: var(--heading); font-weight: 700;
+      }
+      .testi-author h6 { font-family: var(--body); font-size: 0.9rem; font-weight: 600; margin-bottom: 2px; }
+      .testi-author small { font-size: 0.78rem; color: var(--text-muted); }
+      .testi-quote {
+        position: absolute; top: 20px; right: 24px; font-size: 2.5rem;
+        color: var(--primary-accent); opacity: 0.3; font-family: var(--heading); line-height: 1;
+      }
+
+      /* ===== CTA ===== */
+      .cta-sec { background: var(--gradient); position: relative; overflow: hidden; }
+      .cta-sec::before { content: ""; position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; border: 3px solid rgba(255,255,255,0.08); border-radius: 50%; }
+      .cta-sec::after { content: ""; position: absolute; bottom: -30%; left: -5%; width: 300px; height: 300px; border: 2px solid rgba(255,255,255,0.06); border-radius: 50%; }
+      .cta-inner { position: relative; z-index: 1; }
+      .cta-inner h2 { font-size: 2.75rem; color: var(--white); margin-bottom: 1rem; }
+      .cta-inner p { font-size: 1.05rem; color: rgba(255,255,255,0.9); max-width: 600px; margin-bottom: 2rem; }
+
+      /* ===== FOOTER ===== */
+      .foot { background: var(--dark); color: rgba(255,255,255,0.65); }
+      .foot-brand { font-family: var(--heading); font-size: 1.6rem; font-weight: 700; color: var(--white); margin-bottom: 18px; display: inline-block; }
+      .foot-brand b { color: var(--primary-light); font-weight: 800; }
+      .foot p { color: rgba(255,255,255,0.55); font-size: 0.9rem; }
+      .foot h5 { font-family: var(--body); font-size: 1rem; font-weight: 600; color: var(--white); margin-bottom: 22px; position: relative; padding-bottom: 12px; }
+      .foot h5::after { content: ""; position: absolute; bottom: 0; left: 0; width: 30px; height: 3px; background: var(--gradient); border-radius: 10px; }
+      .foot-links { list-style: none; padding: 0; margin: 0; }
+      .foot-links li { margin-bottom: 10px; }
+      .foot-links a { color: rgba(255,255,255,0.55); font-size: 0.88rem; transition: all 0.3s var(--ease); display: inline-flex; align-items: center; gap: 8px; }
+      .foot-links a:hover { color: var(--primary-light); padding-left: 5px; }
+      .foot-soc { display: flex; gap: 10px; margin-top: 22px; }
+      .foot-soc a { width: 40px; height: 40px; border: 1px solid rgba(255,255,255,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.6); font-size: 0.95rem; transition: all 0.3s var(--ease); }
+      .foot-soc a:hover { background: var(--gradient); border-color: transparent; color: var(--white); transform: translateY(-3px); }
+      .foot-bot { border-top: 1px solid rgba(255,255,255,0.08); padding: 24px 0; margin-top: 55px; }
+      .foot-bot p { font-size: 0.82rem; margin-bottom: 0; }
+
+      /* ===== FLOATING ===== */
+      .float-wa { position: fixed; bottom: 30px; right: 30px; width: 58px; height: 58px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 1.6rem; box-shadow: 0 4px 20px rgba(37,211,102,0.4); z-index: 999; transition: all 0.3s var(--ease); animation: waPulse 2s infinite; }
+      .float-wa:hover { transform: scale(1.1); color: var(--white); }
+      @keyframes waPulse { 0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.6); } 70% { box-shadow: 0 0 0 14px rgba(37,211,102,0); } 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); } }
+      .float-call { position: fixed; bottom: 98px; right: 32px; width: 50px; height: 50px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 1.3rem; box-shadow: 0 4px 18px rgba(46,125,50,0.35); z-index: 999; transition: all 0.3s var(--ease); }
+      .float-call:hover { transform: scale(1.1); color: var(--white); background: var(--primary-dark); }
+      .btt { position: fixed; bottom: 160px; right: 35px; width: 42px; height: 42px; background: var(--white); border: 2px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1rem; z-index: 999; opacity: 0; visibility: hidden; transition: all 0.3s var(--ease); box-shadow: var(--shadow-soft); }
+      .btt.on { opacity: 1; visibility: visible; }
+      .btt:hover { background: var(--gradient); border-color: transparent; color: var(--white); transform: translateY(-3px); }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 1199px) {
+        .hero h1 { font-size: 3.5rem; }
+        .section-heading { font-size: 2.75rem; }
+      }
+      @media (max-width: 991px) {
+        .hero h1 { font-size: 3rem; }
+        .section-heading { font-size: 2.25rem; }
+        .section-pad { padding: 80px 0; }
+        .featured-proj { padding: 40px 28px; }
+        .featured-stats { gap: 24px; }
+      }
+      @media (max-width: 767px) {
+        .hero h1 { font-size: 2.5rem; }
+        .section-heading { font-size: 2rem; }
+        .section-pad { padding: 60px 0; }
+        .hero-stats-bar { flex-direction: column; gap: 0; }
+        .hsb-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 14px 0; }
+        .hsb-item:last-child { border-bottom: none; }
+        .hsb-item h3 { font-size: 1.8rem; }
+        .cta-inner h2 { font-size: 2rem; }
+        .featured-proj { padding: 32px 20px; }
+        .featured-stats { gap: 16px; }
+        .pnum-val { font-size: 2.2rem; }
+        .proj-meta-grid { grid-template-columns: 1fr; }
+      }
+      @media (max-width: 575px) {
+        .hero h1 { font-size: 2rem; }
+        .section-heading { font-size: 1.75rem; }
+        .hero-actions { flex-direction: column; }
+        .hero-actions .btn { width: 100%; justify-content: center; }
+        .hero-sub { font-size: 0.95rem; }
+        .filter-bar { gap: 8px; }
+        .filter-btn { padding: 8px 16px; font-size: 0.78rem; }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="nav">
+      <div class="container">
+        <a class="navbar-brand" href="#hero">DH <b>Renovation</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn-main" href="tel:+919042356696" style="padding:10px 24px;font-size:0.85rem">Get Quote</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=80" alt="Our Projects" />
+      </div>
+      <div class="hero-grid"></div>
+      <div class="hero-grad"></div>
+      <div class="hero-sweep"></div>
+      <div class="hero-shapes">
+        <div class="hero-shape hs-1"></div>
+        <div class="hero-shape hs-2"></div>
+        <div class="hero-shape hs-3"></div>
+        <div class="hero-shape hs-4"></div>
+        <div class="hero-shape hs-5"></div>
+      </div>
+      <canvas id="heroCanvas"></canvas>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <div class="hero-content">
+              <div class="hero-tag">
+                <i class="bi bi-grid-3x3-gap-fill"></i>
+                <span>200+ Projects Completed Across Chennai</span>
+              </div>
+              <h1>
+                <span class="line"><span class="line-in">Explore Our</span></span>
+                <span class="line"><span class="line-in"><em>Renovation</em> Portfolio</span></span>
+                <span class="line"><span class="line-in">& Success Stories</span></span>
+              </h1>
+              <p class="hero-sub">
+                From compact kitchen makeovers to full-building transformations — browse through our completed projects and see the quality, creativity, and care we bring to every space.
+              </p>
+              <div class="hero-actions">
+                <a href="#projects" class="btn-main"><i class="bi bi-arrow-down-circle"></i> View Projects</a>
+                <a href="tel:+919042356696" class="btn-ghost"><i class="bi bi-telephone"></i> Discuss Your Project</a>
+              </div>
+              <div class="hero-stats-bar">
+                <div class="hsb-item">
+                  <h3>200<span>+</span></h3>
+                  <p>Projects Done</p>
+                </div>
+                <div class="hsb-item">
+                  <h3>6<span>+</span></h3>
+                  <p>Categories</p>
+                </div>
+                <div class="hsb-item">
+                  <h3>15<span>+</span></h3>
+                  <p>Locations</p>
+                </div>
+                <div class="hsb-item">
+                  <h3>98<span>%</span></h3>
+                  <p>On-Time</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED PROJECT ===== -->
+    <section class="section-pad" id="featured">
+      <div class="container">
+        <div class="featured-proj fade-up">
+          <div class="featured-inner">
+            <div class="featured-badge">
+              <i class="bi bi-star-fill"></i>
+              <span>Featured Project</span>
+            </div>
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-7">
+                <h3>Complete Home Renovation — Anna Nagar, Chennai</h3>
+                <p>
+                  A 2,400 sq.ft. independent house transformed from a 20-year-old structure into a modern living space. The project included complete structural modifications, new electrical and plumbing systems, modular kitchen, 3 bathroom remodels, vitrified flooring throughout, false ceilings with ambient lighting, and a redesigned exterior facade — all completed in 45 days.
+                </p>
+                <div class="featured-stats">
+                  <div class="featured-stat">
+                    <h4>2,400 <span>sq.ft</span></h4>
+                    <p>Area Renovated</p>
+                  </div>
+                  <div class="featured-stat">
+                    <h4>45 <span>Days</span></h4>
+                    <p>Completion Time</p>
+                  </div>
+                  <div class="featured-stat">
+                    <h4>₹28L <span>Total</span></h4>
+                    <p>Project Value</p>
+                  </div>
+                  <div class="featured-stat">
+                    <h4>2024</h4>
+                    <p>Completed</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <p style="color:rgba(255,255,255,0.5);font-size:0.82rem;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px;">Scope of Work</p>
+                <ul class="featured-scope">
+                  <li><i class="bi bi-check-circle-fill"></i> Structural Changes</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Modular Kitchen</li>
+                  <li><i class="bi bi-check-circle-fill"></i> 3 Bathroom Remodels</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Vitrified Flooring</li>
+                  <li><i class="bi bi-check-circle-fill"></i> False Ceiling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Electrical Rewiring</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Plumbing Overhaul</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Exterior Facade</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Interior Painting</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Door & Window Replace</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECT PORTFOLIO ===== -->
+    <section class="section-pad-sm" id="projects" style="background: var(--bg-cream);">
+      <div class="container">
+        <div class="text-center mb-5 fade-up">
+          <div class="overline justify-content-center">Our Portfolio</div>
+          <h2 class="section-heading">Renovation Projects by Category</h2>
+          <p class="section-desc mx-auto">
+            Browse through our diverse portfolio of completed renovation projects — each one a testament to quality workmanship and client satisfaction.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-bar fade-up fd1">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="home">Home Renovation</button>
+          <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+          <button class="filter-btn" data-filter="bathroom">Bathroom</button>
+          <button class="filter-btn" data-filter="commercial">Commercial</button>
+          <button class="filter-btn" data-filter="interior">Interior</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="row g-4" id="projGrid">
+
+          <!-- Project 1 -->
+          <div class="col-lg-4 col-md-6 proj-item fade-up fd1" data-cat="home">
+            <div class="proj-card">
+              <div class="proj-card-head">
+                <div class="proj-icon-lg"><i class="bi bi-house-heart"></i></div>
+                <div>
+                  <span class="proj-cat-badge">Home Renovation</span>
+                  <h4>Velachery Residence</h4>
+                </div>
+              </div>
+              <div class="proj-card-body">
+                <p>Complete overhaul of a 1,800 sq.ft. apartment — new flooring, kitchen remodel, 2 bathroom upgrades, and full interior repaint.</p>
+                <div class="proj-meta-grid">
+                  <div class="proj-meta-item"><i class="bi bi-arrows-fullscreen"></i> 1,800 sq.ft</div>
+                  <div class="proj-meta-item"><i class="bi bi-calendar3"></i> 30 Days</div>
+                  <div class="proj-meta-item"><i class="bi bi-geo-alt"></i> Velachery</div>
+                  <div class="proj-meta-item"><i class="bi bi-currency-rupee"></i> ₹18L</div>
+                </div>
+              </div>
+              <div class="proj-card-foot">
+                <span class="proj-status completed"><span class="proj-status-dot"></span> Completed</span>
+                <a href="tel:+919042356696">Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-4 col-md-6 proj-item fade-up fd2" data-cat="kitchen">
+            <div class="proj-card">
+              <div class="proj-card-head">
+                <div class="proj-icon-lg"><i class="bi bi-cup-hot"></i></div>
+                <div>
+                  <span class="proj-cat-badge">Kitchen Remodel</span>
+                  <h4>T. Nagar Modular Kitchen</h4>
+                </div>
+              </div>
+              <div class="proj-card-body">
+                <p>L-shaped modular kitchen with quartz countertop, soft-close cabinets, chimney, and LED under-cabinet lighting.</p>
+                <div class="proj-meta-grid">
+                  <div class="proj-meta-item"><i class="bi bi-arrows-fullscreen"></i> 120 sq.ft</div>
+                  <div class="proj-meta-item"><i class="bi bi-calendar3"></i> 12 Days</div>
+                  <div class="proj-meta-item"><i class="bi bi-geo-alt"></i> T. Nagar</div>
+                  <div class="proj-meta-item"><i class="bi bi-currency-rupee"></i> ₹3.5L</div>
+                </div>
+              </div>
+              <div class="proj-card-foot">
+                <span class="proj-status completed"><span class="proj-status-dot"></span> Completed</span>
+                <a href="tel:+919042356696">Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-lg-4 col-md-6 proj-item fade-up fd3" data-cat="bathroom">
+            <div class="proj-card">
+              <div class="proj-card-head">
+                <div class="proj-icon-lg"><i class="bi bi-droplet-half"></i></div>
+                <div>
+                  <span class="proj-cat-badge">Bathroom Renovation</span>
+                  <h4>Adyar Luxury Bathroom</h4>
+                </div>
+              </div>
+              <div class="proj-card-body">
+                <p>Master bathroom transformation with Italian marble tiles, rain shower, vanity unit, and concealed plumbing.</p>
+                <div class="proj-meta-grid">
+                  <div class="proj-meta-item"><i class="bi bi-arrows-fullscreen"></i> 65 sq.ft</div>
+                  <div class="proj-meta-item"><i class="bi bi-calendar3"></i> 10 Days</div>
+                  <div class="proj-meta-item"><i class="bi bi-geo-alt"></i> Adyar</div>
+                  <div class="proj-meta-item"><i class="bi bi-currency-rupee"></i> ₹2.2L</div>
+                </div>
+              </div>
+              <div class="proj-card-foot">
+                <span class="proj-status completed"><span class="proj-status-dot"></span> Completed</span>
+                <a href="tel:+919042356696">Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="col-lg-4 col-md-6 proj-item fade-up fd4" data-cat="commercial">
+            <div class="proj-card">
+              <div class="proj-card-head">
+                <div class="proj-icon-lg"><i class="bi bi-building"></i></div>
+                <div>
+                  <span class="proj-cat-badge">Commercial</span>
+                  <h4>OMR Office Fit-Out</h4>
+                </div>
+              </div>
+              <div class="proj-card-body">
+                <p>3,200 sq.ft. IT office renovation — modular workstations, conference room, pantry, and server room with raised flooring.</p>
+                <div class="proj-meta-grid">
+                  <div class="proj-meta-item"><i class="bi bi-arrows-fullscreen"></i> 3,200 sq.ft</div>
+                  <div class="proj-meta-item"><i class="bi bi-calendar3"></i> 40 Days</div>
+                  <div class="proj-meta-item"><i class="bi bi-geo-alt"></i> OMR, Sholinganallur</div>
+                  <div class="proj-meta-item"><i class="bi bi-currency-rupee"></i> ₹35L</div>
+                </div>
+              </div>
+              <div class="proj-card-foot">
+                <span class="proj-status completed"><span class="proj-status-dot"></span> Completed</span>
+                <a href="tel:+919042356696">Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="col-lg-4 col-md-6 proj-item fade-up fd5" data-cat="interior">
+            <div class="proj-card">
+              <div class="proj-card-head">
+                <div class="proj-icon-lg"><i class="bi bi-palette"></i></div>
+                <div>
+                  <span class="proj-cat-badge">Interior Redesign</span>
+                  <h4>Nungambakkam Flat Interiors</h4>
+                </div>
+              </div>
+              <div class="proj-card-body">
+                <p>Complete interior makeover — false ceiling with cove lighting, feature walls, TV unit, wardrobes, and premium wall textures.</p>
+                <div class="proj-meta-grid">
+                  <div class="proj-meta-item"><i class="bi bi-arrows-fullscreen"></i> 1,200 sq.ft</div>
+                  <div class="proj-meta-item"><i class="bi bi-calendar3"></i> 25 Days</div>
+                  <div class="proj-meta-item"><i class="bi bi-geo-alt"></i> Nungambakkam</div>
+                  <div class="proj-meta-item"><i class="bi bi-currency-rupee"></i> ₹12L</div>
+                </div>
+              </div>
+              <div class="proj-card-foot">
+                <span class="proj-status completed"><span class="proj-status-dot"></span> Completed</span>
+                <a href="tel:+919042356696">Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="col-lg-4 col-md-6 proj-item fade-up fd6" data-cat="home">
+            <div class="proj-card">
+              <div class="proj-card-head">
+                <div class="proj-icon-lg"><i class="bi bi-house-door"></i></div>
+                <div>
+                  <span class="proj-cat-badge">Home Renovation</span>
+                  <h4>Porur Independent House</h4>
+                </div>
+              </div>
+              <div class="proj-card-body">
+                <p>Ground + first floor renovation including structural repairs, new staircase, kitchen expansion, and terrace waterproofing.</p>
+                <div class="proj-meta-grid">
+                  <div class="proj-meta-item"><i class="bi bi-arrows-fullscreen"></i> 2,000 sq.ft</div>
+                  <div class="proj-meta-item"><i class="bi bi-calendar3"></i> 50 Days</div>
+                  <div class="proj-meta-item"><i class="bi bi-geo-alt"></i> Porur</div>
+                  <div class="proj-meta-item"><i class="bi bi-currency-rupee"></i> ₹22L</div>
+                </div>
+              </div>
+              <div class="proj-card-foot">
+                <span class="proj-status completed"><span class="proj-status-dot"></span> Completed</span>
+                <a href="tel:+919042356696">Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div class="col-lg-4 col-md-6 proj-item fade-up fd7" data-cat="kitchen">
+            <div class="proj-card">
+              <div class="proj-card-head">
+                <div class="proj-icon-lg"><i class="bi bi-cup-straw"></i></div>
+                <div>
+                  <span class="proj-cat-badge">Kitchen Remodel</span>
+                  <h4>Mogappair U-Shaped Kitchen</h4>
+                </div>
+              </div>
+              <div class="proj-card-body">
+                <p>Compact U-shaped kitchen with handleless cabinets, granite countertop, built-in oven niche, and pull-out pantry unit.</p>
+                <div class="proj-meta-grid">
+                  <div class="proj-meta-item"><i class="bi bi-arrows-fullscreen"></i> 90 sq.ft</div>
+                  <div class="proj-meta-item"><i class="bi bi-calendar3"></i> 15 Days</div>
+                  <div class="proj-meta-item"><i class="bi bi-geo-alt"></i> Mogappair</div>
+                  <div class="proj-meta-item"><i class="bi bi-currency-rupee"></i> ₹2.8L</div>
+                </div>
+              </div>
+              <div class="proj-card-foot">
+                <span class="proj-status completed"><span class="proj-status-dot"></span> Completed</span>
+                <a href="tel:+919042356696">Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div class="col-lg-4 col-md-6 proj-item fade-up fd8" data-cat="commercial">
+            <div class="proj-card">
+              <div class="proj-card-head">
+                <div class="proj-icon-lg"><i class="bi bi-shop"></i></div>
+                <div>
+                  <span class="proj-cat-badge">Commercial</span>
+                  <h4>Anna Nagar Restaurant Renovation</h4>
+                </div>
+              </div>
+              <div class="proj-card-body">
+                <p>Full restaurant interior remodel — custom lighting, acoustic panels, bar counter, dining area layout, and commercial kitchen upgrade.</p>
+                <div class="proj-meta-grid">
+                  <div class="proj-meta-item"><i class="bi bi-arrows-fullscreen"></i> 1,800 sq.ft</div>
+                  <div class="proj-meta-item"><i class="bi bi-calendar3"></i> 35 Days</div>
+                  <div class="proj-meta-item"><i class="bi bi-geo-alt"></i> Anna Nagar</div>
+                  <div class="proj-meta-item"><i class="bi bi-currency-rupee"></i> ₹20L</div>
+                </div>
+              </div>
+              <div class="proj-card-foot">
+                <span class="proj-status completed"><span class="proj-status-dot"></span> Completed</span>
+                <a href="tel:+919042356696">Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9 (Ongoing) -->
+          <div class="col-lg-4 col-md-6 proj-item fade-up fd1" data-cat="home">
+            <div class="proj-card">
+              <div class="proj-card-head">
+                <div class="proj-icon-lg"><i class="bi bi-house-add"></i></div>
+                <div>
+                  <span class="proj-cat-badge">Home Renovation</span>
+                  <h4>Thoraipakkam Villa</h4>
+                </div>
+              </div>
+              <div class="proj-card-body">
+                <p>Ongoing 3,000 sq.ft. villa renovation — second floor addition, smart home wiring, landscape garden, and swimming pool deck.</p>
+                <div class="proj-meta-grid">
+                  <div class="proj-meta-item"><i class="bi bi-arrows-fullscreen"></i> 3,000 sq.ft</div>
+                  <div class="proj-meta-item"><i class="bi bi-calendar3"></i> 60 Days</div>
+                  <div class="proj-meta-item"><i class="bi bi-geo-alt"></i> Thoraipakkam</div>
+                  <div class="proj-meta-item"><i class="bi bi-currency-rupee"></i> ₹42L</div>
+                </div>
+              </div>
+              <div class="proj-card-foot">
+                <span class="proj-status ongoing"><span class="proj-status-dot"></span> In Progress</span>
+                <a href="tel:+919042356696">Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECT NUMBERS ===== -->
+    <section class="section-pad-sm pnum-sec" id="pnum">
+      <div class="container">
+        <div class="text-center mb-5 fade-up">
+          <div class="overline justify-content-center">By The Numbers</div>
+          <h2 class="section-heading">Our Project Impact</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 fade-up fd1">
+            <div class="pnum-card">
+              <div class="pnum-icon"><i class="bi bi-house-check"></i></div>
+              <div class="pnum-val"><span class="counter" data-target="85">0</span><span class="pnum-suf">+</span></div>
+              <p>Home Renovations</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 fade-up fd2">
+            <div class="pnum-card">
+              <div class="pnum-icon"><i class="bi bi-cup-hot"></i></div>
+              <div class="pnum-val"><span class="counter" data-target="45">0</span><span class="pnum-suf">+</span></div>
+              <p>Kitchen Remodels</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 fade-up fd3">
+            <div class="pnum-card">
+              <div class="pnum-icon"><i class="bi bi-droplet-half"></i></div>
+              <div class="pnum-val"><span class="counter" data-target="38">0</span><span class="pnum-suf">+</span></div>
+              <p>Bathroom Upgrades</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 fade-up fd4">
+            <div class="pnum-card">
+              <div class="pnum-icon"><i class="bi bi-building"></i></div>
+              <div class="pnum-val"><span class="counter" data-target="32">0</span><span class="pnum-suf">+</span></div>
+              <p>Commercial Projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUR PROCESS ===== -->
+    <section class="section-pad" id="process">
+      <div class="container">
+        <div class="text-center mb-5 fade-up">
+          <div class="overline justify-content-center">How We Work</div>
+          <h2 class="section-heading">Our Project Execution Process</h2>
+          <p class="section-desc mx-auto">
+            Every project follows a structured 6-step process — ensuring transparency, quality control, and timely delivery from day one.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-2 col-md-4 col-6 fade-up fd1">
+            <div class="proc-card">
+              <div class="proc-num">01</div>
+              <h5>Consultation</h5>
+              <p>Free site visit & discussion to understand your needs</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 fade-up fd2">
+            <div class="proc-card">
+              <div class="proc-num">02</div>
+              <h5>Estimation</h5>
+              <p>Detailed cost breakup with material specifications</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 fade-up fd3">
+            <div class="proc-card">
+              <div class="proc-num">03</div>
+              <h5>Design</h5>
+              <p>Layout planning, material selection & 3D visualization</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 fade-up fd4">
+            <div class="proc-card">
+              <div class="proc-num">04</div>
+              <h5>Execution</h5>
+              <p>Skilled team begins work with dedicated supervision</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 fade-up fd5">
+            <div class="proc-card">
+              <div class="proc-num">05</div>
+              <h5>Quality Check</h5>
+              <p>Multi-stage inspections to ensure flawless finish</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 fade-up fd6">
+            <div class="proc-card">
+              <div class="proc-num">06</div>
+              <h5>Handover</h5>
+              <p>Clean site walkthrough, documentation & warranty</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CLIENT TESTIMONIALS ===== -->
+    <section class="section-pad-sm" style="background: var(--bg-cream);" id="testimonials">
+      <div class="container">
+        <div class="text-center mb-5 fade-up">
+          <div class="overline justify-content-center">Client Voices</div>
+          <h2 class="section-heading">What Our Clients Say</h2>
+          <p class="section-desc mx-auto">
+            Real feedback from homeowners and businesses who trusted DH Construction with their renovation projects.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 fade-up fd1">
+            <div class="testi-card">
+              <div class="testi-quote">"</div>
+              <div class="testi-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>"DH Renovation transformed our 20-year-old house completely. The quality of work was exceptional, and they finished 3 days before the deadline. Highly recommended for anyone looking for reliable renovation in Chennai."</p>
+              <div class="testi-author">
+                <div class="testi-avatar">RK</div>
+                <div>
+                  <h6>Rajesh Kumar</h6>
+                  <small>Home Renovation — Anna Nagar</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 fade-up fd2">
+            <div class="testi-card">
+              <div class="testi-quote">"</div>
+              <div class="testi-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>"Our modular kitchen turned out even better than we imagined. The team was professional, the materials were top quality, and there were absolutely no hidden costs. The entire experience was stress-free."</p>
+              <div class="testi-author">
+                <div class="testi-avatar">PS</div>
+                <div>
+                  <h6>Priya Shankar</h6>
+                  <small>Kitchen Remodel — T. Nagar</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 fade-up fd3">
+            <div class="testi-card">
+              <div class="testi-quote">"</div>
+              <div class="testi-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+              </div>
+              <p>"We hired DH for our office fit-out on OMR and they delivered a fantastic workspace. The project management was excellent — daily updates, on-time milestones, and the final result impressed our entire team."</p>
+              <div class="testi-author">
+                <div class="testi-avatar">AM</div>
+                <div>
+                  <h6>Arun Mehta</h6>
+                  <small>Commercial Renovation — OMR</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section-pad cta-sec" id="cta">
+      <div class="container">
+        <div class="cta-inner text-center">
+          <h2 class="fade-up">Want Your Project Here Next?</h2>
+          <p class="mx-auto fade-up fd1">
+            Let's discuss your renovation idea. Get a free site visit, detailed estimate, and expert consultation — no obligation, no pressure.
+          </p>
+          <div class="d-flex gap-3 justify-content-center flex-wrap fade-up fd2">
+            <a href="tel:+919042356696" class="btn-white"><i class="bi bi-telephone"></i> Call: 90423 56696</a>
+            <a href="https://wa.me/919042356696" target="_blank" class="btn-ghost"><i class="bi bi-whatsapp"></i> WhatsApp Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="foot" id="contact">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <div class="foot-brand">DH <b>Renovation</b></div>
+            <p>Expert building renovation and remodeling services in Chennai. Trusted by 200+ homeowners and businesses for quality craftsmanship and reliable delivery.</p>
+            <div class="foot-soc">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="foot-links">
+              <li><a href="#hero"><i class="bi bi-chevron-right" style="font-size:0.7rem;"></i> Home</a></li>
+              <li><a href="#about"><i class="bi bi-chevron-right" style="font-size:0.7rem;"></i> About Us</a></li>
+              <li><a href="#services"><i class="bi bi-chevron-right" style="font-size:0.7rem;"></i> Services</a></li>
+              <li><a href="#process"><i class="bi bi-chevron-right" style="font-size:0.7rem;"></i> Process</a></li>
+              <li><a href="#projects"><i class="bi bi-chevron-right" style="font-size:0.7rem;"></i> Projects</a></li>
+              <li><a href="#faq"><i class="bi bi-chevron-right" style="font-size:0.7rem;"></i> FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <h5>Services</h5>
+            <ul class="foot-links">
+              <li><a href="#services"><i class="bi bi-chevron-right" style="font-size:0.7rem;"></i> Home Renovation</a></li>
+              <li><a href="#services"><i class="bi bi-chevron-right" style="font-size:0.7rem;"></i> Kitchen Remodeling</a></li>
+              <li><a href="#services"><i class="bi bi-chevron-right" style="font-size:0.7rem;"></i> Bathroom Renovation</a></li>
+              <li><a href="#services"><i class="bi bi-chevron-right" style="font-size:0.7rem;"></i> Commercial Renovation</a></li>
+              <li><a href="#services"><i class="bi bi-chevron-right" style="font-size:0.7rem;"></i> Interior Redesign</a></li>
+              <li><a href="#services"><i class="bi bi-chevron-right" style="font-size:0.7rem;"></i> Flooring & Tiling</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <h5>Contact Us</h5>
+            <ul class="foot-links">
+              <li><a href="tel:+919042356696"><i class="bi bi-telephone" style="font-size:0.85rem;"></i> +91 90423 56696</a></li>
+              <li><a href="https://wa.me/919042356696"><i class="bi bi-whatsapp" style="font-size:0.85rem;"></i> WhatsApp</a></li>
+              <li><a href="mailto:info@dhconstruction.in"><i class="bi bi-envelope" style="font-size:0.85rem;"></i> info@dhconstruction.in</a></li>
+              <li><a href="#"><i class="bi bi-geo-alt" style="font-size:0.85rem;"></i> Chennai, Tamil Nadu, India</a></li>
+              <li><a href="#"><i class="bi bi-clock" style="font-size:0.85rem;"></i> Mon–Sat: 8 AM – 7 PM</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="foot-bot text-center">
+          <p>&copy; 2024 DH Construction. All Rights Reserved. | Expert Renovation Services in Chennai</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/919042356696" target="_blank" class="float-wa" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+    <a href="tel:+919042356696" class="float-call" aria-label="Call"><i class="bi bi-telephone-fill"></i></a>
+    <button class="btt" id="btt" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // ===== Navbar scroll =====
+      const nav = document.getElementById('nav');
+      const btt = document.getElementById('btt');
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 80);
+        btt.classList.toggle('on', window.scrollY > 500);
+      });
+      btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+      // ===== Fade-up on scroll =====
+      const fadeEls = document.querySelectorAll('.fade-up');
+      const fadeObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); fadeObs.unobserve(e.target); } });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      fadeEls.forEach(el => fadeObs.observe(el));
+
+      // ===== Counter animation =====
+      const counters = document.querySelectorAll('.counter');
+      let counterDone = false;
+      const counterObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting && !counterDone) {
+            counterDone = true;
+            counters.forEach(c => {
+              const target = +c.dataset.target;
+              const dur = 2000;
+              const step = target / (dur / 16);
+              let val = 0;
+              const update = () => {
+                val += step;
+                if (val >= target) { c.textContent = target; return; }
+                c.textContent = Math.floor(val);
+                requestAnimationFrame(update);
+              };
+              update();
+            });
+          }
+        });
+      }, { threshold: 0.3 });
+      const pnumSec = document.getElementById('pnum');
+      if (pnumSec) counterObs.observe(pnumSec);
+
+      // ===== Project Filter =====
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const projItems = document.querySelectorAll('.proj-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Update active button
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filter = btn.dataset.filter;
+
+          projItems.forEach(item => {
+            if (filter === 'all' || item.dataset.cat === filter) {
+              item.style.display = '';
+              // Re-trigger fade animation
+              item.classList.remove('visible');
+              setTimeout(() => item.classList.add('visible'), 50);
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // ===== Hero Canvas Particle Animation =====
+      (function() {
+        const canvas = document.getElementById('heroCanvas');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        let w, h, particles = [], mouse = { x: -1000, y: -1000 };
+
+        function resize() {
+          w = canvas.width = canvas.offsetWidth;
+          h = canvas.height = canvas.offsetHeight;
+        }
+        resize();
+        window.addEventListener('resize', resize);
+
+        canvas.parentElement.addEventListener('mousemove', (e) => {
+          const rect = canvas.getBoundingClientRect();
+          mouse.x = e.clientX - rect.left;
+          mouse.y = e.clientY - rect.top;
+        });
+        canvas.parentElement.addEventListener('mouseleave', () => {
+          mouse.x = -1000;
+          mouse.y = -1000;
+        });
+
+        class Particle {
+          constructor() { this.reset(); }
+          reset() {
+            this.x = Math.random() * w;
+            this.y = Math.random() * h;
+            this.size = Math.random() * 2 + 0.5;
+            this.speedX = (Math.random() - 0.5) * 0.4;
+            this.speedY = (Math.random() - 0.5) * 0.4;
+            this.opacity = Math.random() * 0.4 + 0.1;
+          }
+          update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            const dx = this.x - mouse.x;
+            const dy = this.y - mouse.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 120) {
+              const force = (120 - dist) / 120;
+              this.x += (dx / dist) * force * 2;
+              this.y += (dy / dist) * force * 2;
+            }
+            if (this.x < -10 || this.x > w + 10 || this.y < -10 || this.y > h + 10) this.reset();
+          }
+          draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(102, 187, 106, ${this.opacity})`;
+            ctx.fill();
+          }
+        }
+
+        const count = Math.min(Math.floor((w * h) / 8000), 150);
+        for (let i = 0; i < count; i++) particles.push(new Particle());
+
+        function connectParticles() {
+          for (let i = 0; i < particles.length; i++) {
+            for (let j = i + 1; j < particles.length; j++) {
+              const dx = particles[i].x - particles[j].x;
+              const dy = particles[i].y - particles[j].y;
+              const dist = Math.sqrt(dx * dx + dy * dy);
+              if (dist < 140) {
+                const opacity = (1 - dist / 140) * 0.12;
+                ctx.beginPath();
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(particles[j].x, particles[j].y);
+                ctx.strokeStyle = `rgba(102, 187, 106, ${opacity})`;
+                ctx.lineWidth = 0.6;
+                ctx.stroke();
+              }
+            }
+          }
+        }
+
+        function animate() {
+          ctx.clearRect(0, 0, w, h);
+          particles.forEach(p => { p.update(); p.draw(); });
+          connectParticles();
+          requestAnimationFrame(animate);
+        }
+        animate();
+      })();
+
+      // ===== Close mobile nav on link click =====
+      document.querySelectorAll('#navMenu .nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          const navCollapse = document.getElementById('navMenu');
+          const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+          if (bsCollapse) bsCollapse.hide();
+        });
+      });
+    </script>
+  </body>
+</html>
