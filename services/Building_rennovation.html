@@ -1,0 +1,3478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DH Construction - Expert Building Renovation Services in Chennai. Kitchen, bathroom, complete home & commercial renovation with 15+ years experience."
+    />
+    <meta
+      name="keywords"
+      content="building renovation Chennai, home renovation, kitchen renovation, bathroom renovation, commercial renovation, remodeling, DH Construction"
+    />
+    <title>
+      DH Construction | Expert Building Renovation Services in Chennai
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #2e7d32;
+        --primary-dark: #1b5e20;
+        --primary-light: #66bb6a;
+        --primary-accent: #81c784;
+        --bg-cream: #fafaf7;
+        --bg-warm: #f5f3ee;
+        --white: #ffffff;
+        --dark: #1a1a1a;
+        --text: #2d2d2d;
+        --text-light: #6b7280;
+        --text-muted: #9ca3af;
+        --border: #e8e6e1;
+        --gradient: linear-gradient(135deg, #2e7d32, #66bb6a);
+        --heading: "Playfair Display", serif;
+        --body: "Poppins", sans-serif;
+        --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
+        --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.1);
+        --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
+        --shadow-xl: 0 30px 80px rgba(0, 0, 0, 0.15);
+        --radius: 16px;
+        --radius-lg: 24px;
+        --radius-xl: 40px;
+        --ease: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      body {
+        font-family: var(--body);
+        color: var(--text);
+        background: var(--white);
+        line-height: 1.7;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--heading);
+        font-weight: 600;
+        line-height: 1.25;
+        color: var(--dark);
+      }
+      p {
+        color: var(--text-light);
+        margin-bottom: 1rem;
+      }
+      a {
+        text-decoration: none;
+        color: var(--primary);
+        transition: all 0.3s var(--ease);
+      }
+      a:hover {
+        color: var(--primary-dark);
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      .section-pad {
+        padding: 120px 0;
+      }
+      .section-pad-sm {
+        padding: 80px 0;
+      }
+      .overline {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--body);
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--primary);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 1.25rem;
+      }
+      .overline::before {
+        content: "";
+        width: 40px;
+        height: 2px;
+        background: var(--gradient);
+      }
+      .section-heading {
+        font-size: 3.25rem;
+        font-weight: 700;
+        margin-bottom: 1.25rem;
+        letter-spacing: -0.5px;
+      }
+      .section-desc {
+        font-size: 1.05rem;
+        color: var(--text-light);
+        max-width: 600px;
+        line-height: 1.8;
+      }
+
+      /* Fade-up */
+      .fade-up {
+        opacity: 0;
+        transform: translateY(40px);
+        transition:
+          opacity 0.7s var(--ease),
+          transform 0.7s var(--ease);
+      }
+      .fade-up.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .fd1 {
+        transition-delay: 0.1s;
+      }
+      .fd2 {
+        transition-delay: 0.2s;
+      }
+      .fd3 {
+        transition-delay: 0.3s;
+      }
+      .fd4 {
+        transition-delay: 0.4s;
+      }
+      .fd5 {
+        transition-delay: 0.5s;
+      }
+      .fd6 {
+        transition-delay: 0.6s;
+      }
+      .fd7 {
+        transition-delay: 0.7s;
+      }
+
+      /* Buttons */
+      .btn-main {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--gradient);
+        color: var(--white);
+        padding: 16px 36px;
+        border-radius: var(--radius-xl);
+        font-family: var(--body);
+        font-weight: 600;
+        font-size: 0.95rem;
+        border: none;
+        transition: all 0.4s var(--ease);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .btn-main::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: var(--primary-dark);
+        z-index: -1;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s var(--ease);
+      }
+      .btn-main:hover {
+        color: var(--white);
+        transform: translateY(-3px);
+        box-shadow: 0 12px 35px rgba(46, 125, 50, 0.35);
+      }
+      .btn-main:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+      .btn-ghost {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        color: var(--white);
+        padding: 16px 36px;
+        border-radius: var(--radius-xl);
+        font-family: var(--body);
+        font-weight: 500;
+        font-size: 0.95rem;
+        border: 1.5px solid rgba(255, 255, 255, 0.4);
+        transition: all 0.4s var(--ease);
+      }
+      .btn-ghost:hover {
+        background: var(--white);
+        color: var(--primary-dark);
+        border-color: var(--white);
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-lg);
+      }
+      .btn-outline {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        color: var(--primary);
+        padding: 14px 32px;
+        border-radius: var(--radius-xl);
+        font-family: var(--body);
+        font-weight: 600;
+        font-size: 0.9rem;
+        border: 2px solid var(--primary);
+        transition: all 0.4s var(--ease);
+      }
+      .btn-outline:hover {
+        background: var(--primary);
+        color: var(--white);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(46, 125, 50, 0.3);
+      }
+      .btn-white {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--white);
+        color: var(--primary-dark);
+        padding: 16px 36px;
+        border-radius: var(--radius-xl);
+        font-family: var(--body);
+        font-weight: 600;
+        font-size: 0.95rem;
+        border: none;
+        transition: all 0.4s var(--ease);
+      }
+      .btn-white:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+        color: var(--primary-dark);
+      }
+
+      /* ===== NAVBAR ===== */
+      .navbar {
+        padding: 24px 0;
+        transition: all 0.4s var(--ease);
+        z-index: 1000;
+      }
+      .navbar.scrolled {
+        background: rgba(255, 255, 255, 0.97);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        padding: 14px 0;
+        box-shadow: 0 1px 20px rgba(0, 0, 0, 0.06);
+      }
+      .navbar-brand {
+        font-family: var(--heading);
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--white) !important;
+        letter-spacing: -0.5px;
+      }
+      .navbar.scrolled .navbar-brand {
+        color: var(--dark) !important;
+      }
+      .navbar-brand b {
+        color: var(--primary-light);
+        font-weight: 800;
+      }
+      .navbar.scrolled .navbar-brand b {
+        color: var(--primary);
+      }
+      .nav-link {
+        font-family: var(--body);
+        font-weight: 500;
+        font-size: 0.88rem;
+        color: rgba(255, 255, 255, 0.85) !important;
+        padding: 8px 18px !important;
+        transition: all 0.3s var(--ease);
+        position: relative;
+        letter-spacing: 0.3px;
+      }
+      .navbar.scrolled .nav-link {
+        color: var(--text) !important;
+      }
+      .nav-link:hover,
+      .nav-link.active {
+        color: var(--primary-light) !important;
+      }
+      .navbar.scrolled .nav-link:hover,
+      .navbar.scrolled .nav-link.active {
+        color: var(--primary) !important;
+      }
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        left: 18px;
+        right: 18px;
+        height: 2px;
+        background: var(--gradient);
+        transform: scaleX(0);
+        transition: transform 0.3s var(--ease);
+        border-radius: 2px;
+      }
+      .nav-link:hover::after,
+      .nav-link.active::after {
+        transform: scaleX(1);
+      }
+      .navbar-toggler {
+        border: none;
+        padding: 0;
+        font-size: 1.5rem;
+        color: var(--white);
+      }
+      .navbar.scrolled .navbar-toggler {
+        color: var(--dark);
+      }
+
+      .dropdown-item {
+        font-family: var(--body);
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--text) !important;
+        padding: 10px 16px;
+        border-radius: 10px;
+        transition: all 0.25s var(--ease);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .dropdown-item:hover {
+        background: var(--bg-cream);
+        color: var(--primary) !important;
+        padding-left: 20px;
+      }
+      .dropdown-item i {
+        font-size: 1rem;
+        color: var(--primary);
+        width: 20px;
+        text-align: center;
+        flex-shrink: 0;
+      }
+      .dropdown-item .dd-desc {
+        font-size: 0.72rem;
+        color: var(--text-muted);
+        margin-top: 2px;
+        font-weight: 400;
+      }
+      .dd-divider {
+        height: 1px;
+        background: var(--border);
+        margin: 8px 8px;
+      }
+      .dd-title {
+        font-family: var(--body);
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 6px 16px 4px;
+      }
+      .nav-dd-arrow {
+        font-size: 0.65rem;
+        margin-left: 4px;
+        transition: transform 0.3s var(--ease);
+        display: inline-block;
+      }
+      .dropdown:hover .nav-dd-arrow {
+        transform: rotate(180deg);
+      }
+      .dropdown.show .nav-dd-arrow {
+        transform: rotate(180deg);
+      }
+      .dropdown-toggle::after {
+        display: none !important;
+      }
+
+      /* ===== DROPDOWN ===== */
+      .dropdown-menu {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 12px;
+        margin-top: 12px !important;
+        box-shadow: var(--shadow-lg);
+        background: var(--white);
+        animation: ddFade 0.25s var(--ease);
+      }
+
+      @media (max-width: 991px) {
+        .navbar-collapse {
+          background: var(--white);
+          border-radius: var(--radius);
+          padding: 24px;
+          margin-top: 16px;
+          box-shadow: var(--shadow-lg);
+        }
+        .nav-link {
+          color: var(--text) !important;
+          padding: 12px 16px !important;
+        }
+        .nav-link:hover,
+        .nav-link.active {
+          color: var(--primary) !important;
+        }
+      }
+
+      /* ===== DROPDOWN ===== */
+      .dropdown-menu {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 12px;
+        margin-top: 12px !important;
+        box-shadow: var(--shadow-lg);
+        background: var(--white);
+        animation: ddFade 0.25s var(--ease);
+      }
+
+      /* ===== HERO ===== */
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        background: #0a0a0a;
+      }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+      .hero-bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.45;
+      }
+      #heroCanvas {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        pointer-events: none;
+      }
+      .hero-grad {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(
+          105deg,
+          rgba(10, 10, 10, 0.95) 0%,
+          rgba(20, 20, 20, 0.85) 35%,
+          rgba(30, 30, 30, 0.55) 60%,
+          rgba(40, 40, 40, 0.2) 100%
+        );
+      }
+      .hero-sweep {
+        position: absolute;
+        inset: 0;
+        z-index: 3;
+        pointer-events: none;
+        overflow: hidden;
+      }
+      .hero-sweep::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: conic-gradient(
+          from 0deg at 50% 50%,
+          transparent 0deg,
+          rgba(46, 125, 50, 0.05) 30deg,
+          transparent 60deg,
+          transparent 180deg,
+          rgba(102, 187, 106, 0.04) 210deg,
+          transparent 240deg
+        );
+        animation: sweepRot 20s linear infinite;
+      }
+      @keyframes sweepRot {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .hero-shapes {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        pointer-events: none;
+        overflow: hidden;
+      }
+      .hero-shape {
+        position: absolute;
+        border: 1px solid rgba(102, 187, 106, 0.12);
+        border-radius: 4px;
+      }
+      .hs-1 {
+        width: 80px;
+        height: 80px;
+        top: 15%;
+        right: 20%;
+        animation:
+          fShape 12s ease-in-out infinite,
+          rSlow 30s linear infinite;
+      }
+      .hs-2 {
+        width: 50px;
+        height: 50px;
+        top: 60%;
+        right: 35%;
+        animation:
+          fShape 10s ease-in-out infinite 2s,
+          rSlow 25s linear infinite reverse;
+      }
+      .hs-3 {
+        width: 120px;
+        height: 120px;
+        bottom: 20%;
+        right: 10%;
+        border-radius: 50%;
+        animation:
+          fShape 15s ease-in-out infinite 4s,
+          rSlow 40s linear infinite;
+      }
+      .hs-4 {
+        width: 40px;
+        height: 40px;
+        top: 30%;
+        right: 45%;
+        animation:
+          fShape 8s ease-in-out infinite 1s,
+          rSlow 20s linear infinite reverse;
+      }
+      .hs-5 {
+        width: 60px;
+        height: 60px;
+        bottom: 35%;
+        right: 25%;
+        border-radius: 50%;
+        animation:
+          fShape 11s ease-in-out infinite 3s,
+          rSlow 35s linear infinite;
+      }
+      @keyframes fShape {
+        0%,
+        100% {
+          transform: translateY(0) rotate(0deg);
+        }
+        25% {
+          transform: translateY(-20px) rotate(5deg);
+        }
+        50% {
+          transform: translateY(-10px) rotate(-3deg);
+        }
+        75% {
+          transform: translateY(-25px) rotate(4deg);
+        }
+      }
+      @keyframes rSlow {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .hero-grid {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        opacity: 0.03;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+        background-size: 60px 60px;
+        animation: gridDrift 30s linear infinite;
+      }
+      @keyframes gridDrift {
+        to {
+          background-position: 60px 60px;
+        }
+      }
+      .hero-content {
+        position: relative;
+        z-index: 10;
+      }
+      .hero-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: var(--radius-xl);
+        padding: 10px 22px;
+        margin-bottom: 2rem;
+        opacity: 0;
+        transform: translateY(25px);
+        animation: sUp 0.8s var(--ease) 0.4s forwards;
+      }
+      .hero-tag i {
+        color: var(--primary-light);
+      }
+      .hero-tag span {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 0.88rem;
+        font-weight: 500;
+      }
+      .hero h1 {
+        font-size: 4.2rem;
+        font-weight: 700;
+        color: var(--white);
+        line-height: 1.08;
+        margin-bottom: 1.75rem;
+      }
+      .hero h1 .line {
+        display: block;
+        overflow: hidden;
+      }
+      .hero h1 .line-in {
+        display: block;
+        transform: translateY(115%);
+        animation: revLine 1s var(--ease) forwards;
+      }
+      .hero h1 .line:nth-child(1) .line-in {
+        animation-delay: 0.6s;
+      }
+      .hero h1 .line:nth-child(2) .line-in {
+        animation-delay: 0.8s;
+      }
+      .hero h1 .line:nth-child(3) .line-in {
+        animation-delay: 1s;
+      }
+      .hero h1 em {
+        font-style: italic;
+        color: var(--primary-light);
+      }
+      @keyframes revLine {
+        to {
+          transform: translateY(0);
+        }
+      }
+      @keyframes sUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .hero-sub {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.75);
+        max-width: 540px;
+        line-height: 1.8;
+        margin-bottom: 2.5rem;
+        opacity: 0;
+        transform: translateY(25px);
+        animation: sUp 0.8s var(--ease) 1.2s forwards;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+        opacity: 0;
+        transform: translateY(25px);
+        animation: sUp 0.8s var(--ease) 1.4s forwards;
+      }
+      .hero-stats-bar {
+        display: flex;
+        gap: 0;
+        opacity: 0;
+        transform: translateY(25px);
+        animation: sUp 0.8s var(--ease) 1.6s forwards;
+      }
+      .hsb-item {
+        flex: 1;
+        text-align: center;
+        padding: 20px 15px;
+        border-right: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .hsb-item:last-child {
+        border-right: none;
+      }
+      .hsb-item h3 {
+        font-family: var(--heading);
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--white);
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+      .hsb-item h3 span {
+        color: var(--primary-light);
+        font-size: 1.4rem;
+      }
+      .hsb-item p {
+        font-size: 0.78rem;
+        color: rgba(255, 255, 255, 0.55);
+        margin-bottom: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      /* ===== ICON INTRO ===== */
+      .icon-intro-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+      .ii-card {
+        text-align: center;
+        padding: 36px 20px;
+        border-radius: var(--radius);
+        border: 1px solid var(--border);
+        transition: all 0.4s var(--ease);
+        background: var(--white);
+      }
+      .ii-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-md);
+        border-color: transparent;
+      }
+      .ii-icon {
+        width: 72px;
+        height: 72px;
+        background: var(--bg-cream);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        color: var(--primary);
+        margin: 0 auto 18px;
+        transition: all 0.4s var(--ease);
+      }
+      .ii-card:hover .ii-icon {
+        background: var(--gradient);
+        color: var(--white);
+        transform: scale(1.1);
+      }
+      .ii-card h5 {
+        font-family: var(--body);
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .ii-card p {
+        font-size: 0.82rem;
+        margin-bottom: 0;
+        line-height: 1.6;
+      }
+
+      /* ===== RENOVATION SERVICES (Icon Cards) ===== */
+      .rs-card {
+        background: var(--white);
+        border-radius: var(--radius);
+        padding: 36px 28px;
+        transition: all 0.4s var(--ease);
+        border: 1px solid var(--border);
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+      .rs-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 0;
+        background: var(--gradient);
+        transition: height 0.5s var(--ease);
+        border-radius: 0 4px 4px 0;
+      }
+      .rs-card:hover::before {
+        height: 100%;
+      }
+      .rs-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-md);
+        border-color: transparent;
+      }
+      .rs-icon {
+        width: 64px;
+        height: 64px;
+        background: var(--bg-cream);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: var(--primary);
+        margin-bottom: 20px;
+        transition: all 0.4s var(--ease);
+      }
+      .rs-card:hover .rs-icon {
+        background: var(--gradient);
+        color: var(--white);
+        border-radius: 50%;
+      }
+      .rs-card h4 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+      }
+      .rs-card p {
+        font-size: 0.85rem;
+        margin-bottom: 16px;
+        line-height: 1.7;
+      }
+      .rs-features {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .rs-features li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.8rem;
+        color: var(--text-light);
+        padding: 4px 0;
+      }
+      .rs-features li i {
+        color: var(--primary);
+        font-size: 0.75rem;
+        flex-shrink: 0;
+      }
+
+      /* ===== PROCESS TIMELINE ===== */
+      .process-line {
+        position: relative;
+        padding-left: 60px;
+      }
+      .process-line::before {
+        content: "";
+        position: absolute;
+        left: 24px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: var(--border);
+      }
+      .proc-step {
+        position: relative;
+        padding-bottom: 48px;
+      }
+      .proc-step:last-child {
+        padding-bottom: 0;
+      }
+      .proc-dot {
+        position: absolute;
+        left: -60px;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        background: var(--white);
+        border: 2px solid var(--border);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: var(--primary);
+        transition: all 0.4s var(--ease);
+        z-index: 2;
+      }
+      .proc-step:hover .proc-dot {
+        background: var(--gradient);
+        color: var(--white);
+        border-color: transparent;
+        transform: scale(1.15);
+        box-shadow: 0 8px 25px rgba(46, 125, 50, 0.3);
+      }
+      .proc-step h5 {
+        font-family: var(--body);
+        font-size: 1.05rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .proc-step p {
+        font-size: 0.88rem;
+        margin-bottom: 0;
+        line-height: 1.7;
+      }
+
+      /* ===== PROJECTS ===== */
+      .proj-card {
+        border-radius: var(--radius);
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 24px;
+        cursor: pointer;
+        transition: all 0.4s var(--ease);
+      }
+      .proj-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-xl);
+      }
+      .proj-img {
+        position: relative;
+        overflow: hidden;
+        height: 360px;
+      }
+      .proj-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.7s var(--ease);
+      }
+      .proj-card:hover .proj-img img {
+        transform: scale(1.08);
+      }
+      .proj-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.88) 0%,
+          rgba(0, 0, 0, 0.25) 45%,
+          transparent 100%
+        );
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 30px;
+      }
+      .proj-cat {
+        display: inline-block;
+        background: var(--gradient);
+        color: var(--white);
+        padding: 4px 14px;
+        border-radius: var(--radius-xl);
+        font-size: 0.72rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+        width: fit-content;
+      }
+      .proj-overlay h4 {
+        font-size: 1.25rem;
+        color: var(--white);
+        margin-bottom: 10px;
+      }
+      .proj-meta {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .proj-meta span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.75);
+      }
+      .proj-meta span i {
+        color: var(--primary-light);
+        font-size: 0.85rem;
+      }
+
+      /* ===== WHY US ICONS ===== */
+      .wu-card {
+        background: var(--white);
+        border-radius: var(--radius);
+        padding: 32px 24px;
+        transition: all 0.4s var(--ease);
+        border: 1px solid var(--border);
+        height: 100%;
+        text-align: center;
+      }
+      .wu-card:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-6px);
+        border-color: transparent;
+      }
+      .wu-icon {
+        width: 68px;
+        height: 68px;
+        background: var(--bg-cream);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        color: var(--primary);
+        margin: 0 auto 18px;
+        transition: all 0.4s var(--ease);
+      }
+      .wu-card:hover .wu-icon {
+        background: var(--gradient);
+        color: var(--white);
+        transform: scale(1.1);
+      }
+      .wu-card h5 {
+        font-family: var(--body);
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .wu-card p {
+        font-size: 0.82rem;
+        margin-bottom: 0;
+      }
+
+      /* ===== RENOVATION TYPES (Icon Grid) ===== */
+      .rt-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 28px;
+        background: var(--bg-cream);
+        border-radius: var(--radius);
+        transition: all 0.4s var(--ease);
+        border: 1px solid transparent;
+      }
+      .rt-card:hover {
+        background: var(--white);
+        box-shadow: var(--shadow-soft);
+        transform: translateX(6px);
+        border-color: var(--border);
+      }
+      .rt-icon {
+        width: 56px;
+        height: 56px;
+        min-width: 56px;
+        background: var(--gradient);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        color: var(--white);
+        transition: all 0.4s var(--ease);
+      }
+      .rt-card:hover .rt-icon {
+        transform: rotate(-5deg) scale(1.08);
+      }
+      .rt-card h5 {
+        font-family: var(--body);
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+      .rt-card p {
+        font-size: 0.84rem;
+        margin-bottom: 0;
+        line-height: 1.7;
+      }
+
+      /* ===== TESTIMONIALS ===== */
+      .testi-card {
+        background: var(--white);
+        border-radius: var(--radius);
+        padding: 32px;
+        border: 1px solid var(--border);
+        transition: all 0.4s var(--ease);
+        height: 100%;
+        position: relative;
+      }
+      .testi-card:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-4px);
+        border-color: transparent;
+      }
+      .testi-stars {
+        color: #f59e0b;
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+      }
+      .testi-card p {
+        font-size: 0.92rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        font-style: italic;
+        color: var(--text);
+      }
+      .testi-author {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .testi-avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid var(--primary-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--bg-cream);
+        font-size: 1.2rem;
+        color: var(--primary);
+        font-family: var(--heading);
+        font-weight: 700;
+      }
+      .testi-author h6 {
+        font-family: var(--body);
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 2px;
+      }
+      .testi-author small {
+        font-size: 0.78rem;
+        color: var(--text-muted);
+      }
+      .testi-quote {
+        position: absolute;
+        top: 20px;
+        right: 24px;
+        font-size: 2.5rem;
+        color: var(--primary-accent);
+        opacity: 0.3;
+        font-family: var(--heading);
+        line-height: 1;
+      }
+
+      /* ===== FAQ ===== */
+      .faq-item {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        margin-bottom: 12px;
+        overflow: hidden;
+        transition: all 0.3s var(--ease);
+      }
+      .faq-item:hover {
+        border-color: var(--primary-light);
+      }
+      .faq-item.active {
+        border-color: var(--primary);
+        box-shadow: 0 4px 20px rgba(46, 125, 50, 0.08);
+      }
+      .faq-q {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 24px;
+        cursor: pointer;
+        gap: 16px;
+        transition: all 0.3s var(--ease);
+      }
+      .faq-q h5 {
+        font-family: var(--body);
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin-bottom: 0;
+        transition: color 0.3s;
+      }
+      .faq-item.active .faq-q h5 {
+        color: var(--primary);
+      }
+      .faq-q i {
+        font-size: 1.1rem;
+        color: var(--primary);
+        transition: transform 0.4s var(--ease);
+        flex-shrink: 0;
+      }
+      .faq-item.active .faq-q i {
+        transform: rotate(180deg);
+      }
+      .faq-a {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s var(--ease);
+      }
+      .faq-a-inner {
+        padding: 0 24px 20px;
+      }
+      .faq-a-inner p {
+        font-size: 0.88rem;
+        margin-bottom: 0;
+        line-height: 1.8;
+      }
+
+      /* ===== CTA ===== */
+      .cta-sec {
+        background: var(--gradient);
+        position: relative;
+        overflow: hidden;
+      }
+      .cta-sec::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -10%;
+        width: 500px;
+        height: 500px;
+        border: 3px solid rgba(255, 255, 255, 0.08);
+        border-radius: 50%;
+      }
+      .cta-sec::after {
+        content: "";
+        position: absolute;
+        bottom: -30%;
+        left: -5%;
+        width: 300px;
+        height: 300px;
+        border: 2px solid rgba(255, 255, 255, 0.06);
+        border-radius: 50%;
+      }
+      .cta-inner {
+        position: relative;
+        z-index: 1;
+      }
+      .cta-inner h2 {
+        font-size: 2.75rem;
+        color: var(--white);
+        margin-bottom: 1rem;
+      }
+      .cta-inner p {
+        font-size: 1.05rem;
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 600px;
+        margin-bottom: 2rem;
+      }
+
+      /* ===== CONTACT ===== */
+      .ci-wrap {
+        position: relative;
+      }
+      .ci-wrap::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--gradient);
+        border-radius: 10px;
+      }
+      .ci-card {
+        background: var(--bg-cream);
+        border-radius: var(--radius);
+        padding: 22px 22px 22px 28px;
+        display: flex;
+        align-items: flex-start;
+        gap: 18px;
+        transition: all 0.3s var(--ease);
+        border: 1px solid transparent;
+        margin-bottom: 16px;
+      }
+      .ci-card:hover {
+        background: var(--white);
+        box-shadow: var(--shadow-md);
+        transform: translateX(5px);
+        border-color: var(--border);
+      }
+      .ci-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        background: var(--white);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        color: var(--primary);
+        transition: all 0.3s var(--ease);
+        box-shadow: var(--shadow-soft);
+      }
+      .ci-card:hover .ci-icon {
+        background: var(--gradient);
+        color: var(--white);
+      }
+      .ci-card h5 {
+        font-family: var(--body);
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      .ci-card p {
+        font-size: 0.85rem;
+        margin-bottom: 0;
+        line-height: 1.7;
+      }
+      .cf-wrap {
+        background: var(--white);
+        border-radius: var(--radius-lg);
+        padding: 40px;
+        box-shadow: var(--shadow-md);
+        border: 1px solid var(--border);
+      }
+      .cf-head {
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 24px;
+      }
+      .cf-head h4 {
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+      }
+      .cf-head p {
+        font-size: 0.88rem;
+        margin-bottom: 0;
+      }
+      .cf-wrap .form-label {
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 8px;
+      }
+      .ig-custom {
+        position: relative;
+      }
+      .ig-icon {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        z-index: 5;
+        transition: color 0.3s;
+        pointer-events: none;
+      }
+      .ig-custom:has(textarea) .ig-icon {
+        top: 20px;
+        transform: none;
+      }
+      .fc-custom {
+        border: 2px solid var(--border);
+        border-radius: 12px;
+        padding: 14px 20px 14px 46px;
+        font-family: var(--body);
+        font-size: 0.9rem;
+        color: var(--text);
+        transition: all 0.3s var(--ease);
+        background: var(--white);
+        width: 100%;
+      }
+      .fc-custom:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.08);
+        outline: none;
+      }
+      .ig-custom:focus-within .ig-icon {
+        color: var(--primary);
+      }
+      .cf-wrap .form-select.fc-custom {
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236B7280' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        padding-right: 40px;
+      }
+
+      /* ===== FOOTER ===== */
+      .foot {
+        background: var(--dark);
+        color: rgba(255, 255, 255, 0.65);
+      }
+      .foot-brand {
+        font-family: var(--heading);
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 18px;
+        display: inline-block;
+      }
+      .foot-brand b {
+        color: var(--primary-light);
+        font-weight: 800;
+      }
+      .foot p {
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 0.9rem;
+      }
+      .foot h5 {
+        font-family: var(--body);
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--white);
+        margin-bottom: 22px;
+        position: relative;
+        padding-bottom: 12px;
+      }
+      .foot h5::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background: var(--gradient);
+        border-radius: 10px;
+      }
+      .foot-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .foot-links li {
+        margin-bottom: 10px;
+      }
+      .foot-links a {
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 0.88rem;
+        transition: all 0.3s var(--ease);
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .foot-links a:hover {
+        color: var(--primary-light);
+        padding-left: 5px;
+      }
+      .foot-soc {
+        display: flex;
+        gap: 10px;
+        margin-top: 22px;
+      }
+      .foot-soc a {
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.95rem;
+        transition: all 0.3s var(--ease);
+      }
+      .foot-soc a:hover {
+        background: var(--gradient);
+        border-color: transparent;
+        color: var(--white);
+        transform: translateY(-3px);
+      }
+      .foot-bot {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 24px 0;
+        margin-top: 55px;
+      }
+      .foot-bot p {
+        font-size: 0.82rem;
+        margin-bottom: 0;
+      }
+
+      /* ===== FLOATING ===== */
+      .float-wa {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 58px;
+        height: 58px;
+        background: #25d366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: 1.6rem;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        z-index: 999;
+        transition: all 0.3s var(--ease);
+        animation: waPulse 2s infinite;
+      }
+      .float-wa:hover {
+        transform: scale(1.1);
+        color: var(--white);
+      }
+      @keyframes waPulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+        }
+        70% {
+          box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        }
+      }
+      .float-call {
+        position: fixed;
+        bottom: 98px;
+        right: 32px;
+        width: 50px;
+        height: 50px;
+        background: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: 1.3rem;
+        box-shadow: 0 4px 18px rgba(46, 125, 50, 0.35);
+        z-index: 999;
+        transition: all 0.3s var(--ease);
+      }
+      .float-call:hover {
+        transform: scale(1.1);
+        color: var(--white);
+        background: var(--primary-dark);
+      }
+      .btt {
+        position: fixed;
+        bottom: 160px;
+        right: 35px;
+        width: 42px;
+        height: 42px;
+        background: var(--white);
+        border: 2px solid var(--border);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary);
+        font-size: 1rem;
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s var(--ease);
+        box-shadow: var(--shadow-soft);
+      }
+      .btt.on {
+        opacity: 1;
+        visibility: visible;
+      }
+      .btt:hover {
+        background: var(--gradient);
+        border-color: transparent;
+        color: var(--white);
+        transform: translateY(-3px);
+      }
+      .toast-msg {
+        position: fixed;
+        top: 100px;
+        right: 30px;
+        background: var(--white);
+        border-radius: var(--radius);
+        padding: 18px 28px;
+        box-shadow: var(--shadow-lg);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        transform: translateX(120%);
+        transition: transform 0.5s var(--ease);
+        border-left: 4px solid var(--primary);
+      }
+      .toast-msg.show {
+        transform: translateX(0);
+      }
+      .toast-msg i {
+        color: var(--primary);
+        font-size: 1.3rem;
+      }
+      .toast-msg span {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: var(--text);
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 1199px) {
+        .hero h1 {
+          font-size: 3.5rem;
+        }
+        .section-heading {
+          font-size: 2.75rem;
+        }
+        .icon-intro-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 991px) {
+        .hero h1 {
+          font-size: 3rem;
+        }
+        .section-heading {
+          font-size: 2.25rem;
+        }
+        .section-pad {
+          padding: 80px 0;
+        }
+        .ci-wrap::before {
+          display: none;
+        }
+        .cf-wrap {
+          padding: 30px 24px;
+        }
+      }
+      @media (max-width: 767px) {
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+        .section-heading {
+          font-size: 2rem;
+        }
+        .section-pad {
+          padding: 60px 0;
+        }
+        .hero-stats-bar {
+          flex-direction: column;
+          gap: 0;
+        }
+        .hsb-item {
+          border-right: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          padding: 14px 0;
+        }
+        .hsb-item:last-child {
+          border-bottom: none;
+        }
+        .hsb-item h3 {
+          font-size: 1.8rem;
+        }
+        .proj-img {
+          height: 280px;
+        }
+        .cta-inner h2 {
+          font-size: 2rem;
+        }
+        .cf-wrap {
+          padding: 24px 18px;
+        }
+        .icon-intro-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 16px;
+        }
+        .process-line {
+          padding-left: 50px;
+        }
+        .process-line::before {
+          left: 18px;
+        }
+        .proc-dot {
+          left: -50px;
+          width: 40px;
+          height: 40px;
+          font-size: 1rem;
+        }
+      }
+      @media (max-width: 575px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+        .section-heading {
+          font-size: 1.75rem;
+        }
+        .hero-actions {
+          flex-direction: column;
+        }
+        .hero-actions .btn {
+          width: 100%;
+          justify-content: center;
+        }
+        .hero-sub {
+          font-size: 0.95rem;
+        }
+        .icon-intro-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ===== NAVBAR ==-->
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="nav">
+      <div class="container">
+        <a class="navbar-brand" href="#hero">DH <b>Construction</b></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about/about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="../services/All_services.html">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><span class="dd-title">Construction</span></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../services/Buliding_Construction.html"
+                    ><i class="bi bi-building"></i>
+                    <div>
+                      <div>Building Construction</div>
+                      <div class="dd-desc">
+                        Residential, Commercial & Industrial
+                      </div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../services/Building_rennovation.html"
+                    ><i class="bi bi-arrow-repeat"></i>
+                    <div>
+                      <div>Building Renovation</div>
+                      <div class="dd-desc">Remodeling & Makeover</div>
+                    </div></a
+                  >
+                </li>
+                <li class="dd-divider"></li>
+                <li><span class="dd-title">Interior & Fit-Out</span></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../services/interior_designs.html"
+                    ><i class="bi bi-lamp-desk"></i>
+                    <div>
+                      <div>Interior Design & Fit-Out</div>
+                      <div class="dd-desc">Homes, Offices & Retail</div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../services/Infrastructure.html"
+                    ><i class="bi bi-person-workspace"></i>
+                    <div>
+                      <div>Office Infrastructure</div>
+                      <div class="dd-desc">Complete Office Setup</div>
+                    </div></a
+                  >
+                </li>
+                <li class="dd-divider"></li>
+                <li><span class="dd-title">Specialized Works</span></li>
+                <li>
+                  <a class="dropdown-item" href="../services/Glass.html"
+                    ><i class="bi bi-columns-gap"></i>
+                    <div>
+                      <div>Glass & Gypsum Partitions</div>
+                      <div class="dd-desc">Frameless, Framed & Acoustic</div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../services/falseceling.html"
+                    ><i class="bi bi-arrows-fullscreen"></i>
+                    <div>
+                      <div>False Ceiling & Painting</div>
+                      <div class="dd-desc">Gypsum, POP & Premium Paints</div>
+                    </div></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Projects/projects.html">Projects</a>
+              <!-- </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li> -->
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../Contact/contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a
+                class="btn-main btn-sm"
+                href="tel:+919042356696"
+                style="padding: 10px 24px; font-size: 0.85rem"
+                >Get Quote</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HERO — With Renovation Image ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=1920&q=80"
+          alt="Building Renovation"
+        />
+      </div>
+      <div class="hero-grid"></div>
+      <div class="hero-grad"></div>
+      <div class="hero-sweep"></div>
+      <div class="hero-shapes">
+        <div class="hero-shape hs-1"></div>
+        <div class="hero-shape hs-2"></div>
+        <div class="hero-shape hs-3"></div>
+        <div class="hero-shape hs-4"></div>
+        <div class="hero-shape hs-5"></div>
+      </div>
+      <canvas id="heroCanvas"></canvas>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="hero-content">
+              <div class="hero-tag">
+                <i class="bi bi-tools"></i
+                ><span>Expert Renovation Services in Chennai</span>
+              </div>
+              <h1>
+                <span class="line"
+                  ><span class="line-in">Transform Your Space</span></span
+                >
+                <span class="line"
+                  ><span class="line-in"
+                    >with Expert <em>Renovation</em></span
+                  ></span
+                >
+                <span class="line"
+                  ><span class="line-in">& <em>Remodeling</em></span></span
+                >
+              </h1>
+              <p class="hero-sub">
+                Breathe new life into your existing property. From kitchens and
+                bathrooms to complete home makeovers — we handle every detail
+                with precision, creativity, and 15+ years of expertise.
+              </p>
+              <div class="hero-actions">
+                <a href="tel:+919042356696" class="btn-main"
+                  ><i class="bi bi-telephone"></i> Call: 90423 56696</a
+                >
+                <a
+                  href="https://wa.me/919042356696"
+                  target="_blank"
+                  class="btn-ghost"
+                  ><i class="bi bi-whatsapp"></i> WhatsApp Us</a
+                >
+              </div>
+              <div class="hero-stats-bar">
+                <div class="hsb-item">
+                  <h3>200<span>+</span></h3>
+                  <p>Renovations</p>
+                </div>
+                <div class="hsb-item">
+                  <h3>15<span>+</span></h3>
+                  <p>Years Exp.</p>
+                </div>
+                <div class="hsb-item">
+                  <h3>98<span>%</span></h3>
+                  <p>Satisfaction</p>
+                </div>
+                <div class="hsb-item">
+                  <h3>100<span>%</span></h3>
+                  <p>On-Time</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ICON INTRO — What We Renovate ===== -->
+    <section class="section-pad" id="about">
+      <div class="container">
+        <div class="text-center mb-5 fade-up">
+          <div class="overline justify-content-center">What We Renovate</div>
+          <h2 class="section-heading">Complete Renovation Solutions</h2>
+          <p class="section-desc mx-auto">
+            Whether it's a single room or an entire building, we bring your
+            renovation vision to life with expert craftsmanship.
+          </p>
+        </div>
+        <div class="icon-intro-grid">
+          <div class="ii-card fade-up fd1">
+            <div class="ii-icon"><i class="bi bi-house-heart"></i></div>
+            <h5>Complete Home Renovation</h5>
+            <p>
+              Full-scale home remodeling from structure to finishing touches
+            </p>
+          </div>
+          <div class="ii-card fade-up fd2">
+            <div class="ii-icon"><i class="bi bi-cup-hot"></i></div>
+            <h5>Kitchen Renovation</h5>
+            <p>Modern kitchens with modular cabinets, countertops & fixtures</p>
+          </div>
+          <div class="ii-card fade-up fd3">
+            <div class="ii-icon"><i class="bi bi-droplet-half"></i></div>
+            <h5>Bathroom Renovation</h5>
+            <p>Stylish bathrooms with tiles, sanitary ware & plumbing</p>
+          </div>
+          <div class="ii-card fade-up fd4">
+            <div class="ii-icon"><i class="bi bi-building"></i></div>
+            <h5>Commercial Renovation</h5>
+            <p>Office, retail & restaurant remodeling and upgrades</p>
+          </div>
+          <div class="ii-card fade-up fd5">
+            <div class="ii-icon"><i class="bi bi-palette"></i></div>
+            <h5>Interior Redesign</h5>
+            <p>
+              Fresh interiors with false ceiling, painting & wall treatments
+            </p>
+          </div>
+          <div class="ii-card fade-up fd5">
+            <div class="ii-icon"><i class="bi bi-grid-3x3-gap"></i></div>
+            <h5>Flooring & Tiling</h5>
+            <p>Vinyl, vitrified, granite & marble flooring solutions</p>
+          </div>
+          <div class="ii-card fade-up fd6">
+            <div class="ii-icon"><i class="bi bi-lamp"></i></div>
+            <h5>Electrical & Plumbing</h5>
+            <p>Complete rewiring, plumbing overhaul & fixture upgrades</p>
+          </div>
+          <div class="ii-card fade-up fd7">
+            <div class="ii-icon"><i class="bi bi-door-open"></i></div>
+            <h5>Doors & Windows</h5>
+            <p>Replacement with UPVC, aluminum, teak wood & safety doors</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RENOVATION SERVICES (Detailed Icon Cards) ===== -->
+    <section
+      class="section-pad-sm"
+      id="services"
+      style="background: var(--bg-cream)"
+    >
+      <div class="container">
+        <div class="text-center mb-5 fade-up">
+          <div class="overline justify-content-center">Our Expertise</div>
+          <h2 class="section-heading">Renovation Services in Detail</h2>
+          <p class="section-desc mx-auto">
+            Every renovation need covered under one roof — with skilled
+            professionals and premium materials.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6 fade-up fd1">
+            <div class="rs-card">
+              <div class="rs-icon"><i class="bi bi-house-door"></i></div>
+              <h4>Full Home Renovation</h4>
+              <p>
+                Complete transformation of your existing home — structural
+                changes, new layouts, modern finishes, and everything in
+                between.
+              </p>
+              <ul class="rs-features">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Structural
+                  modifications & wall changes
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Complete rewiring &
+                  plumbing
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> New flooring, painting
+                  & ceilings
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Door & window
+                  replacement
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 fade-up fd2">
+            <div class="rs-card">
+              <div class="rs-icon"><i class="bi bi-egg-fried"></i></div>
+              <h4>Kitchen Remodeling</h4>
+              <p>
+                Design and build your dream kitchen with modern modular systems,
+                efficient storage, and premium finishes.
+              </p>
+              <ul class="rs-features">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Modular kitchen
+                  cabinets & shutters
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Granite & quartz
+                  countertops
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Chimney, hob & sink
+                  installation
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Tile backsplash &
+                  lighting
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 fade-up fd3">
+            <div class="rs-card">
+              <div class="rs-icon"><i class="bi bi-shower"></i></div>
+              <h4>Bathroom Makeover</h4>
+              <p>
+                Turn your old bathroom into a spa-like retreat with modern
+                fixtures, waterproofing, and elegant tile work.
+              </p>
+              <ul class="rs-features">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Complete waterproofing
+                  solutions
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Designer wall & floor
+                  tiles
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Sanitary ware &
+                  fittings upgrade
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Shower enclosures &
+                  glass partitions
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 fade-up fd4">
+            <div class="rs-card">
+              <div class="rs-icon"><i class="bi bi-building-gear"></i></div>
+              <h4>Commercial Renovation</h4>
+              <p>
+                Upgrade your office, retail space, or restaurant to create a
+                modern, productive, and customer-friendly environment.
+              </p>
+              <ul class="rs-features">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Office layout redesign
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Glass & gypsum
+                  partitions
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> False ceiling &
+                  lighting systems
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Reception & facade
+                  renovation
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RENOVATION TYPES (Horizontal Icon Cards) ===== -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 fade-up">
+            <div class="overline">Specialized Work</div>
+            <h2 class="section-heading">Additional Renovation Services</h2>
+            <p class="section-desc">
+              Beyond full renovations, we offer specialized services to upgrade
+              specific areas of your property with precision and care.
+            </p>
+            <a href="#contact" class="btn-outline mt-3"
+              ><i class="bi bi-chat-dots"></i> Discuss Your Needs</a
+            >
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-md-6 fade-up fd1">
+                <div class="rt-card">
+                  <div class="rt-icon"><i class="bi bi-layers"></i></div>
+                  <div>
+                    <h5>False Ceiling</h5>
+                    <p>
+                      POP, gypsum & modern ceiling designs with integrated
+                      lighting
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 fade-up fd2">
+                <div class="rt-card">
+                  <div class="rt-icon"><i class="bi bi-brush"></i></div>
+                  <div>
+                    <h5>Painting & Wall Work</h5>
+                    <p>
+                      Texture painting, wall putty, wallpapers & accent walls
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 fade-up fd3">
+                <div class="rt-card">
+                  <div class="rt-icon"><i class="bi bi-columns-gap"></i></div>
+                  <div>
+                    <h5>Partitions & Dividers</h5>
+                    <p>
+                      Glass, gypsum & wooden partitions for space optimization
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 fade-up fd4">
+                <div class="rt-card">
+                  <div class="rt-icon"><i class="bi bi-lightning"></i></div>
+                  <div>
+                    <h5>Electrical Upgrades</h5>
+                    <p>
+                      Rewiring, panel upgrades, LED lighting & smart switches
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 fade-up fd5">
+                <div class="rt-card">
+                  <div class="rt-icon"><i class="bi bi-water"></i></div>
+                  <div>
+                    <h5>Plumbing Overhaul</h5>
+                    <p>
+                      Pipe replacement, water heater installation & drainage
+                      fixes
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 fade-up fd6">
+                <div class="rt-card">
+                  <div class="rt-icon"><i class="bi bi-front"></i></div>
+                  <div>
+                    <h5>Exterior Facelift</h5>
+                    <p>
+                      Exterior painting, cladding, compound wall & elevation
+                      work
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RENOVATION PROCESS (Timeline) ===== -->
+    <section
+      class="section-pad-sm"
+      id="process"
+      style="background: var(--bg-cream)"
+    >
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5 fade-up">
+            <div class="overline">How We Work</div>
+            <h2 class="section-heading">Our Renovation Process</h2>
+            <p class="section-desc mb-4">
+              A structured, transparent process that keeps you informed at every
+              stage — from the first consultation to the final handover.
+            </p>
+            <div
+              class="d-flex align-items-center gap-3 p-3 rounded-3"
+              style="background: var(--white); border: 1px solid var(--border)"
+            >
+              <div
+                style="
+                  width: 48px;
+                  height: 48px;
+                  min-width: 48px;
+                  background: var(--gradient);
+                  border-radius: 12px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--white);
+                  font-size: 1.2rem;
+                "
+              >
+                <i class="bi bi-calendar-check"></i>
+              </div>
+              <div>
+                <h6
+                  style="
+                    font-family: var(--body);
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Average Timeline
+                </h6>
+                <p style="font-size: 0.82rem; margin-bottom: 0">
+                  15–45 days depending on scope & complexity
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 fade-up fd2">
+            <div class="process-line">
+              <div class="proc-step">
+                <div class="proc-dot"><i class="bi bi-chat-left-text"></i></div>
+                <h5>1. Consultation & Assessment</h5>
+                <p>
+                  We visit your property, understand your requirements, assess
+                  the current condition, and discuss your vision, budget, and
+                  timeline expectations.
+                </p>
+              </div>
+              <div class="proc-step">
+                <div class="proc-dot"><i class="bi bi-rulers"></i></div>
+                <h5>2. Detailed Estimation & Planning</h5>
+                <p>
+                  We provide a comprehensive, transparent cost breakdown with
+                  material specifications, work scope, and a detailed project
+                  schedule — no hidden charges.
+                </p>
+              </div>
+              <div class="proc-step">
+                <div class="proc-dot"><i class="bi bi-palette2"></i></div>
+                <h5>3. Design & Material Selection</h5>
+                <p>
+                  Our design team helps you choose finishes, colors, materials,
+                  and layouts. We source premium materials from trusted
+                  suppliers at the best prices.
+                </p>
+              </div>
+              <div class="proc-step">
+                <div class="proc-dot"><i class="bi bi-hammer"></i></div>
+                <h5>4. Execution & Renovation Work</h5>
+                <p>
+                  Our skilled team carries out all demolition, civil,
+                  electrical, plumbing, finishing, and installation work with
+                  strict quality checks at every stage.
+                </p>
+              </div>
+              <div class="proc-step">
+                <div class="proc-dot">
+                  <i class="bi bi-clipboard-check"></i>
+                </div>
+                <h5>5. Quality Inspection & Handover</h5>
+                <p>
+                  Final walkthrough with you, punch list completion, cleaning,
+                  and handover with a satisfaction guarantee and post-project
+                  support.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS — With Renovation Images ===== -->
+    <section class="section-pad" id="projects">
+      <div class="container">
+        <div class="text-center mb-5 fade-up">
+          <div class="overline justify-content-center">Portfolio</div>
+          <h2 class="section-heading">Renovation Projects</h2>
+          <p class="section-desc mx-auto">
+            Real transformations we've delivered — see the before-and-after
+            difference in our work.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6 fade-up fd1">
+            <div class="proj-card">
+              <div class="proj-img" style="height: 400px">
+                <img
+                  src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80"
+                  alt="Kitchen Renovation"
+                />
+                <div class="proj-overlay">
+                  <span class="proj-cat">Kitchen</span>
+                  <h4>Complete Kitchen Remodel — Pallavaram</h4>
+                  <div class="proj-meta">
+                    <span
+                      ><i class="bi bi-arrows-angle-expand"></i> 180 sq ft</span
+                    >
+                    <span><i class="bi bi-clock"></i> 20 Days</span>
+                    <span><i class="bi bi-tag"></i> ₹4.5 Lakhs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 fade-up fd2">
+            <div class="proj-card">
+              <div class="proj-img" style="height: 400px">
+                <img
+                  src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80"
+                  alt="Bathroom Renovation"
+                />
+                <div class="proj-overlay">
+                  <span class="proj-cat">Bathroom</span>
+                  <h4>Luxury Bathroom Makeover — Tambaram</h4>
+                  <div class="proj-meta">
+                    <span
+                      ><i class="bi bi-arrows-angle-expand"></i> 65 sq ft</span
+                    >
+                    <span><i class="bi bi-clock"></i> 12 Days</span>
+                    <span><i class="bi bi-tag"></i> ₹1.8 Lakhs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 fade-up fd3">
+            <div class="proj-card">
+              <div class="proj-img">
+                <img
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80"
+                  alt="Home Renovation"
+                />
+                <div class="proj-overlay">
+                  <span class="proj-cat">Full Home</span>
+                  <h4>Complete Home Renovation — Chengalpattu</h4>
+                  <div class="proj-meta">
+                    <span
+                      ><i class="bi bi-arrows-angle-expand"></i> 1,800 sq
+                      ft</span
+                    ><span><i class="bi bi-clock"></i> 45 Days</span
+                    ><span><i class="bi bi-tag"></i> ₹18 Lakhs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 fade-up fd4">
+            <div class="proj-card">
+              <div class="proj-img">
+                <img
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
+                  alt="Office Renovation"
+                />
+                <div class="proj-overlay">
+                  <span class="proj-cat">Commercial</span>
+                  <h4>Office Renovation — Velachery</h4>
+                  <div class="proj-meta">
+                    <span
+                      ><i class="bi bi-arrows-angle-expand"></i> 3,200 sq
+                      ft</span
+                    ><span><i class="bi bi-clock"></i> 30 Days</span
+                    ><span><i class="bi bi-tag"></i> ₹12 Lakhs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 fade-up fd5">
+            <div class="proj-card">
+              <div class="proj-img">
+                <img
+                  src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80"
+                  alt="Interior Renovation"
+                />
+                <div class="proj-overlay">
+                  <span class="proj-cat">Interior</span>
+                  <h4>Living Room Redesign — Chromepet</h4>
+                  <div class="proj-meta">
+                    <span
+                      ><i class="bi bi-arrows-angle-expand"></i> 400 sq ft</span
+                    ><span><i class="bi bi-clock"></i> 15 Days</span
+                    ><span><i class="bi bi-tag"></i> ₹3.5 Lakhs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US (Icons) ===== -->
+    <section
+      class="section-pad-sm"
+      id="why-us"
+      style="background: var(--bg-cream)"
+    >
+      <div class="container">
+        <div class="text-center mb-5 fade-up">
+          <div class="overline justify-content-center">Why Choose Us</div>
+          <h2 class="section-heading">The DH Renovation Advantage</h2>
+          <p class="section-desc mx-auto">
+            What sets us apart from other renovation contractors in Chennai.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-4 col-6 fade-up fd1">
+            <div class="wu-card">
+              <div class="wu-icon"><i class="bi bi-people-fill"></i></div>
+              <h5>Expert Team</h5>
+              <p>Skilled masons, electricians, plumbers & painters</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 fade-up fd2">
+            <div class="wu-card">
+              <div class="wu-icon"><i class="bi bi-file-earmark-text"></i></div>
+              <h5>Detailed Quote</h5>
+              <p>Itemized estimation — no surprises later</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 fade-up fd3">
+            <div class="wu-card">
+              <div class="wu-icon"><i class="bi bi-clock-history"></i></div>
+              <h5>On-Time Delivery</h5>
+              <p>Strict timeline adherence on every project</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 fade-up fd4">
+            <div class="wu-card">
+              <div class="wu-icon"><i class="bi bi-shield-check"></i></div>
+              <h5>Quality Guarantee</h5>
+              <p>Post-handover support & warranty on work</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 fade-up fd5">
+            <div class="wu-card">
+              <div class="wu-icon"><i class="bi bi-clean"></i></div>
+              <h5>Clean Worksite</h5>
+              <p>Daily cleanup & organized material storage</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 fade-up fd5">
+            <div class="wu-card">
+              <div class="wu-icon"><i class="bi bi-camera-video"></i></div>
+              <h5>Daily Updates</h5>
+              <p>Photo/video progress reports via WhatsApp</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 fade-up fd6">
+            <div class="wu-card">
+              <div class="wu-icon"><i class="bi bi-piggy-bank"></i></div>
+              <h5>Budget Friendly</h5>
+              <p>Options for every budget without quality loss</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 fade-up fd7">
+            <div class="wu-card">
+              <div class="wu-icon"><i class="bi bi-headset"></i></div>
+              <h5>Single Point Contact</h5>
+              <p>Dedicated project manager for communication</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section-pad" id="testimonials">
+      <div class="container">
+        <div class="text-center mb-5 fade-up">
+          <div class="overline justify-content-center">Client Reviews</div>
+          <h2 class="section-heading">What Our Clients Say</h2>
+          <p class="section-desc mx-auto">
+            Hear from homeowners and businesses who trusted us with their
+            renovation projects.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 fade-up fd1">
+            <div class="testi-card">
+              <div class="testi-quote">"</div>
+              <div class="testi-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                We got our 20-year-old kitchen completely renovated. The modular
+                cabinets and granite countertop look amazing. DH team was
+                professional and finished in just 18 days!
+              </p>
+              <div class="testi-author">
+                <div class="testi-avatar">RK</div>
+                <div>
+                  <h6>Revathi Krishnan</h6>
+                  <small>Kitchen Renovation, Pallavaram</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 fade-up fd2">
+            <div class="testi-card">
+              <div class="testi-quote">"</div>
+              <div class="testi-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                Complete office renovation with glass partitions and false
+                ceiling. Very clean work, daily WhatsApp updates, and they
+                delivered 2 days before the deadline. Highly recommend!
+              </p>
+              <div class="testi-author">
+                <div class="testi-avatar">AM</div>
+                <div>
+                  <h6>Arun Mohan</h6>
+                  <small>Office Renovation, Tambaram</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 fade-up fd3">
+            <div class="testi-card">
+              <div class="testi-quote">"</div>
+              <div class="testi-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"></i>
+              </div>
+              <p>
+                Two bathrooms and the living room were renovated. The tile work
+                and waterproofing were excellent. Transparent pricing with no
+                hidden costs — exactly what they quoted.
+              </p>
+              <div class="testi-author">
+                <div class="testi-avatar">DS</div>
+                <div>
+                  <h6>Deepa Suresh</h6>
+                  <small>Home Renovation, Chengalpattu</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section
+      class="section-pad-sm"
+      id="faq"
+      style="background: var(--bg-cream)"
+    >
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5 fade-up">
+            <div class="overline">Common Questions</div>
+            <h2 class="section-heading">Frequently Asked Questions</h2>
+            <p class="section-desc mb-4">
+              Got questions about your renovation project? Here are answers to
+              the most common ones we hear from our clients.
+            </p>
+            <a href="#contact" class="btn-outline"
+              ><i class="bi bi-chat-dots"></i> Still Have Questions?</a
+            >
+          </div>
+          <div class="col-lg-7 fade-up fd2">
+            <div class="faq-item active">
+              <div class="faq-q">
+                <h5>How much does a home renovation cost in Chennai?</h5>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a" style="max-height: 200px">
+                <div class="faq-a-inner">
+                  <p>
+                    It depends on the scope and materials chosen. A basic
+                    bathroom renovation starts from ₹60,000, a kitchen from ₹1.5
+                    lakhs, and full home renovation from ₹8–10 lakhs. We provide
+                    a detailed, itemized quote after a free site visit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                <h5>How long does a typical renovation take?</h5>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  <p>
+                    Bathroom renovations take 10–15 days, kitchen remodeling
+                    15–25 days, and complete home renovation 30–60 days
+                    depending on the area and complexity. We commit to a
+                    timeline upfront and stick to it.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                <h5>Do I need to vacate my home during renovation?</h5>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  <p>
+                    Not always. For single-room renovations (kitchen or
+                    bathroom), you can stay. For full home renovation involving
+                    electrical and plumbing overhaul, we recommend temporary
+                    relocation for safety and convenience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                <h5>Do you handle permits and approvals?</h5>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  <p>
+                    Yes, for renovations involving structural changes, we guide
+                    you through the necessary approvals from the local
+                    municipality or panchayat. For interior-only work, permits
+                    are typically not required.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                <h5>What materials do you use? Can I choose my own?</h5>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  <p>
+                    We use premium-grade materials from trusted brands. You're
+                    absolutely welcome to choose your own materials, tiles,
+                    fixtures, and finishes — we'll source them at the best
+                    prices and handle all procurement.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                <h5>Do you provide a warranty on renovation work?</h5>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  <p>
+                    Yes, we provide a workmanship warranty of 1–2 years
+                    depending on the type of work. Waterproofing carries a
+                    separate manufacturer warranty. We also offer post-handover
+                    support for any issues.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-sec section-pad">
+      <div class="container">
+        <div class="cta-inner text-center fade-up">
+          <h2>Ready to Transform Your Space?</h2>
+          <p>
+            Get a free site visit, detailed assessment, and transparent quote —
+            no obligations, just honest renovation advice from experts.
+          </p>
+          <div class="d-flex gap-3 justify-content-center flex-wrap">
+            <a href="tel:+919042356696" class="btn-white"
+              ><i class="bi bi-telephone-fill"></i> Call: 90423 56696</a
+            >
+            <a
+              href="https://wa.me/919042356696"
+              target="_blank"
+              class="btn-ghost"
+              ><i class="bi bi-whatsapp"></i> WhatsApp Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AREAS WE SERVE ===== -->
+    <section class="section-pad-sm">
+      <div class="container">
+        <div class="text-center mb-4 fade-up">
+          <div class="overline justify-content-center">Coverage</div>
+          <h2 class="section-heading">Renovation Areas We Serve</h2>
+          <p class="section-desc mx-auto">
+            Expert renovation services across Chennai and surrounding areas.
+          </p>
+        </div>
+        <div class="d-flex flex-wrap gap-3 justify-content-center fade-up">
+          <span
+            class="area-pill"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 6px;
+              padding: 10px 20px;
+              background: var(--bg-cream);
+              border: 1px solid var(--border);
+              border-radius: var(--radius-xl);
+              font-size: 0.82rem;
+              color: var(--text);
+              font-weight: 500;
+              transition: all 0.3s var(--ease);
+              cursor: default;
+            "
+            ><i
+              class="bi bi-geo-alt-fill"
+              style="color: var(--primary); font-size: 0.7rem"
+            ></i>
+            Pallavaram</span
+          >
+          <span
+            class="area-pill"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 6px;
+              padding: 10px 20px;
+              background: var(--bg-cream);
+              border: 1px solid var(--border);
+              border-radius: var(--radius-xl);
+              font-size: 0.82rem;
+              color: var(--text);
+              font-weight: 500;
+              transition: all 0.3s var(--ease);
+              cursor: default;
+            "
+            ><i
+              class="bi bi-geo-alt-fill"
+              style="color: var(--primary); font-size: 0.7rem"
+            ></i>
+            Tambaram</span
+          >
+          <span
+            class="area-pill"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 6px;
+              padding: 10px 20px;
+              background: var(--bg-cream);
+              border: 1px solid var(--border);
+              border-radius: var(--radius-xl);
+              font-size: 0.82rem;
+              color: var(--text);
+              font-weight: 500;
+              transition: all 0.3s var(--ease);
+              cursor: default;
+            "
+            ><i
+              class="bi bi-geo-alt-fill"
+              style="color: var(--primary); font-size: 0.7rem"
+            ></i>
+            Chengalpattu</span
+          >
+          <span
+            class="area-pill"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 6px;
+              padding: 10px 20px;
+              background: var(--bg-cream);
+              border: 1px solid var(--border);
+              border-radius: var(--radius-xl);
+              font-size: 0.82rem;
+              color: var(--text);
+              font-weight: 500;
+              transition: all 0.3s var(--ease);
+              cursor: default;
+            "
+            ><i
+              class="bi bi-geo-alt-fill"
+              style="color: var(--primary); font-size: 0.7rem"
+            ></i>
+            Chromepet</span
+          >
+          <span
+            class="area-pill"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 6px;
+              padding: 10px 20px;
+              background: var(--bg-cream);
+              border: 1px solid var(--border);
+              border-radius: var(--radius-xl);
+              font-size: 0.82rem;
+              color: var(--text);
+              font-weight: 500;
+              transition: all 0.3s var(--ease);
+              cursor: default;
+            "
+            ><i
+              class="bi bi-geo-alt-fill"
+              style="color: var(--primary); font-size: 0.7rem"
+            ></i>
+            Velachery</span
+          >
+          <span
+            class="area-pill"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 6px;
+              padding: 10px 20px;
+              background: var(--bg-cream);
+              border: 1px solid var(--border);
+              border-radius: var(--radius-xl);
+              font-size: 0.82rem;
+              color: var(--text);
+              font-weight: 500;
+              transition: all 0.3s var(--ease);
+              cursor: default;
+            "
+            ><i
+              class="bi bi-geo-alt-fill"
+              style="color: var(--primary); font-size: 0.7rem"
+            ></i>
+            Kanchipuram</span
+          >
+          <span
+            class="area-pill"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 6px;
+              padding: 10px 20px;
+              background: var(--bg-cream);
+              border: 1px solid var(--border);
+              border-radius: var(--radius-xl);
+              font-size: 0.82rem;
+              color: var(--text);
+              font-weight: 500;
+              transition: all 0.3s var(--ease);
+              cursor: default;
+            "
+            ><i
+              class="bi bi-geo-alt-fill"
+              style="color: var(--primary); font-size: 0.7rem"
+            ></i>
+            Vandalur</span
+          >
+          <span
+            class="area-pill"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 6px;
+              padding: 10px 20px;
+              background: var(--bg-cream);
+              border: 1px solid var(--border);
+              border-radius: var(--radius-xl);
+              font-size: 0.82rem;
+              color: var(--text);
+              font-weight: 500;
+              transition: all 0.3s var(--ease);
+              cursor: default;
+            "
+            ><i
+              class="bi bi-geo-alt-fill"
+              style="color: var(--primary); font-size: 0.7rem"
+            ></i>
+            Mudichur</span
+          >
+          <span
+            class="area-pill"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 6px;
+              padding: 10px 20px;
+              background: var(--bg-cream);
+              border: 1px solid var(--border);
+              border-radius: var(--radius-xl);
+              font-size: 0.82rem;
+              color: var(--text);
+              font-weight: 500;
+              transition: all 0.3s var(--ease);
+              cursor: default;
+            "
+            ><i
+              class="bi bi-geo-alt-fill"
+              style="color: var(--primary); font-size: 0.7rem"
+            ></i>
+            Perungalathur</span
+          >
+          <span
+            class="area-pill"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 6px;
+              padding: 10px 20px;
+              background: var(--bg-cream);
+              border: 1px solid var(--border);
+              border-radius: var(--radius-xl);
+              font-size: 0.82rem;
+              color: var(--text);
+              font-weight: 500;
+              transition: all 0.3s var(--ease);
+              cursor: default;
+            "
+            ><i
+              class="bi bi-geo-alt-fill"
+              style="color: var(--primary); font-size: 0.7rem"
+            ></i>
+            Chennai City</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section
+      class="section-pad"
+      id="contact"
+      style="background: var(--bg-cream)"
+    >
+      <div class="container">
+        <div class="text-center mb-5 fade-up">
+          <div class="overline justify-content-center">Get In Touch</div>
+          <h2 class="section-heading">Request a Renovation Quote</h2>
+          <p class="section-desc mx-auto">
+            Tell us about your renovation project and get a free, no-obligation
+            estimate within 24 hours.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-5 fade-up">
+            <div class="ci-wrap">
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <h5>Office Address</h5>
+                  <p>Pallavaram, Chennai,<br />Tamil Nadu - 600043</p>
+                </div>
+              </div>
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                  <h5>Phone Number</h5>
+                  <p><a href="tel:+919042356696">+91 90423 56696</a></p>
+                </div>
+              </div>
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-whatsapp"></i></div>
+                <div>
+                  <h5>WhatsApp</h5>
+                  <p>
+                    <a href="https://wa.me/919042356696" target="_blank"
+                      >Send photos of your space on WhatsApp</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <h5>Email</h5>
+                  <p>
+                    <a href="mailto:info@dhconstruction.in"
+                      >info@dhconstruction.in</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-clock-fill"></i></div>
+                <div>
+                  <h5>Working Hours</h5>
+                  <p>
+                    Mon – Sat: 8:00 AM – 7:00 PM<br />Sunday: By Appointment
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 fade-up fd2">
+            <div class="cf-wrap">
+              <div class="cf-head">
+                <h4>Free Renovation Estimate</h4>
+                <p>
+                  Fill out the details below — the more info you provide, the
+                  more accurate our quote will be.
+                </p>
+              </div>
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Full Name *</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-person ig-icon"></i
+                      ><input
+                        type="text"
+                        class="form-control fc-custom"
+                        placeholder="Your full name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Phone Number *</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-telephone ig-icon"></i
+                      ><input
+                        type="tel"
+                        class="form-control fc-custom"
+                        placeholder="+91 XXXXX XXXXX"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Type of Renovation *</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-tools ig-icon"></i>
+                      <select class="form-select fc-custom" required>
+                        <option value="" selected disabled>Select type</option>
+                        <option>Full Home Renovation</option>
+                        <option>Kitchen Remodeling</option>
+                        <option>Bathroom Renovation</option>
+                        <option>Commercial Renovation</option>
+                        <option>Interior Redesign</option>
+                        <option>Flooring & Tiling</option>
+                        <option>Electrical & Plumbing</option>
+                        <option>Exterior Renovation</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Approx. Area</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-arrows-angle-expand ig-icon"></i
+                      ><input
+                        type="text"
+                        class="form-control fc-custom"
+                        placeholder="e.g., 1,200 sq ft"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Property Location *</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-geo-alt ig-icon"></i
+                      ><input
+                        type="text"
+                        class="form-control fc-custom"
+                        placeholder="e.g., Pallavaram, Chennai"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label"
+                      >Describe Your Renovation Needs *</label
+                    >
+                    <div class="ig-custom">
+                      <i class="bi bi-chat-dots ig-icon"></i
+                      ><textarea
+                        class="form-control fc-custom"
+                        rows="4"
+                        placeholder="What needs to be renovated? Any specific requirements, material preferences, budget range..."
+                        required
+                        style="padding-top: 14px"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <button
+                      type="submit"
+                      class="btn-main w-100"
+                      id="cfBtn"
+                      style="justify-content: center"
+                    >
+                      <i class="bi bi-send-fill"></i> Get Free Estimate
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="foot section-pad-sm">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <a class="foot-brand" href="#hero">DH <b>Construction</b></a>
+            <p>
+              Expert building renovation and remodeling services in Chennai.
+              Transforming homes and commercial spaces with 15+ years of
+              experience, premium materials, and dedicated craftsmanship.
+            </p>
+            <div class="foot-soc">
+              <a href="#" aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="foot-links">
+              <li>
+                <a href="#hero"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  Home</a
+                >
+              </li>
+              <li>
+                <a href="#about"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  About</a
+                >
+              </li>
+              <li>
+                <a href="#services"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  Services</a
+                >
+              </li>
+              <li>
+                <a href="#process"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  Process</a
+                >
+              </li>
+              <li>
+                <a href="#projects"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  Projects</a
+                >
+              </li>
+              <li>
+                <a href="#contact"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <h5>Renovation Services</h5>
+            <ul class="foot-links">
+              <li><a href="#services">Full Home Renovation</a></li>
+              <li><a href="#services">Kitchen Remodeling</a></li>
+              <li><a href="#services">Bathroom Makeover</a></li>
+              <li><a href="#services">Commercial Renovation</a></li>
+              <li><a href="#services">False Ceiling & Painting</a></li>
+              <li><a href="#services">Flooring & Tiling</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <h5>Contact Info</h5>
+            <ul class="foot-links">
+              <li>
+                <a href="tel:+919042356696"
+                  ><i class="bi bi-telephone" style="font-size: 0.8rem"></i> +91
+                  90423 56696</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@dhconstruction.in"
+                  ><i class="bi bi-envelope" style="font-size: 0.8rem"></i>
+                  info@dhconstruction.in</a
+                >
+              </li>
+              <li>
+                <a href="https://wa.me/919042356696" target="_blank"
+                  ><i class="bi bi-whatsapp" style="font-size: 0.8rem"></i>
+                  WhatsApp Chat</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="bi bi-geo-alt" style="font-size: 0.8rem"></i>
+                  Pallavaram, Chennai – 600043</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="foot-bot text-center">
+          <p>
+            &copy; 2025 DH Construction. All Rights Reserved. | Expert
+            Renovation Services in Chennai
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a
+      href="https://wa.me/919042356696"
+      target="_blank"
+      class="float-wa"
+      aria-label="WhatsApp"
+      ><i class="bi bi-whatsapp"></i
+    ></a>
+    <a href="tel:+919042356696" class="float-call" aria-label="Call"
+      ><i class="bi bi-telephone-fill"></i
+    ></a>
+    <button class="btt" id="bttBtn" aria-label="Back to top">
+      <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Toast -->
+    <div class="toast-msg" id="toastMsg">
+      <i class="bi bi-check-circle-fill"></i
+      ><span>Quote request sent! We'll contact you within 24 hours.</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      (function () {
+        /* Navbar scroll */
+        var nav = document.getElementById("nav"),
+          bttBtn = document.getElementById("bttBtn");
+        window.addEventListener("scroll", function () {
+          nav.classList.toggle("scrolled", window.scrollY > 80);
+          bttBtn.classList.toggle("on", window.scrollY > 600);
+        });
+        bttBtn.addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+        document.querySelectorAll(".nav-link").forEach(function (l) {
+          l.addEventListener("click", function () {
+            var c = bootstrap.Collapse.getInstance(
+              document.getElementById("navMenu"),
+            );
+            if (c) c.hide();
+          });
+        });
+        /* Active nav */
+        var secs = document.querySelectorAll("section[id]");
+        window.addEventListener("scroll", function () {
+          var sy = window.scrollY + 200;
+          secs.forEach(function (s) {
+            var t = s.offsetTop,
+              h = s.offsetHeight,
+              id = s.id;
+            var lnk = document.querySelector('.nav-link[href="#' + id + '"]');
+            if (lnk) {
+              if (sy >= t && sy < t + h) {
+                document.querySelectorAll(".nav-link").forEach(function (l) {
+                  l.classList.remove("active");
+                });
+                lnk.classList.add("active");
+              }
+            }
+          });
+        });
+
+        /* Hero Canvas Particles */
+        var canvas = document.getElementById("heroCanvas"),
+          ctx = canvas.getContext("2d"),
+          particles = [],
+          mx = 0,
+          my = 0;
+        function resizeCanvas() {
+          canvas.width = canvas.parentElement.offsetWidth;
+          canvas.height = canvas.parentElement.offsetHeight;
+        }
+        resizeCanvas();
+        window.addEventListener("resize", resizeCanvas);
+        document
+          .querySelector(".hero")
+          .addEventListener("mousemove", function (e) {
+            var r = canvas.getBoundingClientRect();
+            mx = e.clientX - r.left;
+            my = e.clientY - r.top;
+          });
+        function Particle() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.s = Math.random() * 2 + 0.5;
+          this.sx = (Math.random() - 0.5) * 0.5;
+          this.sy = (Math.random() - 0.5) * 0.5;
+          this.o = Math.random() * 0.4 + 0.1;
+        }
+        var pc = Math.min(80, Math.floor(window.innerWidth / 20));
+        for (var i = 0; i < pc; i++) particles.push(new Particle());
+        function animP() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          for (var i = 0; i < particles.length; i++) {
+            var p = particles[i];
+            p.x += p.sx;
+            p.y += p.sy;
+            var dx = p.x - mx,
+              dy = p.y - my,
+              d = Math.sqrt(dx * dx + dy * dy);
+            if (d < 120) {
+              p.x += (dx / d) * 1.5;
+              p.y += (dy / d) * 1.5;
+            }
+            if (p.x < 0) p.x = canvas.width;
+            if (p.x > canvas.width) p.x = 0;
+            if (p.y < 0) p.y = canvas.height;
+            if (p.y > canvas.height) p.y = 0;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.s, 0, Math.PI * 2);
+            ctx.fillStyle = "rgba(102,187,106," + p.o + ")";
+            ctx.fill();
+            for (var j = i + 1; j < particles.length; j++) {
+              var p2 = particles[j],
+                ddx = p.x - p2.x,
+                ddy = p.y - p2.y,
+                dd = Math.sqrt(ddx * ddx + ddy * ddy);
+              if (dd < 150) {
+                ctx.beginPath();
+                ctx.moveTo(p.x, p.y);
+                ctx.lineTo(p2.x, p2.y);
+                ctx.strokeStyle =
+                  "rgba(102,187,106," + 0.08 * (1 - dd / 150) + ")";
+                ctx.lineWidth = 0.5;
+                ctx.stroke();
+              }
+            }
+          }
+          requestAnimationFrame(animP);
+        }
+        animP();
+
+        /* Scroll Reveal */
+        var fEls = document.querySelectorAll(".fade-up");
+        var obs = new IntersectionObserver(
+          function (e) {
+            e.forEach(function (en) {
+              if (en.isIntersecting) {
+                en.target.classList.add("visible");
+                obs.unobserve(en.target);
+              }
+            });
+          },
+          { threshold: 0.15, rootMargin: "0px 0px -40px 0px" },
+        );
+        fEls.forEach(function (el) {
+          obs.observe(el);
+        });
+
+        /* Counter */
+        var cts = document.querySelectorAll(".counter");
+        var cObs = new IntersectionObserver(
+          function (e) {
+            e.forEach(function (en) {
+              if (en.isIntersecting) {
+                var el = en.target,
+                  t = parseInt(el.dataset.target),
+                  dur = 2000,
+                  st = null;
+                function step(ts) {
+                  if (!st) st = ts;
+                  var pr = Math.min((ts - st) / dur, 1),
+                    eased = 1 - (1 - pr) * (1 - pr);
+                  el.textContent = Math.floor(eased * t);
+                  if (pr < 1) requestAnimationFrame(step);
+                  else el.textContent = t;
+                }
+                requestAnimationFrame(step);
+                cObs.unobserve(el);
+              }
+            });
+          },
+          { threshold: 0.5 },
+        );
+        cts.forEach(function (c) {
+          cObs.observe(c);
+        });
+
+        /* FAQ */
+        document.querySelectorAll(".faq-q").forEach(function (q) {
+          q.addEventListener("click", function () {
+            var item = q.parentElement,
+              ans = item.querySelector(".faq-a"),
+              isActive = item.classList.contains("active");
+            document.querySelectorAll(".faq-item").forEach(function (fi) {
+              fi.classList.remove("active");
+              fi.querySelector(".faq-a").style.maxHeight = "0";
+            });
+            if (!isActive) {
+              item.classList.add("active");
+              ans.style.maxHeight = ans.scrollHeight + "px";
+            }
+          });
+        });
+
+        /* Area pills hover */
+        document.querySelectorAll(".area-pill").forEach(function (p) {
+          p.addEventListener("mouseenter", function () {
+            p.style.background = "var(--gradient)";
+            p.style.color = "var(--white)";
+            p.style.borderColor = "transparent";
+            p.style.transform = "translateY(-2px)";
+            p.style.boxShadow = "0 6px 20px rgba(46,125,50,.25)";
+            p.querySelector("i").style.color = "var(--white)";
+          });
+          p.addEventListener("mouseleave", function () {
+            p.style.background = "var(--bg-cream)";
+            p.style.color = "var(--text)";
+            p.style.borderColor = "var(--border)";
+            p.style.transform = "";
+            p.style.boxShadow = "";
+            p.querySelector("i").style.color = "var(--primary)";
+          });
+        });
+
+        /* Contact Form */
+        var form = document.getElementById("contactForm"),
+          toast = document.getElementById("toastMsg");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var btn = document.getElementById("cfBtn");
+          btn.innerHTML =
+            '<i class="bi bi-spinner" style="animation:spin 1s linear infinite;"></i> Sending...';
+          btn.style.pointerEvents = "none";
+          btn.style.opacity = ".7";
+          setTimeout(function () {
+            btn.innerHTML =
+              '<i class="bi bi-check-circle-fill"></i> Sent Successfully!';
+            btn.style.background = "var(--primary)";
+            btn.style.opacity = "1";
+            toast.classList.add("show");
+            setTimeout(function () {
+              toast.classList.remove("show");
+            }, 4000);
+            form.reset();
+            setTimeout(function () {
+              btn.innerHTML =
+                '<i class="bi bi-send-fill"></i> Get Free Estimate';
+              btn.style.pointerEvents = "";
+              btn.style.background = "";
+            }, 3000);
+          }, 1500);
+        });
+        var ss = document.createElement("style");
+        ss.textContent = "@keyframes spin{to{transform:rotate(360deg);}}";
+        document.head.appendChild(ss);
+      })();
+    </script>
+  </body>
+</html>

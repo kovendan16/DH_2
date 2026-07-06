@@ -1,0 +1,1824 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DH Construction - Contact Us. Get in touch for expert renovation services in Chennai. Call, WhatsApp, or visit our office."
+    />
+    <title>Contact Us | DH Construction - Expert Renovation in Chennai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #2e7d32;
+        --primary-dark: #1b5e20;
+        --primary-light: #66bb6a;
+        --primary-accent: #81c784;
+        --bg-cream: #fafaf7;
+        --bg-warm: #f5f3ee;
+        --white: #ffffff;
+        --dark: #1a1a1a;
+        --text: #2d2d2d;
+        --text-light: #6b7280;
+        --text-muted: #9ca3af;
+        --border: #e8e6e1;
+        --gradient: linear-gradient(135deg, #2e7d32, #66bb6a);
+        --heading: "Playfair Display", serif;
+        --body: "Poppins", sans-serif;
+        --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
+        --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.1);
+        --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
+        --shadow-xl: 0 30px 80px rgba(0, 0, 0, 0.15);
+        --radius: 16px;
+        --radius-lg: 24px;
+        --radius-xl: 40px;
+        --ease: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      body {
+        font-family: var(--body);
+        color: var(--text);
+        background: var(--white);
+        line-height: 1.7;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--heading);
+        font-weight: 600;
+        line-height: 1.25;
+        color: var(--dark);
+      }
+      p {
+        color: var(--text-light);
+        margin-bottom: 1rem;
+      }
+      a {
+        text-decoration: none;
+        color: var(--primary);
+        transition: all 0.3s var(--ease);
+      }
+      a:hover {
+        color: var(--primary-dark);
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      .section-pad {
+        padding: 120px 0;
+      }
+      .section-pad-sm {
+        padding: 80px 0;
+      }
+      .overline {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--body);
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--primary);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 1.25rem;
+      }
+      .overline::before {
+        content: "";
+        width: 40px;
+        height: 2px;
+        background: var(--gradient);
+      }
+      .section-heading {
+        font-size: 3.25rem;
+        font-weight: 700;
+        margin-bottom: 1.25rem;
+        letter-spacing: -0.5px;
+      }
+      .section-desc {
+        font-size: 1.05rem;
+        color: var(--text-light);
+        max-width: 600px;
+        line-height: 1.8;
+      }
+      .fade-up {
+        opacity: 0;
+        transform: translateY(40px);
+        transition:
+          opacity 0.7s var(--ease),
+          transform 0.7s var(--ease);
+      }
+      .fade-up.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .fd1 {
+        transition-delay: 0.1s;
+      }
+      .fd2 {
+        transition-delay: 0.2s;
+      }
+      .fd3 {
+        transition-delay: 0.3s;
+      }
+      .fd4 {
+        transition-delay: 0.4s;
+      }
+      .fd5 {
+        transition-delay: 0.5s;
+      }
+      .fd6 {
+        transition-delay: 0.6s;
+      }
+      .fd7 {
+        transition-delay: 0.7s;
+      }
+      .fd8 {
+        transition-delay: 0.8s;
+      }
+      .btn-main {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--gradient);
+        color: var(--white);
+        padding: 16px 36px;
+        border-radius: var(--radius-xl);
+        font-family: var(--body);
+        font-weight: 600;
+        font-size: 0.95rem;
+        border: none;
+        transition: all 0.4s var(--ease);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .btn-main::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: var(--primary-dark);
+        z-index: -1;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s var(--ease);
+      }
+      .btn-main:hover {
+        color: var(--white);
+        transform: translateY(-3px);
+        box-shadow: 0 12px 35px rgba(46, 125, 50, 0.35);
+      }
+      .btn-main:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+      .btn-ghost {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        color: var(--white);
+        padding: 16px 36px;
+        border-radius: var(--radius-xl);
+        font-family: var(--body);
+        font-weight: 500;
+        font-size: 0.95rem;
+        border: 1.5px solid rgba(255, 255, 255, 0.4);
+        transition: all 0.4s var(--ease);
+      }
+      .btn-ghost:hover {
+        background: var(--white);
+        color: var(--primary-dark);
+        border-color: var(--white);
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-lg);
+      }
+      .btn-outline {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        color: var(--primary);
+        padding: 14px 32px;
+        border-radius: var(--radius-xl);
+        font-family: var(--body);
+        font-weight: 600;
+        font-size: 0.9rem;
+        border: 2px solid var(--primary);
+        transition: all 0.4s var(--ease);
+      }
+      .btn-outline:hover {
+        background: var(--primary);
+        color: var(--white);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(46, 125, 50, 0.3);
+      }
+      .btn-white {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--white);
+        color: var(--primary-dark);
+        padding: 16px 36px;
+        border-radius: var(--radius-xl);
+        font-family: var(--body);
+        font-weight: 600;
+        font-size: 0.95rem;
+        border: none;
+        transition: all 0.4s var(--ease);
+      }
+      .btn-white:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+        color: var(--primary-dark);
+      }
+
+      /* ===== NAVBAR ===== */
+      .navbar {
+        padding: 24px 0;
+        transition: all 0.4s var(--ease);
+        z-index: 1000;
+        background: green;
+      }
+      .navbar.scrolled {
+        background: rgba(255, 255, 255, 0.97);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        padding: 14px 0;
+        box-shadow: 0 1px 20px rgba(0, 0, 0, 0.06);
+      }
+      .navbar-brand {
+        font-family: var(--heading);
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--white) !important;
+        letter-spacing: -0.5px;
+      }
+      .navbar.scrolled .navbar-brand {
+        color: var(--dark) !important;
+      }
+      .navbar-brand b {
+        color: var(--primary-light);
+        font-weight: 800;
+      }
+      .navbar.scrolled .navbar-brand b {
+        color: var(--primary);
+      }
+      .nav-link {
+        font-family: var(--body);
+        font-weight: 500;
+        font-size: 0.88rem;
+        color: rgba(255, 255, 255, 0.85) !important;
+        padding: 8px 18px !important;
+        transition: all 0.3s var(--ease);
+        position: relative;
+        letter-spacing: 0.3px;
+      }
+      .navbar.scrolled .nav-link {
+        color: var(--text) !important;
+      }
+      .nav-link:hover,
+      .nav-link.active {
+        color: var(--primary-light) !important;
+      }
+      .navbar.scrolled .nav-link:hover,
+      .navbar.scrolled .nav-link.active {
+        color: var(--primary) !important;
+      }
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        left: 18px;
+        right: 18px;
+        height: 2px;
+        background: var(--gradient);
+        transform: scaleX(0);
+        transition: transform 0.3s var(--ease);
+        border-radius: 2px;
+      }
+      .nav-link:hover::after,
+      .nav-link.active::after {
+        transform: scaleX(1);
+      }
+      .navbar-toggler {
+        border: none;
+        padding: 0;
+        font-size: 1.5rem;
+        color: var(--white);
+      }
+      .navbar.scrolled .navbar-toggler {
+        color: var(--dark);
+      }
+      @media (max-width: 991px) {
+        .navbar-collapse {
+          background: var(--white);
+          border-radius: var(--radius);
+          padding: 24px;
+          margin-top: 16px;
+          box-shadow: var(--shadow-lg);
+        }
+        .nav-link {
+          color: var(--text) !important;
+          padding: 12px 16px !important;
+        }
+        .nav-link:hover,
+        .nav-link.active {
+          color: var(--primary) !important;
+        }
+      }
+
+      /* ===== Dropdown Menu (from your original) ===== */
+      .dropdown {
+        position: relative;
+      }
+      .dropdown-menu {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 12px 0;
+        box-shadow: var(--shadow-lg);
+        margin-top: 12px;
+        min-width: 300px;
+      }
+      .dropdown-item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 12px 20px;
+        color: var(--text);
+        font-size: 0.88rem;
+        transition: all 0.25s var(--ease);
+      }
+      .dropdown-item:hover {
+        background: var(--bg-cream);
+        color: var(--primary);
+        padding-left: 24px;
+      }
+      .dropdown-item i {
+        font-size: 1.1rem;
+        color: var(--primary);
+        width: 24px;
+        text-align: center;
+        flex-shrink: 0;
+      }
+      .dropdown-item .dd-desc {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        margin-bottom: 0;
+      }
+      .dd-title {
+        display: block;
+        padding: 8px 20px 4px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .dd-divider {
+        height: 1px;
+        background: var(--border);
+        margin: 8px 0;
+      }
+
+      /* ===== CONTACT INFO CARDS ===== */
+      .ci-wrap {
+        position: relative;
+      }
+      .ci-wrap::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--gradient);
+        border-radius: 10px;
+      }
+      .ci-card {
+        background: var(--bg-cream);
+        border-radius: var(--radius);
+        padding: 24px 24px 24px 30px;
+        display: flex;
+        align-items: flex-start;
+        gap: 18px;
+        transition: all 0.3s var(--ease);
+        border: 1px solid transparent;
+        margin-bottom: 16px;
+      }
+      .ci-card:hover {
+        background: var(--white);
+        box-shadow: var(--shadow-md);
+        transform: translateX(5px);
+        border-color: var(--border);
+      }
+      .ci-icon {
+        width: 52px;
+        height: 52px;
+        min-width: 52px;
+        background: var(--white);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: var(--primary);
+        transition: all 0.3s var(--ease);
+        box-shadow: var(--shadow-soft);
+      }
+      .ci-card:hover .ci-icon {
+        background: var(--gradient);
+        color: var(--white);
+      }
+      .ci-card h5 {
+        font-family: var(--body);
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      .ci-card p {
+        font-size: 0.85rem;
+        margin-bottom: 0;
+        line-height: 1.7;
+      }
+      .ci-card a {
+        color: var(--text-light);
+      }
+      .ci-card a:hover {
+        color: var(--primary);
+      }
+
+      /* ===== CONTACT FORM ===== */
+      .cf-wrap {
+        background: var(--white);
+        border-radius: var(--radius-lg);
+        padding: 44px;
+        box-shadow: var(--shadow-md);
+        border: 1px solid var(--border);
+      }
+      .cf-head {
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 28px;
+      }
+      .cf-head h4 {
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+      }
+      .cf-head p {
+        font-size: 0.88rem;
+        margin-bottom: 0;
+      }
+      .cf-wrap .form-label {
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 8px;
+      }
+      .ig-custom {
+        position: relative;
+      }
+      .ig-icon {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        z-index: 5;
+        transition: color 0.3s;
+        pointer-events: none;
+      }
+      .ig-custom:has(textarea) .ig-icon {
+        top: 20px;
+        transform: none;
+      }
+      .fc-custom {
+        border: 2px solid var(--border);
+        border-radius: 12px;
+        padding: 14px 20px 14px 46px;
+        font-family: var(--body);
+        font-size: 0.9rem;
+        color: var(--text);
+        transition: all 0.3s var(--ease);
+        background: var(--white);
+        width: 100%;
+      }
+      .fc-custom:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.08);
+        outline: none;
+      }
+      .ig-custom:focus-within .ig-icon {
+        color: var(--primary);
+      }
+      .fc-custom::placeholder {
+        color: var(--text-muted);
+        font-size: 0.85rem;
+      }
+      .cf-wrap .form-select.fc-custom {
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236B7280' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        padding-right: 40px;
+      }
+      .cf-note {
+        background: var(--bg-cream);
+        border-radius: var(--radius);
+        padding: 16px 20px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-top: 20px;
+      }
+      .cf-note i {
+        color: var(--primary);
+        font-size: 1.1rem;
+        margin-top: 2px;
+        flex-shrink: 0;
+      }
+      .cf-note p {
+        font-size: 0.82rem;
+        margin-bottom: 0;
+        line-height: 1.7;
+      }
+
+      /* ===== EMBEDDED MAP ===== */
+      .map-embed-card {
+        background: var(--white);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow-md);
+        margin-bottom: 24px;
+        position: relative;
+      }
+      .map-embed-frame {
+        width: 100%;
+        height: 260px;
+        border: 0;
+        display: block;
+        filter: saturate(0.9) contrast(1.05);
+      }
+      .map-embed-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 20px;
+        background: var(--bg-cream);
+        border-top: 1px solid var(--border);
+      }
+      .map-embed-bar h6 {
+        font-family: var(--body);
+        font-size: 0.88rem;
+        font-weight: 600;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .map-embed-bar h6 i {
+        color: var(--primary);
+      }
+      .map-embed-bar a {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--primary);
+      }
+      .map-embed-bar a:hover {
+        gap: 10px;
+      }
+
+      /* ===== FAQ ===== */
+      .faq-item {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        margin-bottom: 12px;
+        overflow: hidden;
+        transition: all 0.3s var(--ease);
+      }
+      .faq-item:hover {
+        border-color: var(--primary-light);
+      }
+      .faq-item.active {
+        border-color: var(--primary);
+        box-shadow: 0 4px 20px rgba(46, 125, 50, 0.08);
+      }
+      .faq-q {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 24px;
+        cursor: pointer;
+        gap: 16px;
+        transition: all 0.3s var(--ease);
+      }
+      .faq-q h5 {
+        font-family: var(--body);
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin-bottom: 0;
+        transition: color 0.3s;
+      }
+      .faq-item.active .faq-q h5 {
+        color: var(--primary);
+      }
+      .faq-q i {
+        font-size: 1.1rem;
+        color: var(--primary);
+        transition: transform 0.4s var(--ease);
+        flex-shrink: 0;
+      }
+      .faq-item.active .faq-q i {
+        transform: rotate(180deg);
+      }
+      .faq-a {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s var(--ease);
+      }
+      .faq-a-inner {
+        padding: 0 24px 20px;
+      }
+      .faq-a-inner p {
+        font-size: 0.88rem;
+        margin-bottom: 0;
+        line-height: 1.8;
+      }
+
+      /* ===== CTA ===== */
+      .cta-sec {
+        background: var(--gradient);
+        position: relative;
+        overflow: hidden;
+      }
+      .cta-sec::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -10%;
+        width: 500px;
+        height: 500px;
+        border: 3px solid rgba(255, 255, 255, 0.08);
+        border-radius: 50%;
+      }
+      .cta-sec::after {
+        content: "";
+        position: absolute;
+        bottom: -30%;
+        left: -5%;
+        width: 300px;
+        height: 300px;
+        border: 2px solid rgba(255, 255, 255, 0.06);
+        border-radius: 50%;
+      }
+      .cta-inner {
+        position: relative;
+        z-index: 1;
+      }
+      .cta-inner h2 {
+        font-size: 2.75rem;
+        color: var(--white);
+        margin-bottom: 1rem;
+      }
+      .cta-inner p {
+        font-size: 1.05rem;
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 600px;
+        margin-bottom: 2rem;
+      }
+
+      /* ===== FOOTER ===== */
+      .foot {
+        background: var(--dark);
+        color: rgba(255, 255, 255, 0.65);
+      }
+      .foot-brand {
+        font-family: var(--heading);
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 18px;
+        display: inline-block;
+      }
+      .foot-brand b {
+        color: var(--primary-light);
+        font-weight: 800;
+      }
+      .foot p {
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 0.9rem;
+      }
+      .foot h5 {
+        font-family: var(--body);
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--white);
+        margin-bottom: 22px;
+        position: relative;
+        padding-bottom: 12px;
+      }
+      .foot h5::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background: var(--gradient);
+        border-radius: 10px;
+      }
+      .foot-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .foot-links li {
+        margin-bottom: 10px;
+      }
+      .foot-links a {
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 0.88rem;
+        transition: all 0.3s var(--ease);
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .foot-links a:hover {
+        color: var(--primary-light);
+        padding-left: 5px;
+      }
+      .foot-soc {
+        display: flex;
+        gap: 10px;
+        margin-top: 22px;
+      }
+      .foot-soc a {
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.95rem;
+        transition: all 0.3s var(--ease);
+      }
+      .foot-soc a:hover {
+        background: var(--gradient);
+        border-color: transparent;
+        color: var(--white);
+        transform: translateY(-3px);
+      }
+      .foot-bot {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 24px 0;
+        margin-top: 55px;
+      }
+      .foot-bot p {
+        font-size: 0.82rem;
+        margin-bottom: 0;
+      }
+
+      /* ===== FLOATING ===== */
+      .float-wa {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 58px;
+        height: 58px;
+        background: #25d366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: 1.6rem;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        z-index: 999;
+        transition: all 0.3s var(--ease);
+        animation: waPulse 2s infinite;
+      }
+      .float-wa:hover {
+        transform: scale(1.1);
+        color: var(--white);
+      }
+      @keyframes waPulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+        }
+        70% {
+          box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        }
+      }
+      .float-call {
+        position: fixed;
+        bottom: 98px;
+        right: 32px;
+        width: 50px;
+        height: 50px;
+        background: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: 1.3rem;
+        box-shadow: 0 4px 18px rgba(46, 125, 50, 0.35);
+        z-index: 999;
+        transition: all 0.3s var(--ease);
+      }
+      .float-call:hover {
+        transform: scale(1.1);
+        color: var(--white);
+        background: var(--primary-dark);
+      }
+      .btt {
+        position: fixed;
+        bottom: 160px;
+        right: 35px;
+        width: 42px;
+        height: 42px;
+        background: var(--white);
+        border: 2px solid var(--border);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary);
+        font-size: 1rem;
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s var(--ease);
+        box-shadow: var(--shadow-soft);
+      }
+      .btt.on {
+        opacity: 1;
+        visibility: visible;
+      }
+      .btt:hover {
+        background: var(--gradient);
+        border-color: transparent;
+        color: var(--white);
+        transform: translateY(-3px);
+      }
+      .toast-msg {
+        position: fixed;
+        top: 100px;
+        right: 30px;
+        background: var(--white);
+        border-radius: var(--radius);
+        padding: 18px 28px;
+        box-shadow: var(--shadow-lg);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        transform: translateX(120%);
+        transition: transform 0.5s var(--ease);
+        border-left: 4px solid var(--primary);
+      }
+      .toast-msg.show {
+        transform: translateX(0);
+      }
+      .toast-msg i {
+        color: var(--primary);
+        font-size: 1.3rem;
+      }
+      .toast-msg span {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: var(--text);
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 1199px) {
+        .section-heading {
+          font-size: 2.75rem;
+        }
+      }
+      @media (max-width: 991px) {
+        .section-heading {
+          font-size: 2.25rem;
+        }
+        .section-pad {
+          padding: 80px 0;
+        }
+        .ci-wrap::before {
+          display: none;
+        }
+        .cf-wrap {
+          padding: 30px 24px;
+        }
+      }
+      @media (max-width: 767px) {
+        .section-heading {
+          font-size: 2rem;
+        }
+        .section-pad {
+          padding: 60px 0;
+        }
+        .cta-inner h2 {
+          font-size: 2rem;
+        }
+        .cf-wrap {
+          padding: 24px 18px;
+        }
+        .map-embed-frame {
+          height: 220px;
+        }
+      }
+      @media (max-width: 575px) {
+        .section-heading {
+          font-size: 1.75rem;
+        }
+        .hero-actions {
+          flex-direction: column;
+        }
+        .hero-actions .btn {
+          width: 100%;
+          justify-content: center;
+        }
+        .hero-sub {
+          font-size: 0.95rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="nav">
+      <div class="container">
+        <a class="navbar-brand" href="#hero">DH <b>Construction</b></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about/about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="../services/All_services.html">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><span class="dd-title">Construction</span></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../services/Buliding_Construction.html"
+                    ><i class="bi bi-building"></i>
+                    <div>
+                      <div>Building Construction</div>
+                      <div class="dd-desc">
+                        Residential, Commercial & Industrial
+                      </div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../services/Building_rennovation.html"
+                    ><i class="bi bi-arrow-repeat"></i>
+                    <div>
+                      <div>Building Renovation</div>
+                      <div class="dd-desc">Remodeling & Makeover</div>
+                    </div></a
+                  >
+                </li>
+                <li class="dd-divider"></li>
+                <li><span class="dd-title">Interior & Fit-Out</span></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../services/interior_designs.html"
+                    ><i class="bi bi-lamp-desk"></i>
+                    <div>
+                      <div>Interior Design & Fit-Out</div>
+                      <div class="dd-desc">Homes, Offices & Retail</div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../services/Infrastructure.html"
+                    ><i class="bi bi-person-workspace"></i>
+                    <div>
+                      <div>Office Infrastructure</div>
+                      <div class="dd-desc">Complete Office Setup</div>
+                    </div></a
+                  >
+                </li>
+                <li class="dd-divider"></li>
+                <li><span class="dd-title">Specialized Works</span></li>
+                <li>
+                  <a class="dropdown-item" href="../services/Glass.html"
+                    ><i class="bi bi-columns-gap"></i>
+                    <div>
+                      <div>Glass & Gypsum Partitions</div>
+                      <div class="dd-desc">Frameless, Framed & Acoustic</div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../services/falseceling.html"
+                    ><i class="bi bi-arrows-fullscreen"></i>
+                    <div>
+                      <div>False Ceiling & Painting</div>
+                      <div class="dd-desc">Gypsum, POP & Premium Paints</div>
+                    </div></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Projects/projects.html">Projects</a>
+              <!-- </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li> -->
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../Contact/contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a
+                class="btn-main btn-sm"
+                href="tel:+919042356696"
+                style="padding: 10px 24px; font-size: 0.85rem"
+                >Get Quote</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== SEND US YOUR REQUIREMENTS (with integrated map) ===== -->
+    <section class="section-pad" id="contact" style="padding-top: 140px">
+      <div class="container">
+        <div class="text-center mb-5 fade-up">
+          <div class="overline justify-content-center">Get In Touch</div>
+          <h2 class="section-heading">Send Us Your Requirements</h2>
+          <p class="section-desc mx-auto">
+            Fill out the form below with your project details and we'll get back
+            to you with a free estimate within 24 hours.
+          </p>
+        </div>
+
+        <div class="row g-5">
+          <!-- Form Column -->
+          <div class="col-lg-7 fade-up fd1">
+            <div class="cf-wrap">
+              <div class="cf-head">
+                <h4>Request a Free Estimate</h4>
+                <p>
+                  All fields marked with * are required. We respond within 24
+                  hours.
+                </p>
+              </div>
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Full Name *</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-person ig-icon"></i>
+                      <input
+                        type="text"
+                        class="form-control fc-custom"
+                        id="cfName"
+                        placeholder="Your full name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Phone Number *</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-telephone ig-icon"></i>
+                      <input
+                        type="tel"
+                        class="form-control fc-custom"
+                        id="cfPhone"
+                        placeholder="+91 XXXXX XXXXX"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Email Address</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-envelope ig-icon"></i>
+                      <input
+                        type="email"
+                        class="form-control fc-custom"
+                        id="cfEmail"
+                        placeholder="your@email.com"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Service Type *</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-tools ig-icon"></i>
+                      <select
+                        class="form-select fc-custom"
+                        id="cfService"
+                        required
+                      >
+                        <option value="" disabled selected>
+                          Select a service
+                        </option>
+                        <option>Building Construction</option>
+                        <option>Building Renovation</option>
+                        <option>Interior Design & Fit-Out</option>
+                        <option>Office Infrastructure</option>
+                        <option>Glass & Gypsum Partitions</option>
+                        <option>False Ceiling & Painting</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Property Location *</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-geo-alt ig-icon"></i>
+                      <input
+                        type="text"
+                        class="form-control fc-custom"
+                        id="cfLocation"
+                        placeholder="Area / Locality in Chennai"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Approximate Area (sq.ft)</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-arrows-fullscreen ig-icon"></i>
+                      <input
+                        type="number"
+                        class="form-control fc-custom"
+                        id="cfArea"
+                        placeholder="e.g. 1200"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Budget Range</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-currency-rupee ig-icon"></i>
+                      <select class="form-select fc-custom" id="cfBudget">
+                        <option value="" disabled selected>
+                          Select budget range
+                        </option>
+                        <option>Below ₹2 Lakhs</option>
+                        <option>₹2 – 5 Lakhs</option>
+                        <option>₹5 – 10 Lakhs</option>
+                        <option>₹10 – 20 Lakhs</option>
+                        <option>Above ₹20 Lakhs</option>
+                        <option>Not Sure Yet</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Preferred Contact Time</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-clock ig-icon"></i>
+                      <select class="form-select fc-custom" id="cfTime">
+                        <option value="" disabled selected>
+                          When can we call?
+                        </option>
+                        <option>Morning (8 AM – 12 PM)</option>
+                        <option>Afternoon (12 PM – 4 PM)</option>
+                        <option>Evening (4 PM – 7 PM)</option>
+                        <option>Anytime</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Project Details *</label>
+                    <div class="ig-custom">
+                      <i class="bi bi-chat-left-text ig-icon"></i>
+                      <textarea
+                        class="form-control fc-custom"
+                        id="cfMessage"
+                        rows="4"
+                        placeholder="Describe your requirements, current condition, what you'd like to change..."
+                        required
+                        style="padding-top: 14px"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="btn-main w-100 justify-content-center"
+                      style="padding: 16px 36px"
+                    >
+                      <i class="bi bi-send-fill"></i> Submit Your Enquiry
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <div class="cf-note">
+                <i class="bi bi-shield-check"></i>
+                <p>
+                  Your information is 100% secure. We never share your details
+                  with third parties. By submitting, you agree to receive a
+                  follow-up call/email regarding your enquiry.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Map + Contact Info -->
+          <div class="col-lg-5 fade-up fd2">
+            <!-- Embedded Map -->
+            <div class="map-embed-card">
+              <iframe
+                class="map-embed-frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.84916296526!2d79.94972824316406!3d13.047525300000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265b4e8aaa9ab%3A0x7a32db45ec8e0a6b!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="DH Construction Location"
+              >
+              </iframe>
+              <div class="map-embed-bar">
+                <h6><i class="bi bi-geo-alt-fill"></i> Chennai, Tamil Nadu</h6>
+                <a
+                  href="https://maps.google.com/?q=Chennai,Tamil Nadu,India"
+                  target="_blank"
+                  >Directions <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Contact Info Cards -->
+            <div class="ci-wrap">
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                  <h5>Phone</h5>
+                  <p><a href="tel:+919042356696">+91 90423 56696</a></p>
+                  <p style="font-size: 0.78rem; color: var(--text-muted)">
+                    Available Mon–Sat, 8 AM – 7 PM
+                  </p>
+                </div>
+              </div>
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-whatsapp"></i></div>
+                <div>
+                  <h5>WhatsApp</h5>
+                  <p>
+                    <a href="https://wa.me/919042356696" target="_blank"
+                      >+91 90423 56696</a
+                    >
+                  </p>
+                  <p style="font-size: 0.78rem; color: var(--text-muted)">
+                    Send photos & get instant quotes
+                  </p>
+                </div>
+              </div>
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <h5>Email</h5>
+                  <p>
+                    <a href="mailto:info@dhconstruction.in"
+                      >info@dhconstruction.in</a
+                    >
+                  </p>
+                  <p style="font-size: 0.78rem; color: var(--text-muted)">
+                    We respond within 24 hours
+                  </p>
+                </div>
+              </div>
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <h5>Office Address</h5>
+                  <p>
+                    No. 42, 2nd Street, Anna Nagar East,<br />Chennai – 600
+                    040,<br />Tamil Nadu, India
+                  </p>
+                </div>
+              </div>
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-clock-fill"></i></div>
+                <div>
+                  <h5>Working Hours</h5>
+                  <p>
+                    Monday – Saturday: 8:00 AM – 7:00 PM<br />Sunday: Closed
+                  </p>
+                </div>
+              </div>
+              <div class="ci-card">
+                <div class="ci-icon"><i class="bi bi-globe"></i></div>
+                <div>
+                  <h5>Service Area</h5>
+                  <p>
+                    All areas across Chennai & suburbs — Anna Nagar, Velachery,
+                    T. Nagar, Adyar, OMR, Porur, Tambaram, Nungambakkam & more.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section
+      class="section-pad-sm"
+      style="background: var(--bg-cream)"
+      id="faq"
+    >
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <div class="fade-up" style="position: sticky; top: 120px">
+              <div class="overline">Common Questions</div>
+              <h2 class="section-heading">Frequently Asked Questions</h2>
+              <p class="section-desc">
+                Quick answers to common queries about reaching us, our
+                consultation process, and what to expect when you contact DH
+                Construction.
+              </p>
+              <a href="tel:+919042356696" class="btn-outline mt-3"
+                ><i class="bi bi-telephone"></i> Still Have Questions? Call
+                Us</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="faq-item active fade-up fd1">
+              <div class="faq-q">
+                <h5>Is the consultation really free?</h5>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a" style="max-height: 200px">
+                <div class="faq-a-inner">
+                  <p>
+                    Yes, absolutely. We offer a free site visit and consultation
+                    for all enquiries. Our team will visit your property,
+                    understand your requirements, and provide a detailed written
+                    estimate — all at no cost and no obligation.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-up fd2">
+              <div class="faq-q">
+                <h5>How quickly will I receive a response?</h5>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  <p>
+                    We respond to all enquiries within 24 hours. For urgent
+                    requests, calling or WhatsApp-ing us gets you an instant
+                    response. We'll schedule a site visit at your convenience
+                    within 1–2 business days.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-up fd3">
+              <div class="faq-q">
+                <h5>Do I need to prepare anything before the site visit?</h5>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  <p>
+                    Not necessarily, but it helps to have a rough idea of what
+                    you want changed, any reference photos (from Pinterest or
+                    Instagram), and your budget range. If you have existing
+                    floor plans, keep those handy too.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-up fd4">
+              <div class="faq-q">
+                <h5>Can I get a quote over the phone without a site visit?</h5>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  <p>
+                    We can give you a rough ballpark range over the phone based
+                    on your description. However, an accurate and binding
+                    estimate requires a site visit to assess the current
+                    condition, measurements, and specific requirements.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-up fd5">
+              <div class="faq-q">
+                <h5>What if I'm located outside Chennai?</h5>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  <p>
+                    While our primary service area is Chennai and its suburbs,
+                    we do take on projects in nearby areas like Kanchipuram,
+                    Chengalpattu, and Tiruvallur. Contact us with your location
+                    and we'll let you know if we can help.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item fade-up fd6">
+              <div class="faq-q">
+                <h5>Can I visit your office without an appointment?</h5>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  <p>
+                    Yes, you're welcome to walk in during our office hours
+                    (Mon–Sat, 8 AM – 7 PM). However, for a detailed discussion
+                    about your project, we recommend scheduling an appointment
+                    so we can dedicate proper time to your requirements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section-pad cta-sec" id="cta">
+      <div class="container">
+        <div class="cta-inner text-center">
+          <h2 class="fade-up">Ready to Start Your Project?</h2>
+          <p class="mx-auto fade-up fd1">
+            One call is all it takes. Reach out now for a free consultation and
+            let's turn your construction vision into reality.
+          </p>
+          <div
+            class="d-flex gap-3 justify-content-center flex-wrap fade-up fd2"
+          >
+            <a href="tel:+919042356696" class="btn-white"
+              ><i class="bi bi-telephone"></i> Call: 90423 56696</a
+            >
+            <a
+              href="https://wa.me/919042356696"
+              target="_blank"
+              class="btn-ghost"
+              ><i class="bi bi-whatsapp"></i> WhatsApp Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="foot" id="footer">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <div class="foot-brand">DH <b>Construction</b></div>
+            <p>
+              Expert building construction, renovation and interior services in
+              Chennai. Trusted by 200+ homeowners and businesses for quality
+              craftsmanship and reliable delivery.
+            </p>
+            <div class="foot-soc">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="foot-links">
+              <li>
+                <a href="../index.html"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  Home</a
+                >
+              </li>
+              <li>
+                <a href="../about/about.html"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  About Us</a
+                >
+              </li>
+              <li>
+                <a href="../services/All_services.html"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  Services</a
+                >
+              </li>
+              <li>
+                <a href="../Projects/projects.html"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  Projects</a
+                >
+              </li>
+              <li>
+                <a href="../Contact/contact.html"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <h5>Services</h5>
+            <ul class="foot-links">
+              <li>
+                <a href="../services/Buliding_Construction.html"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  Building Construction</a
+                >
+              </li>
+              <li>
+                <a href="../services/Building_rennovation.html"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  Building Renovation</a
+                >
+              </li>
+              <li>
+                <a href="../services/interior_designs.html"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  Interior Design</a
+                >
+              </li>
+              <li>
+                <a href="../services/Infrastructure.html"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  Office Infrastructure</a
+                >
+              </li>
+              <li>
+                <a href="../services/Glass.html"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  Glass Partitions</a
+                >
+              </li>
+              <li>
+                <a href="../services/falseceling.html"
+                  ><i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  False Ceiling</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <h5>Contact Us</h5>
+            <ul class="foot-links">
+              <li>
+                <a href="tel:+919042356696"
+                  ><i class="bi bi-telephone" style="font-size: 0.85rem"></i>
+                  +91 90423 56696</a
+                >
+              </li>
+              <li>
+                <a href="https://wa.me/919042356696"
+                  ><i class="bi bi-whatsapp" style="font-size: 0.85rem"></i>
+                  WhatsApp</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@dhconstruction.in"
+                  ><i class="bi bi-envelope" style="font-size: 0.85rem"></i>
+                  info@dhconstruction.in</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="bi bi-geo-alt" style="font-size: 0.85rem"></i>
+                  Chennai, Tamil Nadu, India</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="bi bi-clock" style="font-size: 0.85rem"></i>
+                  Mon–Sat: 8 AM – 7 PM</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="foot-bot text-center">
+          <p>
+            &copy; 2024 DH Construction. All Rights Reserved. | Expert
+            Construction & Renovation Services in Chennai
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a
+      href="https://wa.me/919042356696"
+      target="_blank"
+      class="float-wa"
+      aria-label="WhatsApp"
+      ><i class="bi bi-whatsapp"></i
+    ></a>
+    <a href="tel:+919042356696" class="float-call" aria-label="Call"
+      ><i class="bi bi-telephone-fill"></i
+    ></a>
+    <button class="btt" id="btt" aria-label="Back to top">
+      <i class="bi bi-chevron-up"></i>
+    </button>
+    <div class="toast-msg" id="toast">
+      <i class="bi bi-check-circle-fill"></i
+      ><span id="toastText">Message sent!</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Navbar scroll
+      const nav = document.getElementById("nav");
+      const btt = document.getElementById("btt");
+      window.addEventListener("scroll", () => {
+        nav.classList.toggle("scrolled", window.scrollY > 80);
+        btt.classList.toggle("on", window.scrollY > 500);
+      });
+      btt.addEventListener("click", () =>
+        window.scrollTo({ top: 0, behavior: "smooth" }),
+      );
+
+      // Fade-up on scroll
+      const fadeEls = document.querySelectorAll(".fade-up");
+      const fadeObs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              fadeObs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.15, rootMargin: "0px 0px -40px 0px" },
+      );
+      fadeEls.forEach((el) => fadeObs.observe(el));
+
+      // Toast
+      function showToast(msg) {
+        const toast = document.getElementById("toast");
+        document.getElementById("toastText").textContent = msg;
+        toast.classList.add("show");
+        setTimeout(() => toast.classList.remove("show"), 4000);
+      }
+
+      // Contact Form
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const name = document.getElementById("cfName").value.trim();
+          const phone = document.getElementById("cfPhone").value.trim();
+          const service = document.getElementById("cfService").value;
+          const location = document.getElementById("cfLocation").value.trim();
+          const message = document.getElementById("cfMessage").value.trim();
+          if (!name) {
+            showToast("Please enter your name");
+            document.getElementById("cfName").focus();
+            return;
+          }
+          if (!phone || phone.length < 10) {
+            showToast("Please enter a valid phone number");
+            document.getElementById("cfPhone").focus();
+            return;
+          }
+          if (!service) {
+            showToast("Please select a service type");
+            document.getElementById("cfService").focus();
+            return;
+          }
+          if (!location) {
+            showToast("Please enter your property location");
+            document.getElementById("cfLocation").focus();
+            return;
+          }
+          if (!message) {
+            showToast("Please describe your project requirements");
+            document.getElementById("cfMessage").focus();
+            return;
+          }
+          const btn = this.querySelector('button[type="submit"]');
+          const origHTML = btn.innerHTML;
+          btn.innerHTML =
+            '<i class="bi bi-arrow-repeat" style="animation:spin 1s linear infinite;"></i> Sending...';
+          btn.disabled = true;
+          btn.style.opacity = "0.7";
+          setTimeout(() => {
+            btn.innerHTML =
+              '<i class="bi bi-check-circle-fill"></i> Enquiry Sent Successfully!';
+            btn.style.background = "var(--primary-dark)";
+            showToast(
+              "Thank you, " + name + "! We'll contact you within 24 hours.",
+            );
+            setTimeout(() => {
+              this.reset();
+              btn.innerHTML = origHTML;
+              btn.disabled = false;
+              btn.style.opacity = "1";
+              btn.style.background = "";
+            }, 3000);
+          }, 1500);
+        });
+
+      // Spin keyframe
+      const spinStyle = document.createElement("style");
+      spinStyle.textContent =
+        "@keyframes spin { to { transform: rotate(360deg); } }";
+      document.head.appendChild(spinStyle);
+
+      // FAQ Accordion
+      document.querySelectorAll(".faq-q").forEach((q) => {
+        q.addEventListener("click", () => {
+          const item = q.parentElement;
+          const answer = item.querySelector(".faq-a");
+          const isActive = item.classList.contains("active");
+          document.querySelectorAll(".faq-item").forEach((fi) => {
+            fi.classList.remove("active");
+            fi.querySelector(".faq-a").style.maxHeight = "0";
+          });
+          if (!isActive) {
+            item.classList.add("active");
+            answer.style.maxHeight = answer.scrollHeight + "px";
+          }
+        });
+      });
+
+      // Close mobile nav on link click
+      document
+        .querySelectorAll("#navMenu .nav-link, .dropdown-item")
+        .forEach((link) => {
+          link.addEventListener("click", () => {
+            const nc = document.getElementById("navMenu");
+            const bs = bootstrap.Collapse.getInstance(nc);
+            if (bs) bs.hide();
+          });
+        });
+    </script>
+  </body>
+</html>
