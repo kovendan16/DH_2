@@ -7,7 +7,7 @@
       name="description"
       content="DH Construction - Our Projects. Explore our completed renovation projects across Chennai — homes, kitchens, bathrooms, and commercial spaces."
     />
-    <title>Our Projects | DH Construction - Renovation Portfolio Chennai</title>
+    <title>Our Projects | DH Construction -Portfolio Chennai</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -272,50 +272,38 @@
         padding: 24px 0;
         transition: all 0.4s var(--ease);
         z-index: 1000;
-      }
-      .navbar.scrolled {
         background: rgba(255, 255, 255, 0.97);
         backdrop-filter: blur(24px);
         -webkit-backdrop-filter: blur(24px);
-        padding: 14px 0;
         box-shadow: 0 1px 20px rgba(0, 0, 0, 0.06);
+      }
+      .navbar.scrolled {
+        padding: 14px 0;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
       }
       .navbar-brand {
         font-family: var(--heading);
         font-size: 1.6rem;
         font-weight: 700;
-        color: var(--white) !important;
+        color: var(--dark) !important;
         letter-spacing: -0.5px;
       }
-      .navbar.scrolled .navbar-brand {
-        color: var(--dark) !important;
-      }
       .navbar-brand b {
-        color: var(--primary-light);
-        font-weight: 800;
-      }
-      .navbar.scrolled .navbar-brand b {
         color: var(--primary);
+        font-weight: 800;
       }
       .nav-link {
         font-family: var(--body);
         font-weight: 500;
         font-size: 0.88rem;
-        color: rgba(255, 255, 255, 0.85) !important;
+        color: var(--text) !important;
         padding: 8px 18px !important;
         transition: all 0.3s var(--ease);
         position: relative;
         letter-spacing: 0.3px;
       }
-      .navbar.scrolled .nav-link {
-        color: var(--text) !important;
-      }
       .nav-link:hover,
       .nav-link.active {
-        color: var(--primary-light) !important;
-      }
-      .navbar.scrolled .nav-link:hover,
-      .navbar.scrolled .nav-link.active {
         color: var(--primary) !important;
       }
       .nav-link::after {
@@ -338,9 +326,6 @@
         border: none;
         padding: 0;
         font-size: 1.5rem;
-        color: var(--white);
-      }
-      .navbar.scrolled .navbar-toggler {
         color: var(--dark);
       }
       @media (max-width: 991px) {
@@ -369,6 +354,7 @@
         align-items: center;
         overflow: hidden;
         background: #0a0a0a;
+        padding-top: 80px;
       }
       .hero-bg {
         position: absolute;
@@ -675,7 +661,7 @@
         color: var(--white);
       }
 
-      /* ===== PROJECT CARDS (No Image — Icon Based) ===== */
+      /* ===== PROJECT CARDS ===== */
       .proj-card {
         background: var(--white);
         border-radius: var(--radius);
@@ -1089,6 +1075,75 @@
         line-height: 1;
       }
 
+      /* ===== CLIENTS ===== */
+      .clients-sec {
+        background: var(--white);
+      }
+      .client-card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 36px 24px;
+        text-align: center;
+        height: 100%;
+        transition: all 0.4s var(--ease);
+        position: relative;
+        overflow: hidden;
+      }
+      .client-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: var(--gradient);
+        transform: scaleX(0);
+        transition: transform 0.5s var(--ease);
+      }
+      .client-card:hover::before {
+        transform: scaleX(1);
+      }
+      .client-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-lg);
+        border-color: transparent;
+      }
+      .client-logo {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 18px;
+        border-radius: 50%;
+        background: var(--bg-cream);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--heading);
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--primary);
+        transition: all 0.4s var(--ease);
+      }
+      .client-card:hover .client-logo {
+        background: var(--gradient);
+        color: var(--white);
+        transform: scale(1.08) rotate(-5deg);
+      }
+      .client-card h5 {
+        font-family: var(--body);
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: var(--dark);
+      }
+      .client-card .client-cat {
+        font-size: 0.78rem;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+      }
+
       /* ===== CTA ===== */
       .cta-sec {
         background: var(--gradient);
@@ -1410,7 +1465,7 @@
 
     <nav class="navbar navbar-expand-lg fixed-top" id="nav">
       <div class="container">
-        <a class="navbar-brand" href="#hero">DH <b>Construction</b></a>
+        <a class="navbar-brand" href="#hero"> <img src="../Contact/logo.png"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -1505,12 +1560,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../Projects/projects.html">Projects</a>
-              <!-- </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
-            </li> -->
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="../Contact/contact.html">Contact</a>
             </li>
@@ -1526,6 +1576,7 @@
         </div>
       </div>
     </nav>
+
     <!-- ===== HERO ===== -->
     <section class="hero" id="hero">
       <div class="hero-bg">
@@ -1559,7 +1610,7 @@
                 >
                 <span class="line"
                   ><span class="line-in"
-                    ><em>Renovation</em> Portfolio</span
+                    ><em> Construction</em> Portfolio</span
                   ></span
                 >
                 <span class="line"
@@ -2315,6 +2366,51 @@
                   <small>Commercial Renovation — OMR</small>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUR CLIENTS ===== -->
+    <section class="section-pad-sm clients-sec" id="clients">
+      <div class="container">
+        <div class="text-center mb-5 fade-up">
+          <div class="overline justify-content-center">Our Valued Clients</div>
+          <h2 class="section-heading">Trusted by Leading Brands</h2>
+          <p class="section-desc mx-auto">
+            We are proud to have partnered with renowned organizations across
+            various industries, delivering quality construction and renovation
+            solutions they can rely on.
+          </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-3 col-md-6 fade-up fd1">
+            <div class="client-card">
+              <div class="client-logo">NP</div>
+              <h5>Nippon Paints</h5>
+              <p class="client-cat">Paints & Coatings</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 fade-up fd2">
+            <div class="client-card">
+              <div class="client-logo">NL</div>
+              <h5>Nippon Logistics</h5>
+              <p class="client-cat">Logistics & Supply Chain</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 fade-up fd3">
+            <div class="client-card">
+              <div class="client-logo">KJ</div>
+              <h5>Kalyana Jewellers</h5>
+              <p class="client-cat">Jewellery Retail</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 fade-up fd4">
+            <div class="client-card">
+              <div class="client-logo">MF</div>
+              <h5>Manappuram Finance</h5>
+              <p class="client-cat">Financial Services</p>
             </div>
           </div>
         </div>
