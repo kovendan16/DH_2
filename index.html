@@ -436,14 +436,15 @@
       }
 
       /* ===== HERO ===== */
-      .hero {
-        position: relative;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        overflow: visible;
-        background: #0d1f0d;
-      }
+     .hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #0d1f0d;
+  padding: 40px 0 30px;
+}
       .hero-bg {
         position: absolute;
         inset: 0;
@@ -476,10 +477,9 @@
         );
         z-index: 1;
       }
-      .hero-content {
+     .hero-content {
   position: relative;
   z-index: 10;
-         transform: translateY(25px);
 }
       .hero-tag {
         display: inline-flex;
@@ -670,13 +670,13 @@
       .hv-badge-2 h4 {
         color: var(--primary);
       }
-      .hero-stats-bar {
-        display: flex;
-        gap: 0;
-        opacity: 0;
-        transform: translateY(25px);
-        animation: sUp 0.8s var(--ease) 1.6s forwards;
-      }
+     .hero-stats-bar {
+  display: flex;
+  gap: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: sUp 0.8s var(--ease) 1.6s forwards;
+}
       .hsb-item {
         flex: 1;
         text-align: center;
